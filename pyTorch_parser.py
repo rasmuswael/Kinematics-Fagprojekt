@@ -58,7 +58,7 @@ class Joint:
       rotation = torch.deg2rad(motion['root'][3:]).flip(0)
       # self.matrix = self.C.dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
       # print(euler_angles_to_matrix(rotation, "ZYX"))
-      self.matrix = torch.matmul(torch.matmul(self.C, euler_angles_to_matrix(rotation, "ZYX")), self.Cinv)
+      self.matrix = torch.mm(torch.mm(self.C, euler_angles_to_matrix(rotation, "ZYX")), self.Cinv)
     else:
       idx = 0
       rotation = torch.zeros(3)
@@ -218,7 +218,7 @@ def parse_asf(file_path):
   return joints
 
 
-def parse_amc(file_path):
+def parse_amc(file_path, ignore_translation = True):
   with open(file_path) as f:
     content = f.read().splitlines()
 
@@ -243,11 +243,11 @@ def parse_amc(file_path):
         break
 
       # Ignore translations
-      # if line[0] == 'root':
-      #   joint_degree[line[0]] = torch.tensor([0,0,0] + [float(deg) for deg in line[4:]], requires_grad=True)
-      # else:
-      #   joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
-      joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
+      if line[0] == 'root' and ignore_translation:
+        joint_degree[line[0]] = torch.tensor([0,0,0] + [float(deg) for deg in line[4:]], requires_grad=True)
+      else:
+        joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
+      # joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
     frames.append(joint_degree)
   return frames
 

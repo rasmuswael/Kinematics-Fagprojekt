@@ -213,7 +213,7 @@ def parse_asf(file_path):
   return joints
 
 
-def parse_amc(file_path):
+def parse_amc(file_path, ignore_translation = True):
   with open(file_path) as f:
     content = f.read().splitlines()
 
@@ -238,11 +238,11 @@ def parse_amc(file_path):
         break
 
       #Ignore translation
-      # if line[0] == 'root':
-      #   joint_degree[line[0]] = [0,0,0] + [float(deg) for deg in line[4:]]
-      # else:
-      #   joint_degree[line[0]] = [float(deg) for deg in line[1:]]
-      joint_degree[line[0]] = [float(deg) for deg in line[1:]]
+      if line[0] == 'root' and ignore_translation:
+        joint_degree[line[0]] = [0,0,0] + [float(deg) for deg in line[4:]]
+      else:
+        joint_degree[line[0]] = [float(deg) for deg in line[1:]]
+      # joint_degree[line[0]] = [float(deg) for deg in line[1:]]
     frames.append(joint_degree)
   return frames
 
