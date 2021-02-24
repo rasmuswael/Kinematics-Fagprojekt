@@ -36,8 +36,8 @@ class Joint:
     self.name = name
     self.direction = torch.reshape(direction, [3, 1]) #from 1x3 to 3x1 array
     self.length = length
-    axis = torch.deg2rad(axis) #Convert angles from degrees to radians
-    self.C = euler_angles_to_matrix(axis, "XYZ") #return rotation matrix from Euler angles and axis sequence.
+    axis = torch.deg2rad(axis).flip(0) #Convert angles from degrees to radians
+    self.C = euler_angles_to_matrix(axis, "ZYX") #return rotation matrix from Euler angles and axis sequence.
     self.Cinv = torch.inverse(self.C)
     self.limits = np.zeros([3, 2])
     for lm, nm in zip(limits, dof):
@@ -55,9 +55,10 @@ class Joint:
   def set_motion(self, motion):
     if self.name == 'root':
       self.coordinate = torch.reshape(motion['root'][:3], [3, 1]) #
-      rotation = torch.deg2rad(motion['root'][3:])
+      rotation = torch.deg2rad(motion['root'][3:]).flip(0)
       # self.matrix = self.C.dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
-      self.matrix = torch.mm(torch.mm(self.C, euler_angles_to_matrix(rotation, "XYZ")), self.Cinv)
+      # print(euler_angles_to_matrix(rotation, "ZYX"))
+      self.matrix = torch.matmul(torch.matmul(self.C, euler_angles_to_matrix(rotation, "ZYX")), self.Cinv)
     else:
       idx = 0
       rotation = torch.zeros(3)
@@ -65,9 +66,9 @@ class Joint:
         if not torch.equal(torch.tensor(lm).float(), torch.zeros(2)):
           rotation[axis] = motion[self.name][idx]
           idx += 1
-      rotation = torch.deg2rad(rotation)
+      rotation = torch.deg2rad(rotation).flip(0)
       # self.matrix = self.parent.matrix.dot(self.C).dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
-      self.matrix = torch.mm(torch.mm(torch.mm(self.parent.matrix, self.C), euler_angles_to_matrix(rotation, "XYZ")), self.Cinv)
+      self.matrix = torch.mm(torch.mm(torch.mm(self.parent.matrix, self.C), euler_angles_to_matrix(rotation, "ZYX")), self.Cinv)
       # self.coordinate = self.parent.coordinate + self.length * self.matrix.dot(self.direction)
       self.coordinate = self.parent.coordinate + self.length * torch.mm(self.matrix, self.direction)
     for child in self.children:
