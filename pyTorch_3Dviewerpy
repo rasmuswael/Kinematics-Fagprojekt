@@ -4,7 +4,7 @@ import pygame
 import numpy as np
 import time
 import transforms3d.euler as euler
-from amc_parser import *
+from pyTorch_parser import *
 
 from OpenGL.GL import *
 from OpenGL.GLU import *
@@ -196,7 +196,7 @@ class Viewer:
     glBegin(GL_POINTS)
     for j in self.joints.values():
       coord = np.array(
-        np.squeeze(j.coordinate).dot(self.rotation_R) + \
+        np.squeeze(j.coordinate.detach().numpy()).dot(self.rotation_R) + \
         self.translate, dtype=np.float32
       )
       glVertex3f(*coord)
@@ -208,11 +208,11 @@ class Viewer:
       parent = j.parent
       if parent is not None:
         coord_x = np.array(
-          np.squeeze(child.coordinate).dot(self.rotation_R)+self.translate,
+          np.squeeze(child.coordinate.detach().numpy()).dot(self.rotation_R)+self.translate,
           dtype=np.float32
         )
         coord_y = np.array(
-          np.squeeze(parent.coordinate).dot(self.rotation_R)+self.translate,
+          np.squeeze(parent.coordinate.detach().numpy()).dot(self.rotation_R)+self.translate,
           dtype=np.float32
         )
         glVertex3f(*coord_x)

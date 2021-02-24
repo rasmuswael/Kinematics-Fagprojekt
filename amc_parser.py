@@ -236,6 +236,12 @@ def parse_amc(file_path):
         break
       if line[0].isnumeric():
         break
+
+      #Ignore translation
+      # if line[0] == 'root':
+      #   joint_degree[line[0]] = [0,0,0] + [float(deg) for deg in line[4:]]
+      # else:
+      #   joint_degree[line[0]] = [float(deg) for deg in line[1:]]
       joint_degree[line[0]] = [float(deg) for deg in line[1:]]
     frames.append(joint_degree)
   return frames

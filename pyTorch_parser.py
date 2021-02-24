@@ -39,7 +39,7 @@ class Joint:
     axis = torch.deg2rad(axis) #Convert angles from degrees to radians
     self.C = euler_angles_to_matrix(axis, "XYZ") #return rotation matrix from Euler angles and axis sequence.
     self.Cinv = torch.inverse(self.C)
-    self.limits = np.zeros((3, 2))
+    self.limits = np.zeros([3, 2])
     for lm, nm in zip(limits, dof):
       if nm == 'rx':
         self.limits[0] = lm
@@ -62,12 +62,14 @@ class Joint:
       idx = 0
       rotation = torch.zeros(3)
       for axis, lm in enumerate(self.limits):
-        if not torch.equal(lm, torch.zeros(2)):
+        if not torch.equal(torch.tensor(lm).float(), torch.zeros(2)):
           rotation[axis] = motion[self.name][idx]
           idx += 1
       rotation = torch.deg2rad(rotation)
-      self.matrix = self.parent.matrix.dot(self.C).dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
-      self.coordinate = self.parent.coordinate + self.length * self.matrix.dot(self.direction)
+      # self.matrix = self.parent.matrix.dot(self.C).dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
+      self.matrix = torch.mm(torch.mm(torch.mm(self.parent.matrix, self.C), euler_angles_to_matrix(rotation, "XYZ")), self.Cinv)
+      # self.coordinate = self.parent.coordinate + self.length * self.matrix.dot(self.direction)
+      self.coordinate = self.parent.coordinate + self.length * torch.mm(self.matrix, self.direction)
     for child in self.children:
       child.set_motion(motion)
 
@@ -240,10 +242,11 @@ def parse_amc(file_path):
         break
 
       # Ignore translations
-      if line[0] == 'root':
-        joint_degree[line[0]] = torch.tensor([0,0,0] + [float(deg) for deg in line[4:]], requires_grad=True)
-      else:
-        joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
+      # if line[0] == 'root':
+      #   joint_degree[line[0]] = torch.tensor([0,0,0] + [float(deg) for deg in line[4:]], requires_grad=True)
+      # else:
+      #   joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
+      joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
     frames.append(joint_degree)
   return frames
 
