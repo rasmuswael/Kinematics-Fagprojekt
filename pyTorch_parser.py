@@ -37,9 +37,9 @@ class Joint:
     self.direction = torch.reshape(direction, [3, 1]) #from 1x3 to 3x1 array
     self.length = length
     axis = torch.deg2rad(axis) #Convert angles from degrees to radians
-    self.C = euler_angles_to_matrix(axis) #return rotation matrix from Euler angles and axis sequence.
+    self.C = euler_angles_to_matrix(axis, "XYZ") #return rotation matrix from Euler angles and axis sequence.
     self.Cinv = torch.inverse(self.C)
-    self.limits = torch.zeros(3, 2)
+    self.limits = np.zeros((3, 2))
     for lm, nm in zip(limits, dof):
       if nm == 'rx':
         self.limits[0] = lm
@@ -56,7 +56,8 @@ class Joint:
     if self.name == 'root':
       self.coordinate = torch.reshape(motion['root'][:3], [3, 1]) #
       rotation = torch.deg2rad(motion['root'][3:])
-      self.matrix = self.C.dot(euler2mat(*rotation)).dot(self.Cinv)
+      # self.matrix = self.C.dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
+      self.matrix = torch.mm(torch.mm(self.C, euler_angles_to_matrix(rotation, "XYZ")), self.Cinv)
     else:
       idx = 0
       rotation = torch.zeros(3)
@@ -65,7 +66,7 @@ class Joint:
           rotation[axis] = motion[self.name][idx]
           idx += 1
       rotation = torch.deg2rad(rotation)
-      self.matrix = self.parent.matrix.dot(self.C).dot(euler2mat(*rotation)).dot(self.Cinv)
+      self.matrix = self.parent.matrix.dot(self.C).dot(euler_angles_to_matrix(rotation, "XYZ")).dot(self.Cinv)
       self.coordinate = self.parent.coordinate + self.length * self.matrix.dot(self.direction)
     for child in self.children:
       child.set_motion(motion)
