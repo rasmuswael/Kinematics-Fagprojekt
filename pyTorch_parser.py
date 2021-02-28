@@ -79,12 +79,14 @@ class Joint:
     fig = plt.figure()
     ax = Axes3D(fig)
 
-    ax.set_xlim3d(-50, 10)
-    ax.set_ylim3d(-20, 40)
+    # Center around origo
+    ax.set_xlim3d(-30, 30)
+    ax.set_ylim3d(-30, 30)
     ax.set_zlim3d(-20, 40)
 
     xs, ys, zs = [], [], []
     for joint in joints.values():
+      joint.coordinate = joint.coordinate.detach().numpy()
       xs.append(joint.coordinate[0, 0])
       ys.append(joint.coordinate[1, 0])
       zs.append(joint.coordinate[2, 0])
@@ -94,6 +96,7 @@ class Joint:
       child = joint
       if child.parent is not None:
         parent = child.parent
+        # child.coordinate, parent.coordinate = child.coordinate.detach().numpy(), parent.coordinate.detach().numpy()
         xs = [child.coordinate[0, 0], parent.coordinate[0, 0]]
         ys = [child.coordinate[1, 0], parent.coordinate[1, 0]]
         zs = [child.coordinate[2, 0], parent.coordinate[2, 0]]
