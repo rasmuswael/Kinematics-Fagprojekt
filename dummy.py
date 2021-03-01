@@ -1,5 +1,5 @@
 import torch
-from pyTorch_parser import Joint, read_line, parse_amc
+from pyTorch_parser import Joint, read_line
 
 
 def dummy():
@@ -48,6 +48,8 @@ def dummy():
         assert line[0] == 'axis'
         assert line[4] == 'XYZ'
 
+        # set axis to 0
+        # axis = torch.tensor([float(axis) for axis in line[1:-1]])
         axis = torch.tensor([float(axis) for axis in line[1:-1]])
 
         dof = []
@@ -96,10 +98,10 @@ def dummy():
             joints[nm].parent = joints[line[0]]
 
     #Def t-pose
-    pose = {'root': torch.tensor(6 * [float(0)])}
+    pose = {'root': torch.tensor(6 * [float(0)], requires_grad=False)}
     for name in joints.keys():
         if name != 'root':
-            pose[name] = torch.tensor(3 * [float(0)])
+            pose[name] = torch.tensor(3 * [float(0)], requires_grad=False)
     return joints, pose
 
 if __name__ == '__main__':
