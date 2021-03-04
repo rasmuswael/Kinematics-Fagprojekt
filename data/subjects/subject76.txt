@@ -1,0 +1,16 @@
+
+			Subject #76 (avoidance)
+
+76_01	76_01.tvd	76_01.c3d	76_01.amc	76_01.avi	walk backwards then attack with a punch	
+76_02	76_02.tvd	76_02.c3d	76_02.amc	76_02.avi	walk backwards, feign a few attacks, then attack	
+76_03	76_03.tvd	76_03.c3d	76_03.amc	76_03.avi	avoid attacker	
+76_04	76_04.tvd	76_04.c3d	76_04.amc	76_04.avi	defensive guard pose	
+76_05	76_05.tvd	76_05.c3d	76_05.amc	76_05.avi	swatting at pesky bug	
+76_06	76_06.tvd	76_06.c3d	76_06.amc	76_06.avi	avoid stepping on something	
+76_07	76_07.tvd	76_07.c3d	76_07.amc	76_07.avi		
+76_08	76_08.tvd	76_08.c3d	76_08.amc	76_08.avi	careful stepping over things	
+76_09	76_09.tvd	76_09.c3d	76_09.amc	76_09.avi	walking backwards	
+76_10	76_10.tvd	76_10.c3d	76_10.amc	76_10.avi	turning	
+76_11	76_11.tvd	76_11.c3d	76_11.amc	76_11.avi	quick large steps backwards	
+
+

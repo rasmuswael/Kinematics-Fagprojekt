@@ -1,0 +1,18 @@
+
+			Subject #124 (Sports Related Motions)
+
+124_01	124_01.c3d	124_01.amc	124_01.avi	Baseball Pitch	
+124_02	124_02.c3d	124_02.amc	124_02.avi	Baseball Pitch	
+124_03	124_03.c3d	124_03.amc	124_03.avi	Basketball Shoot	
+124_04	124_04.c3d	124_04.amc	124_04.avi	Basketball Free Throw	
+124_05	124_05.c3d	124_05.amc	124_05.avi	Basketball Jump Shot	
+124_06	124_06.c3d	124_06.amc	124_06.avi	Basketball Lay Up	
+124_07	124_07.c3d	124_07.amc	124_07.avi	Baseball Swing	
+124_08	124_08.c3d	124_08.amc	124_08.avi	Baseball Bunt	
+124_09	124_09.c3d	124_09.amc	124_09.avi	Frisbee	
+124_10	124_10.c3d	124_10.amc	124_10.avi	Motorcycle	
+124_11	124_11.c3d	124_11.amc	124_11.avi	2 Foot Jump	
+124_12	124_12.c3d	124_12.amc	124_12.avi	Underhand Toss	
+124_13	124_13.c3d	124_13.amc	124_13.avi	Underhand Fast Pitch	
+
+

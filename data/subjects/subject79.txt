@@ -1,0 +1,196 @@
+
+			Subject #79 (actor everyday activities)
+
+79_01	79_01.tvd	79_01.c3d	79_01.amc	79_01.mpg	79_01.avi	chopping wood
+	
+79_02	79_02.tvd	79_02.c3d	79_02.amc	79_02.mpg	79_02.avi	swimming
+	
+79_03	79_03.tvd	79_03.c3d	79_03.amc	79_03.mpg	79_03.avi	swimming
+	
+79_04	79_04.tvd	79_04.c3d	79_04.amc	79_04.mpg	79_04.avi	digging
+	
+79_05	79_05.tvd	79_05.c3d	79_05.amc	79_05.mpg	79_05.avi	sewing
+	
+79_06	79_06.tvd	79_06.c3d	79_06.amc	79_06.mpg	79_06.avi	hand shake
+	
+79_07	79_07.tvd	79_07.c3d	79_07.amc	79_07.mpg	79_07.avi	lost marker
+	
+79_08	79_08.tvd	79_08.c3d	79_08.amc	79_08.mpg	79_08.avi	boxing
+	
+79_09	79_09.tvd	79_09.c3d	79_09.amc	79_09.mpg	79_09.avi	slicing bread
+	
+79_10	79_10.tvd	79_10.c3d	79_10.amc	79_10.mpg	79_10.avi	chopping onions
+	
+79_11	79_11.tvd	79_11.c3d	79_11.amc	79_11.mpg	79_11.avi	Subject calibration
+	
+79_12	79_12.tvd	79_12.c3d	79_12.amc	79_12.mpg	79_12.avi	eating dinner
+	
+79_13	79_13.tvd	79_13.c3d	79_13.amc	79_13.mpg	79_13.avi	mixing batter
+	
+79_14	79_14.tvd	79_14.c3d	79_14.amc	79_14.mpg	79_14.avi	making dough
+	
+79_15	79_15.tvd	79_15.c3d	79_15.amc	79_15.mpg	79_15.avi	eating a sandwich
+	
+79_16	79_16.tvd	79_16.c3d	79_16.amc	79_16.mpg	79_16.avi	buying something
+	
+79_17	79_17.tvd	79_17.c3d	79_17.amc	79_17.mpg	79_17.avi	playing violin
+	
+79_18	79_18.tvd	79_18.c3d	79_18.amc	79_18.mpg	79_18.avi	playing drums
+	
+79_19	79_19.tvd	79_19.c3d	79_19.amc	79_19.mpg	79_19.avi	playing piano
+	
+79_20	79_20.tvd	79_20.c3d	79_20.amc	79_20.mpg	79_20.avi	hanging a picture
+	
+79_21	79_21.tvd	79_21.c3d	79_21.amc	79_21.mpg	79_21.avi	putting on a pull over
+	
+79_22	79_22.tvd	79_22.c3d	79_22.amc	79_22.mpg	79_22.avi	range of motion
+	
+79_23	79_23.tvd	79_23.c3d	79_23.amc	79_23.mpg	79_23.avi	putting on a jacket
+	
+79_24	79_24.tvd	79_24.c3d	79_24.amc	79_24.mpg	79_24.avi	putting on button up sweater
+	
+79_25	79_25.tvd	79_25.c3d	79_25.amc	79_25.mpg	79_25.avi	moving heavy box
+	
+79_26	79_26.tvd	79_26.c3d	79_26.amc	79_26.mpg	79_26.avi	planting a tree
+	
+79_27	79_27.tvd	79_27.c3d	79_27.amc	79_27.mpg	79_27.avi	planting a plant
+	
+79_28	79_28.tvd	79_28.c3d	79_28.amc	79_28.mpg	79_28.avi	putting on a ball cap
+	
+79_29	79_29.tvd	79_29.c3d	79_29.amc	79_29.mpg	79_29.avi	putting on a dress
+	
+79_30	79_30.tvd	79_30.c3d	79_30.amc	79_30.mpg	79_30.avi	pushing a swing
+	
+79_31	79_31.tvd	79_31.c3d	79_31.amc	79_31.mpg	79_31.avi	writing on a chalkboard
+	
+79_32	79_32.tvd	79_32.c3d	79_32.amc	79_32.mpg	79_32.avi	writing on a chalkboard
+	
+79_33	79_33.tvd	79_33.c3d	79_33.amc	79_33.mpg	79_33.avi	chug a beer
+	
+79_34	79_34.tvd	79_34.c3d	79_34.amc	79_34.mpg	79_34.avi	fishing
+	
+79_35	79_35.tvd	79_35.c3d	79_35.amc	79_35.mpg	79_35.avi	fishing
+	
+79_36	79_36.tvd	79_36.c3d	79_36.amc	79_36.mpg	79_36.avi	answering the phone
+	
+79_37	79_37.tvd	79_37.c3d	79_37.amc	79_37.mpg	79_37.avi	dialing phone
+	
+79_38	79_38.tvd	79_38.c3d	79_38.amc	79_38.mpg	79_38.avi	drinking water
+	
+79_39	79_39.tvd	79_39.c3d	79_39.amc	79_39.mpg	79_39.avi	sipping martinee
+	
+79_40	79_40.tvd	79_40.c3d	79_40.amc	79_40.mpg	79_40.avi	drinking a soda
+	
+79_41	79_41.tvd	79_41.c3d	79_41.amc	79_41.mpg	79_41.avi	sipping coffee
+	
+79_42	79_42.tvd	79_42.c3d	79_42.amc	79_42.mpg	79_42.avi	eating soup
+	
+79_43	79_43.tvd	79_43.c3d	79_43.amc	79_43.mpg	79_43.avi	painting
+	
+79_44	79_44.tvd	79_44.c3d	79_44.amc	79_44.mpg	79_44.avi	washing a window
+	
+79_45	79_45.tvd	79_45.c3d	79_45.amc	79_45.mpg	79_45.avi	bear
+	
+79_46	79_46.tvd	79_46.c3d	79_46.amc	79_46.mpg	79_46.avi	bear
+	
+79_47	79_47.tvd	79_47.c3d	79_47.amc	79_47.mpg	79_47.avi	chicken
+	
+79_48	79_48.tvd	79_48.c3d	79_48.amc	79_48.mpg	79_48.avi	elephant
+	
+79_49	79_49.tvd	79_49.c3d	79_49.amc	79_49.mpg	79_49.avi	monkey
+	
+79_50	79_50.tvd	79_50.c3d	79_50.amc	79_50.mpg	79_50.avi	mouse
+	
+79_51	79_51.tvd	79_51.c3d	79_51.amc	79_51.mpg	79_51.avi	chipmunk
+	
+79_52	79_52.tvd	79_52.c3d	79_52.amc	79_52.mpg	79_52.avi	prairie dog
+	
+79_53	79_53.tvd	79_53.c3d	79_53.amc	79_53.mpg	79_53.avi	dog
+	
+79_54	79_54.tvd	79_54.c3d	79_54.amc	79_54.mpg	79_54.avi	snake
+	
+79_55	79_55.tvd	79_55.c3d	79_55.amc	79_55.mpg	79_55.avi	sweeping
+	
+79_56	79_56.tvd	79_56.c3d	79_56.amc	79_56.mpg	79_56.avi	T-rex
+	
+79_57	79_57.tvd	79_57.c3d	79_57.amc	79_57.mpg	79_57.avi	fish
+	
+79_58	79_58.tvd	79_58.c3d	79_58.amc	79_58.mpg	79_58.avi	bird
+	
+79_59	79_59.tvd	79_59.c3d	79_59.amc	79_59.mpg	79_59.avi	cat
+	
+79_60	79_60.tvd	79_60.c3d	79_60.amc	79_60.mpg	79_60.avi	chicken
+	
+79_61	79_61.tvd	79_61.c3d	79_61.amc	79_61.mpg	79_61.avi	cow
+	
+79_62	79_62.tvd	79_62.c3d	79_62.amc	79_62.mpg	79_62.avi	chicken	
+79_63	79_63.tvd	79_63.c3d	79_63.amc	79_63.mpg	79_63.avi	tiger
+	
+79_64	79_64.tvd	79_64.c3d	79_64.amc	79_64.mpg	79_64.avi	penguin
+	
+79_65	79_65.tvd	79_65.c3d	79_65.amc	79_65.mpg	79_65.avi	horse
+	
+79_66	79_66.tvd	79_66.c3d	79_66.amc	79_66.mpg	79_66.avi	movie and trial dont match
+	
+79_67	79_67.tvd	79_67.c3d	79_67.amc	79_67.avi	no movie
+	
+79_68	79_68.tvd	79_68.c3d	79_68.amc	79_68.mpg	79_68.avi	cold
+	
+79_69	79_69.tvd	79_69.c3d	79_69.amc	79_69.mpg	79_69.avi	very happy
+	
+79_70	79_70.tvd	79_70.c3d	79_70.amc	79_70.mpg	79_70.avi	laughing
+	
+79_71	79_71.tvd	79_71.c3d	79_71.amc	79_71.mpg	79_71.avi	sad
+	
+79_72	79_72.tvd	79_72.c3d	79_72.amc	79_72.mpg	79_72.avi	crying
+	
+79_73	79_73.tvd	79_73.c3d	79_73.amc	79_73.mpg	79_73.avi	scared
+	
+79_74	79_74.tvd	79_74.c3d	79_74.amc	79_74.mpg	79_74.avi	upset
+	
+79_75	79_75.tvd	79_75.c3d	79_75.amc	79_75.mpg	79_75.avi	channel surfing
+	
+79_76	79_76.tvd	79_76.c3d	79_76.amc	79_76.mpg	79_76.avi	driving
+	
+79_77	79_77.tvd	79_77.c3d	79_77.amc	79_77.mpg	79_77.avi	vacuuming
+	
+79_78	79_78.tvd	79_78.c3d	79_78.amc	79_78.mpg	79_78.avi	taking a movie
+	
+79_79	79_79.tvd	79_79.c3d	79_79.amc	79_79.mpg	79_79.avi	putting on headphones
+	
+79_80	79_80.tvd	79_80.c3d	79_80.amc	79_80.mpg	79_80.avi	using a palm pilot
+	
+79_81	79_81.tvd	79_81.c3d	79_81.amc	79_81.mpg	79_81.avi	brushing teeth
+	
+79_82	79_82.tvd	79_82.c3d	79_82.amc	79_82.mpg	79_82.avi	putting on deoderant
+	
+79_83	79_83.tvd	79_83.c3d	79_83.amc	79_83.mpg	79_83.avi	shaving
+	
+79_84	79_84.tvd	79_84.c3d	79_84.amc	79_84.mpg	79_84.avi	combing hair
+	
+79_85	79_85.tvd	79_85.c3d	79_85.amc	79_85.mpg	79_85.avi	typing on a laptop
+	
+79_86	79_86.tvd	79_86.c3d	79_86.amc	79_86.mpg	79_86.avi	shooting bow and arrow
+	
+79_87	79_87.tvd	79_87.c3d	79_87.amc	79_87.mpg	79_87.avi	raking
+	
+79_88	79_88.tvd	79_88.c3d	79_88.amc	79_88.mpg	79_88.avi	swatting at a fly
+	
+79_89	79_89.tvd	79_89.c3d	79_89.amc	79_89.mpg	79_89.avi	holding a baby
+	
+79_90	79_90.tvd	79_90.c3d	79_90.amc	79_90.mpg	79_90.avi	washing
+	
+79_91	79_91.tvd	79_91.c3d	79_91.amc	79_91.mpg	79_91.avi	football
+	
+79_92	79_92.tvd	79_92.c3d	79_92.amc	79_92.mpg	79_92.avi	frisbee
+	
+79_93	79_93.tvd	79_93.c3d	79_93.amc	79_93.mpg	79_93.avi	weight lifting
+	
+79_94	79_94.tvd	79_94.c3d	79_94.amc	79_94.mpg	79_94.avi	flexing
+	
+79_95	79_95.tvd	79_95.c3d	79_95.amc	79_95.mpg	79_95.avi	rowing
+	
+79_96	79_96.tvd	79_96.c3d	79_96.amc	79_96.mpg	79_96.avi	shooting a gun
+	
+
+

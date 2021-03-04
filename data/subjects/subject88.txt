@@ -1,0 +1,16 @@
+
+			Subject #88 (acrobatics)
+
+88_01	88_01.tvd	88_01.c3d	88_01.amc	88_01.mpg	88_01.avi	backflip	
+88_02	88_02.tvd	88_02.c3d	88_02.amc	88_02.mpg	88_02.avi	backflips, jump onto platform, handstands, vertical pushups	
+88_03	88_03.tvd	88_03.c3d	88_03.amc	88_03.mpg	88_03.avi	motorcycle pose	
+88_04	88_04.tvd	88_04.c3d	88_04.amc	88_04.mpg	88_04.avi	stretches, cartwheels, flips, spin kicks, spins, and fall	
+88_05	88_05.tvd	88_05.c3d	88_05.amc	88_05.avi	cartwheel into backflip	
+88_06	88_06.tvd	88_06.c3d	88_06.amc	88_06.mpg	88_06.avi	jump and spin kick	
+88_07	88_07.tvd	88_07.c3d	88_07.amc	88_07.mpg	88_07.avi	cartwheel	
+88_08	88_08.tvd	88_08.c3d	88_08.amc	88_08.mpg	88_08.avi	crouch and flip backward on hands	
+88_09	88_09.tvd	88_09.c3d	88_09.amc	88_09.mpg	88_09.avi	stretch and cartwheel	
+88_10	88_10.tvd	88_10.c3d	88_10.amc	88_10.mpg	88_10.avi	stretch and spin	
+88_11	88_11.tvd	88_11.c3d	88_11.amc	88_11.mpg	88_11.avi	stretches and jumps	
+
+

@@ -1,0 +1,9 @@
+
+			Subject #12 (tai chi, walk)
+
+12_01	12_01.tvd	12_01.c3d	12_01.amc	12_01.avi	walk	
+12_02	12_02.tvd	12_02.c3d	12_02.amc	12_02.avi	walk	
+12_03	12_03.tvd	12_03.c3d	12_03.amc	12_03.avi	walk	
+12_04	12_04.tvd	12_04.c3d	12_04.amc	12_04.avi	tai chi	
+
+

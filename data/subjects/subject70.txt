@@ -1,0 +1,18 @@
+
+			Subject #70 (suitcase)
+
+70_01	70_01.tvd	70_01.c3d	70_01.amc	70_01.avi	carry 5.5lb suitcase	
+70_02	70_02.tvd	70_02.c3d	70_02.amc	70_02.avi	carry 5.5lb suitcase	
+70_03	70_03.tvd	70_03.c3d	70_03.amc	70_03.avi	carry 19.5lb suitcase	
+70_04	70_04.tvd	70_04.c3d	70_04.amc	70_04.avi	carry 19.5lb suitcase	
+70_05	70_05.tvd	70_05.c3d	70_05.amc	70_05.avi	carry 19.5lb suitcase	
+70_06	70_06.tvd	70_06.c3d	70_06.amc	70_06.avi	carry 19.5lb suitcase	
+70_07	70_07.amc	70_07.avi	carry 19.5lb suitcase	
+70_08	70_08.tvd	70_08.c3d	70_08.amc	70_08.avi	carry 19.5lb suitcase	
+70_09	70_09.tvd	70_09.c3d	70_09.amc	70_09.avi	carry 19.5lb suitcase	
+70_10	70_10.tvd	70_10.c3d	70_10.amc	70_10.avi	carry 12.5lb suitcase	
+70_11	70_11.amc	70_11.avi	carry 12.5lb suitcase	
+70_12	70_12.amc	70_12.avi	carry 12.5lb suitcase	
+70_13	70_13.amc	70_13.avi	carry 12.5lb suitcase	
+
+

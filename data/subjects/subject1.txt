@@ -1,0 +1,19 @@
+
+			Subject #1 (climb, swing, hang on playground equipment)
+
+01_01	01_01.tvd	01_01.c3d	01_01.amc	01_01.mpg	01_01.avi	playground - forward jumps, turn around	
+01_02	01_02.tvd	01_02.c3d	01_02.amc	01_02.mpg	01_02.avi	playground - climb	
+01_03	01_03.tvd	01_03.c3d	01_03.amc	01_03.mpg	01_03.avi	playground - climb, hang, swing	
+01_04	01_04.tvd	01_04.c3d	01_04.amc	01_04.mpg	01_04.avi	playground - climb	
+01_05	01_05.tvd	01_05.c3d	01_05.amc	01_05.mpg	01_05.avi	playground - climb, go under	
+01_06	01_06.tvd	01_06.c3d	01_06.amc	01_06.mpg	01_06.avi	playground - climb, sit, dangle legs, descend	
+01_07	01_07.tvd	01_07.c3d	01_07.amc	01_07.mpg	01_07.avi	playground - climb, sit, dangle legs, jump down	
+01_08	01_08.tvd	01_08.c3d	01_08.amc	01_08.mpg	01_08.avi	playground - climb, sit, dangle legs, rock back, lower self to ground	
+01_09	01_09.tvd	01_09.c3d	01_09.amc	01_09.mpg	01_09.avi	playground - climb, hang, hold self up with arms straight, swing, drop, sit, dangle legs, go under	
+01_10	01_10.tvd	01_10.c3d	01_10.amc	01_10.mpg	01_10.avi	playground - climb, swing, lean back, drop	
+01_11	01_11.tvd	01_11.c3d	01_11.amc	01_11.mpg	01_11.avi	playground - climb, hang, lean over, jump down	
+01_12	01_12.tvd	01_12.c3d	01_12.amc	01_12.mpg	01_12.avi	playground - climb, pull up, dangle, sit, lower self to ground	
+01_13	01_13.tvd	01_13.c3d	01_13.amc	01_13.mpg	01_13.avi	playground - climb, go under, jump down	
+01_14	01_14.tvd	01_14.c3d	01_14.amc	01_14.mpg	01_14.avi	playground - climb, jump down, dangle, legs push off against	
+
+

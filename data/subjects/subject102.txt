@@ -1,0 +1,39 @@
+
+			Subject #102 (Basketball)
+
+102_01	102_01.tvd	102_01.c3d	102_01.amc	RightWideTurn	
+102_02	102_02.tvd	102_02.c3d	102_02.amc	LeftWideTurn	
+102_03	102_03.tvd	102_03.c3d	102_03.amc	SuperTightLeft	
+102_04	102_04.tvd	102_04.c3d	102_04.amc	SuperTightRight	
+102_05	102_05.tvd	102_05.c3d	102_05.amc	RunningStraight	
+102_06	102_06.tvd	102_06.c3d	102_06.amc	RunningWideRight	
+102_07	102_07.tvd	102_07.c3d	102_07.amc	RunningWideLeft	
+102_08	102_08.tvd	102_08.c3d	102_08.amc	RunningTighterRight	
+102_09	102_09.tvd	102_09.c3d	102_09.amc	calibration
+	
+102_10	102_10.tvd	102_10.c3d	102_10.amc	RunningNoBall	
+102_11	102_11.tvd	102_11.c3d	102_11.amc	OffensiveMoveSpinLeft	
+102_12	102_12.tvd	102_12.c3d	102_12.amc	OffensiveMoveSpinLeft	
+102_13	102_13.tvd	102_13.c3d	102_13.amc	OffensiveMoveGoRight	
+102_14	102_14.tvd	102_14.c3d	102_14.amc	OffensiveMoveGoLeft	
+102_15	102_15.tvd	102_15.c3d	102_15.amc	OffensiveMoveSpinRight	
+102_16	102_16.tvd	102_16.c3d	102_16.amc	WalkEvasiveLeft	
+102_17	102_17.tvd	102_17.c3d	102_17.amc	WalkEvasiveRight	
+102_18	102_18.tvd	102_18.c3d	102_18.amc	FeintLeftMoveRight	
+102_19	102_19.tvd	102_19.c3d	102_19.amc	FeintRightMoveLeft	
+102_20	102_20.tvd	102_20.c3d	102_20.amc	FakeShotBreakRight	
+102_21	102_21.tvd	102_21.c3d	102_21.amc	FakeShotBreakLeft	
+102_22	102_22.tvd	102_22.c3d	102_22.amc	DefensiveStraightNoStop	
+102_23	102_23.tvd	102_23.c3d	102_23.amc	DefensiveStraightWithStop	
+102_24	102_24.tvd	102_24.c3d	102_24.amc	DefensiveRightStopToStop	
+102_25	102_25.tvd	102_25.c3d	102_25.amc	DefensiveLeftStopToStop	
+102_26	102_26.tvd	102_26.c3d	102_26.amc	DefensiveMoveZigZag	
+102_27	102_27.tvd	102_27.c3d	102_27.amc	DefensiveMoveSideToSide	
+102_28	102_28.tvd	102_28.c3d	102_28.amc	DefensiveMoveSideToSide	
+102_29	102_29.tvd	102_29.c3d	102_29.amc	Pivoting	
+102_30	102_30.tvd	102_30.c3d	102_30.amc	SraightDriveFromStop	
+102_31	102_31.tvd	102_31.c3d	102_31.amc	RightDrive (left then right)	
+102_32	102_32.tvd	102_32.c3d	102_32.amc	LeftDrive (right then left)	
+102_33	102_33.tvd	102_33.c3d	102_33.amc	RightTightTurn	
+
+

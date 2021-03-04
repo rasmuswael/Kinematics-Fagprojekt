@@ -1,0 +1,39 @@
+
+			Subject #139 (Action Walks, sneaking, wounded, looking around)
+
+139_01	139_01.tvd	139_01.c3d	139_01.amc	139_01.avi	Looking Around	
+139_02	139_02.tvd	139_02.c3d	139_02.amc	139_02.avi	Shifting Weight	
+139_03	139_03.tvd	139_03.c3d	139_03.amc	139_03.avi	Looking Around	
+139_04	139_04.tvd	139_04.c3d	139_04.amc	139_04.avi	Looking Around	
+139_05	139_05.tvd	139_05.c3d	139_05.amc	139_05.avi	Pulling a Gun	
+139_06	139_06.tvd	139_06.c3d	139_06.amc	139_06.avi	Poking Around On The Ground	
+139_07	139_07.tvd	139_07.c3d	139_07.amc	139_07.avi	Poking Around On The Ground	
+139_08	139_08.tvd	139_08.c3d	139_08.amc	139_08.avi	Poking Around On The Ground	
+139_09	139_09.tvd	139_09.c3d	139_09.amc	139_09.avi	Ducking	
+139_10	139_10.tvd	139_10.c3d	139_10.amc	139_10.avi	Run	
+139_11	139_11.tvd	139_11.c3d	139_11.amc	139_11.avi	Run To Sneak	
+139_12	139_12.tvd	139_12.c3d	139_12.amc	139_12.avi	Run in Circles	
+139_13	139_13.tvd	139_13.c3d	139_13.amc	139_13.avi	Run in Circles	
+139_14	139_14.tvd	139_14.c3d	139_14.amc	139_14.avi	Sneak Sideways	
+139_15	139_15.tvd	139_15.c3d	139_15.amc	139_15.avi	Sneak Sideways	
+139_16	139_16.tvd	139_16.c3d	139_16.amc	139_16.avi	Get Up From Ground	
+139_17	139_17.tvd	139_17.c3d	139_17.amc	139_17.avi	Get Up From Ground	
+139_18	139_18.tvd	139_18.c3d	139_18.amc	139_18.avi	Get Up From Ground Laying on Back	
+139_19	139_19.tvd	139_19.c3d	139_19.amc	139_19.avi	Walk Wounded Leg	
+139_20	139_20.tvd	139_20.c3d	139_20.amc	139_20.avi	Walk Wounded Leg	
+139_21	139_21.tvd	139_21.c3d	139_21.amc	139_21.avi	Range Of Motion	
+139_22	139_22.tvd	139_22.c3d	139_22.amc	139_22.avi	Walk Wounded Leg	
+139_23	139_23.tvd	139_23.c3d	139_23.amc	139_23.avi	Walk Wounded Leg	
+139_24	139_24.tvd	139_24.c3d	139_24.amc	139_24.avi	Walk Wounded Leg	
+139_25	139_25.tvd	139_25.c3d	139_25.amc	139_25.avi	Giving Directions	
+139_26	139_26.tvd	139_26.c3d	139_26.amc	139_26.avi	Looking Around	
+139_27	139_27.tvd	139_27.c3d	139_27.amc	139_27.avi	Looking Around	
+139_28	139_28.tvd	139_28.c3d	139_28.amc	139_28.avi	Walking	
+139_29	139_29.tvd	139_29.c3d	139_29.amc	139_29.avi	Sneaking	
+139_30	139_30.tvd	139_30.c3d	139_30.amc	139_30.avi	Walking	
+139_31	139_31.tvd	139_31.c3d	139_31.amc	139_31.avi	Sneaking	
+139_32	139_32.tvd	139_32.c3d	139_32.amc	139_32.avi	Sneaking	
+139_33	139_33.tvd	139_33.c3d	139_33.amc	139_33.avi	Sneaking	
+139_34	139_34.tvd	139_34.c3d	139_34.amc	139_34.avi	Sneaking	
+
+

@@ -1,0 +1,11 @@
+
+			Subject #89 (acrobatics)
+
+89_01	89_01.tvd	89_01.c3d	89_01.amc	89_01.mpg	89_01.avi	balance object on forehead	
+89_02	89_02.tvd	89_02.c3d	89_02.amc	89_02.mpg	89_02.avi	motorcycle pose	
+89_03	89_03.tvd	89_03.c3d	89_03.amc	89_03.mpg	89_03.avi	flip and stand on one hand	
+89_04	89_04.tvd	89_04.c3d	89_04.amc	89_04.mpg	89_04.avi	spins, flips, stand on one hand	
+89_05	89_05.tvd	89_05.c3d	89_05.amc	89_05.mpg	89_05.avi	spin upside down, handstand, flips	
+89_06	89_06.tvd	89_06.c3d	89_06.amc	89_06.mpg	89_06.avi	balance beam	
+
+

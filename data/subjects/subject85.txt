@@ -1,0 +1,34 @@
+
+			Subject #85 (jumps; flips; breakdance)
+
+85_01	85_01.tvd	85_01.c3d	85_01.amc	85_01.avi	JumpTwist
+	
+85_02	85_02.tvd	85_02.c3d	85_02.amc	85_02.avi	JumpTwist
+	
+85_03	85_03.tvd	85_03.c3d	85_03.amc	85_03.avi	UpRightSequence
+	
+85_04	85_04.tvd	85_04.c3d	85_04.amc	85_04.avi	FancyFootWork
+	
+85_05	85_05.tvd	85_05.c3d	85_05.amc	85_05.avi	HandStandKicks
+	
+85_06	85_06.tvd	85_06.c3d	85_06.amc	85_06.avi	KickFlip
+	
+85_07	85_07.tvd	85_07.c3d	85_07.amc	85_07.avi	KickFlipStumble
+	
+85_08	85_08.tvd	85_08.c3d	85_08.amc	85_08.avi	Helicopter
+	
+85_09	85_09.tvd	85_09.c3d	85_09.amc	85_09.avi	motorcycle pose	
+85_10	85_10.tvd	85_10.c3d	85_10.amc	85_10.avi	EndofBreakDance
+	
+85_11	85_11.tvd	85_11.c3d	85_11.amc	85_11.avi	UpRightSequence
+	
+85_12	85_12.tvd	85_12.c3d	85_12.amc	85_12.avi	LongSequenceGood
+	
+85_13	85_13.tvd	85_13.c3d	85_13.amc	85_13.avi	BadStartSequnce
+	
+85_14	85_14.tvd	85_14.c3d	85_14.amc	85_14.avi	BreakSequencewithFlips
+	
+85_15	85_15.tvd	85_15.c3d	85_15.amc	85_15.avi	90TwistsFall
+	
+
+

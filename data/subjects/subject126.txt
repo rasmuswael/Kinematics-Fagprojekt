@@ -1,0 +1,19 @@
+
+			Subject #126 (Swimming 2)
+
+126_01	126_01.c3d	126_01.amc	126_01.avi	Back Stroke	
+126_02	126_02.c3d	126_02.amc	126_02.avi	Back Stroke	
+126_03	126_03.c3d	126_03.amc	126_03.avi	Breast Stroke	
+126_04	126_04.c3d	126_04.amc	126_04.avi	Breast Stroke	
+126_05	126_05.c3d	126_05.amc	126_05.avi	Breast Stroke	
+126_06	126_06.c3d	126_06.amc	126_06.avi	Fly Stroke	
+126_07	126_07.c3d	126_07.amc	126_07.avi	Fly Stroke	
+126_08	126_08.c3d	126_08.amc	126_08.avi	Fly Stroke	
+126_09	126_09.c3d	126_09.amc	126_09.avi	Fly Stroke	
+126_10	126_10.c3d	126_10.amc	126_10.avi	Free Style	
+126_11	126_11.c3d	126_11.amc	126_11.avi	Free Style	
+126_12	126_12.c3d	126_12.amc	126_12.avi	Free Style	
+126_13	126_13.c3d	126_13.amc	126_13.avi	Motorcycle	
+126_14	126_14.c3d	126_14.amc	126_14.avi	Range of Motion	
+
+

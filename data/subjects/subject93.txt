@@ -1,0 +1,19 @@
+
+			Subject #93 (Charleston Dance)
+
+93_01	93_01.tvd	93_01.c3d	93_01.amc	93_01.avi	Motorcycle Pose	
+93_02	93_02.tvd	93_02.c3d	93_02.amc	93_02.avi	rangeOfMotion	
+93_03	93_03.tvd	93_03.c3d	93_03.amc	93_03.avi	charleston_01
+	
+93_04	93_04.tvd	93_04.c3d	93_04.amc	93_04.avi	charleston_side_by_side_female
+	
+93_05	93_05.tvd	93_05.c3d	93_05.amc	93_05.avi	charleston_side_by_side_male
+	
+93_06	93_06.tvd	93_06.c3d	93_06.amc	93_06.avi	lindyHop2
+	
+93_07	93_07.tvd	93_07.c3d	93_07.amc	93_07.avi	Casual Walk
+	
+93_08	93_08.tvd	93_08.c3d	93_08.amc	93_08.avi	xtra fancY charleston
+	
+
+

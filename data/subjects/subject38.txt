@@ -1,0 +1,9 @@
+
+			Subject #38 (walk, run)
+
+38_01	38_01.tvd	38_01.c3d	38_01.amc	38_01.mpg	38_01.avi	walk	
+38_02	38_02.tvd	38_02.c3d	38_02.amc	38_02.mpg	38_02.avi	walk	
+38_03	38_03.tvd	38_03.c3d	38_03.amc	38_03.mpg	38_03.avi	run around in a circle	
+38_04	38_04.tvd	38_04.c3d	38_04.amc	38_04.mpg	38_04.avi	walk around, frequent turns, cyclic walk along a line	
+
+

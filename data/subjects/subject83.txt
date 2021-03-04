@@ -1,0 +1,73 @@
+
+			Subject #83 (steps)
+
+83_01	83_01.tvd	83_01.c3d	83_01.amc	83_01.avi	large sidestep to right	
+83_02	83_02.tvd	83_02.c3d	83_02.amc	83_02.avi	sidestep to the right and up a ledge	
+83_03	83_03.tvd	83_03.c3d	83_03.amc	83_03.avi	large step to a short ledge	
+83_04	83_04.tvd	83_04.c3d	83_04.amc	83_04.avi	large sidestep to right	
+83_05	83_05.tvd	83_05.c3d	83_05.amc	83_05.avi	very large sidestep to right	
+83_06	83_06.tvd	83_06.c3d	83_06.amc	83_06.avi	very large sidestep to right and down	
+83_07	83_07.tvd	83_07.c3d	83_07.amc	83_07.avi	short sidestep to right and down	
+83_08	83_08.tvd	83_08.c3d	83_08.amc	83_08.avi	medium step forward and down	
+83_09	83_09.tvd	83_09.c3d	83_09.amc	83_09.avi	short step forward and down	
+83_10	83_10.tvd	83_10.c3d	83_10.amc	83_10.avi	medium step forward and down	
+83_11	83_11.tvd	83_11.c3d	83_11.amc	83_11.avi	static pose	
+83_12	83_12.tvd	83_12.c3d	83_12.amc	83_12.avi	medium sidestep to right and down	
+83_13	83_13.tvd	83_13.c3d	83_13.amc	83_13.avi	large sidestep to right	
+83_14	83_14.tvd	83_14.c3d	83_14.amc	83_14.avi	short sidestep to left and down	
+83_15	83_15.tvd	83_15.c3d	83_15.amc	83_15.avi	short step forward	
+83_16	83_16.tvd	83_16.c3d	83_16.amc	83_16.avi	medium sidestep to left and down	
+83_17	83_17.tvd	83_17.c3d	83_17.amc	83_17.avi	medium step to left and down	
+83_18	83_18.tvd	83_18.c3d	83_18.amc	83_18.avi	short step to left and forward	
+83_19	83_19.tvd	83_19.c3d	83_19.amc	83_19.avi	medium sidestep to left	
+83_20	83_20.tvd	83_20.c3d	83_20.amc	83_20.avi	medium step forward	
+83_21	83_21.tvd	83_21.c3d	83_21.amc	83_21.avi	large step to left and forward	
+83_22	83_22.tvd	83_22.c3d	83_22.amc	83_22.avi	stretching	
+83_23	83_23.tvd	83_23.c3d	83_23.amc	83_23.avi	short sidestep to left and up	
+83_24	83_24.tvd	83_24.c3d	83_24.amc	83_24.avi	medium step to left and up	
+83_25	83_25.tvd	83_25.c3d	83_25.amc	83_25.avi	short step forward and up	
+83_26	83_26.tvd	83_26.c3d	83_26.amc	83_26.avi	medium step to left, forward, and up	
+83_27	83_27.tvd	83_27.c3d	83_27.amc	83_27.avi	walk forward stepping up stairs	
+83_28	83_28.tvd	83_28.c3d	83_28.amc	83_28.avi	walk forward stepping up stairs	
+83_29	83_29.tvd	83_29.c3d	83_29.amc	83_29.avi	walk forward stepping up stairs	
+83_30	83_30.tvd	83_30.c3d	83_30.amc	83_30.avi	walk forward stepping up stairs	
+83_31	83_31.tvd	83_31.c3d	83_31.amc	83_31.avi	walk forward stepping up stairs	
+83_32	83_32.tvd	83_32.c3d	83_32.amc	83_32.avi	walk forward stepping up stairs	
+83_33	83_33.tvd	83_33.c3d	83_33.amc	83_33.avi	sidestep to right then back to left	
+83_34	83_34.tvd	83_34.c3d	83_34.amc	83_34.avi	walk forward and up stairs	
+83_35	83_35.tvd	83_35.c3d	83_35.amc	83_35.avi	walk forward and stepping up stairs	
+83_36	83_36.tvd	83_36.c3d	83_36.amc	83_36.avi	walk forward turn 90 degrees left walk forward	
+83_37	83_37.tvd	83_37.c3d	83_37.amc	83_37.avi	walk forward turn 90 degrees right walk forward	
+83_38	83_38.tvd	83_38.c3d	83_38.amc	83_38.avi	walk forward turn 90 degrees left walk forward	
+83_39	83_39.tvd	83_39.c3d	83_39.amc	83_39.avi	walk forward turn 90 degrees right walk forward	
+83_40	83_40.tvd	83_40.c3d	83_40.amc	83_40.avi	hop forward	
+83_41	83_41.tvd	83_41.c3d	83_41.amc	83_41.avi	hop forward	
+83_42	83_42.tvd	83_42.c3d	83_42.amc	83_42.avi	long jump forward	
+83_43	83_43.tvd	83_43.c3d	83_43.amc	83_43.avi	long jump forward	
+83_44	83_44.tvd	83_44.c3d	83_44.amc	83_44.avi	medium step forward	
+83_45	83_45.tvd	83_45.c3d	83_45.amc	83_45.avi	hop forward	
+83_46	83_46.tvd	83_46.c3d	83_46.amc	83_46.avi	medium hop forward	
+83_47	83_47.tvd	83_47.c3d	83_47.amc	83_47.avi	long jump forward	
+83_48	83_48.tvd	83_48.c3d	83_48.amc	83_48.avi	short hop forward	
+83_49	83_49.tvd	83_49.c3d	83_49.amc	83_49.avi	medium hop forward	
+83_50	83_50.tvd	83_50.c3d	83_50.amc	83_50.avi	long jump forward	
+83_51	83_51.tvd	83_51.c3d	83_51.amc	83_51.avi	hop turn 90 degrees left in air	
+83_52	83_52.tvd	83_52.c3d	83_52.amc	83_52.avi	hop turn 90 degrees left in air	
+83_53	83_53.tvd	83_53.c3d	83_53.amc	83_53.avi	hop turn 90 degrees left in air	
+83_54	83_54.tvd	83_54.c3d	83_54.amc	83_54.avi	hop turn 180 degrees left in air	
+83_55	83_55.tvd	83_55.c3d	83_55.amc	83_55.avi	medium sidestep to right	
+83_56	83_56.tvd	83_56.c3d	83_56.amc	83_56.avi	hop turn left 180 degrees in air	
+83_57	83_57.tvd	83_57.c3d	83_57.amc	83_57.avi	hop turn left 180 degrees in air	
+83_58	83_58.tvd	83_58.c3d	83_58.amc	83_58.avi	hop turn left 270 degrees in air	
+83_59	83_59.tvd	83_59.c3d	83_59.amc	83_59.avi	hop turn left 270 degrees in air	
+83_60	83_60.tvd	83_60.c3d	83_60.amc	83_60.avi	hop turn left 270 degrees in air	
+83_61	83_61.tvd	83_61.c3d	83_61.amc	83_61.avi	hop turn 360 degrees left in air	
+83_62	83_62.tvd	83_62.c3d	83_62.amc	83_62.avi	hop turn left 360 degrees in air	
+83_63	83_63.tvd	83_63.c3d	83_63.amc	83_63.avi	large sidestep to right and forward	
+83_64	83_64.tvd	83_64.c3d	83_64.amc	83_64.avi	hop and turn right 360 degrees in air	
+83_65	83_65.tvd	83_65.c3d	83_65.amc	83_65.avi	hop and turn right 360 degrees in air	
+83_66	83_66.tvd	83_66.c3d	83_66.amc	83_66.avi	short sidestep to right	
+83_67	83_67.tvd	83_67.c3d	83_67.amc	83_67.avi	short sidestep to the right	
+83_68	83_68.tvd	83_68.c3d	83_68.amc	83_68.avi	medium sidestep to right	
+
+

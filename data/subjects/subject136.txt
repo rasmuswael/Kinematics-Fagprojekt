@@ -1,0 +1,38 @@
+
+			Subject #136 (Weird Walks)
+
+136_01	136_01.c3d	136_01.amc	136_01.avi	Walk Bent Forward	
+136_02	136_02.c3d	136_02.amc	136_02.avi	Walk Bent Forward	
+136_03	136_03.c3d	136_03.amc	136_03.avi	Walk Backwards Bent Forward	
+136_04	136_04.c3d	136_04.amc	136_04.avi	Walk Backwards Bent Forward	
+136_05	136_05.c3d	136_05.amc	136_05.avi	Walk on Toes Bent Forward	
+136_06	136_06.c3d	136_06.amc	136_06.avi	Walk on Toes Bent Forward	
+136_07	136_07.c3d	136_07.amc	136_07.avi	Walk Backward on Toes Bent Forward	
+136_08	136_08.c3d	136_08.amc	136_08.avi	Walk Backward on Toes Bent Forward	
+136_09	136_09.c3d	136_09.amc	136_09.avi	Walk Crouched	
+136_10	136_10.c3d	136_10.amc	136_10.avi	Walk Crouched	
+136_11	136_11.c3d	136_11.amc	136_11.avi	Walk Backwards Crouched	
+136_12	136_12.c3d	136_12.amc	136_12.avi	Walk Backwards Crouched	
+136_13	136_13.c3d	136_13.amc	136_13.avi	Walk on Toes Crouched	
+136_14	136_14.c3d	136_14.amc	136_14.avi	Walk on Toes Crouched	
+136_15	136_15.c3d	136_15.amc	136_15.avi	Walk Backwards on Toes Crouched	
+136_16	136_16.c3d	136_16.amc	136_16.avi	Walk Backwards on Toes Crouched	
+136_17	136_17.c3d	136_17.amc	136_17.avi	Flamingo, lift legs high	
+136_18	136_18.c3d	136_18.amc	136_18.avi	Flamingo, lift legs high	
+136_19	136_19.amc	136_19.avi	Motorcycle	
+136_20	136_20.c3d	136_20.amc	136_20.avi	Normal Walk	
+136_21	136_21.c3d	136_21.amc	136_21.avi	Normal Walk	
+136_22	136_22.c3d	136_22.amc	136_22.avi	Normal Walk	
+136_23	136_23.c3d	136_23.amc	136_23.avi	Normal Walk	
+136_24	136_24.c3d	136_24.amc	136_24.avi	Normal Walk	
+136_25	136_25.c3d	136_25.amc	136_25.avi	Normal Walk Backwards	
+136_26	136_26.c3d	136_26.amc	136_26.avi	Normal Walk Backwards	
+136_27	136_27.c3d	136_27.amc	136_27.avi	Walk on Toes	
+136_28	136_28.c3d	136_28.amc	136_28.avi	Walk on Toes	
+136_29	136_29.c3d	136_29.amc	136_29.avi	Walk Backwards on Toes	
+136_30	136_30.c3d	136_30.amc	136_30.avi	Walk Backwards on Toes	
+136_31	136_31.c3d	136_31.amc	136_31.avi	Quail, quick little steps	
+136_32	136_32.c3d	136_32.amc	136_32.avi	Quail, quick little steps	
+136_33	136_33.c3d	136_33.amc	136_33.avi	Range of Motion	
+
+

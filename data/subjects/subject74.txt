@@ -1,0 +1,45 @@
+
+			Subject #74 (kicks and walking on slopes)
+
+74_01	74_01.tvd	74_01.c3d	74_01.amc	74_01.avi	stiff walk
+	
+74_02	74_02.tvd	74_02.c3d	74_02.amc	74_02.avi	stiff walk
+	
+74_03	74_03.tvd	74_03.c3d	74_03.amc	74_03.avi	kick
+	
+74_04	74_04.tvd	74_04.c3d	74_04.amc	74_04.avi	kick
+	
+74_05	74_05.tvd	74_05.c3d	74_05.amc	74_05.avi	kick
+	
+74_06	74_06.tvd	74_06.c3d	74_06.amc	74_06.avi	kick
+	
+74_07	74_07.tvd	74_07.c3d	74_07.amc	74_07.avi	lifting up
+	
+74_08	74_08.tvd	74_08.c3d	74_08.amc	74_08.avi	lifting up
+	
+74_09	74_09.tvd	74_09.c3d	74_09.amc	74_09.avi	
+	
+74_10	74_10.tvd	74_10.c3d	74_10.amc	74_10.avi	peeping
+	
+74_11	74_11.tvd	74_11.c3d	74_11.amc	74_11.avi	peeping
+	
+74_12	74_12.tvd	74_12.c3d	74_12.amc	74_12.avi	thinker
+	
+74_13	74_13.tvd	74_13.c3d	74_13.amc	74_13.avi	Range of motion
+	
+74_14	74_14.tvd	74_14.c3d	74_14.amc	74_14.avi	slope 1
+	
+74_15	74_15.tvd	74_15.c3d	74_15.amc	74_15.avi	slope1
+	
+74_16	74_16.tvd	74_16.c3d	74_16.amc	74_16.avi	slope 2
+	
+74_17	74_17.tvd	74_17.c3d	74_17.amc	74_17.avi	slope 2
+	
+74_18	74_18.tvd	74_18.c3d	74_18.amc	74_18.avi	slope 3
+	
+74_19	74_19.tvd	74_19.c3d	74_19.amc	74_19.avi	slope 3
+	
+74_20	74_20.tvd	74_20.c3d	74_20.amc	74_20.avi	stiff walk
+	
+
+

@@ -1,0 +1,20 @@
+
+			Subject #18 (human interaction and communication (2 subjects - subject A))
+
+18_01	18_01.tvd	18_01.c3d	18_01.amc	18_01.mpg	18_01.avi	walk, shake hands (2 subjects - subject A)	
+18_02	18_02.tvd	18_02.c3d	18_02.amc	18_02.mpg	18_02.avi	walk, shake hands (2 subjects - subject A)	
+18_03	18_03.tvd	18_03.c3d	18_03.amc	18_03.mpg	18_03.avi	A pulls B; B resists (2 subjects - subject A)	
+18_04	18_04.tvd	18_04.c3d	18_04.amc	18_04.mpg	18_04.avi	A pulls B; B resists (2 subjects - subject A)	
+18_05	18_05.tvd	18_05.c3d	18_05.amc	18_05.mpg	18_05.avi	A pulls B by the elbow; B resists (2 subjects - subject A)	
+18_06	18_06.tvd	18_06.c3d	18_06.amc	18_06.mpg	18_06.avi	A pulls B by the elbow; B resists (2 subjects - subject A)	
+18_07	18_07.tvd	18_07.c3d	18_07.amc	18_07.mpg	18_07.avi	navigate busy sidewalk; A leads the way, takes B by the arm (2 subjects - subject A)	
+18_08	18_08.tvd	18_08.c3d	18_08.amc	18_08.mpg	18_08.avi	conversation - explain with hand gestures (2 subjects - subject A)	
+18_09	18_09.tvd	18_09.c3d	18_09.amc	18_09.mpg	18_09.avi	conversation - explain with hand gestures, walk (2 subjects - subject A)	
+18_10	18_10.tvd	18_10.c3d	18_10.amc	18_10.mpg	18_10.avi	quarrel - angry hand gestures (2 subjects - subject A)	
+18_11	18_11.tvd	18_11.c3d	18_11.amc	18_11.mpg	18_11.avi	quarrel - angry hand gestures (2 subjects - subject A)	
+18_12	18_12.tvd	18_12.c3d	18_12.amc	18_12.mpg	18_12.avi	friends meet, hang out; A sits, B joins A (2 subjects - subject A)	
+18_13	18_13.tvd	18_13.c3d	18_13.amc	18_13.mpg	18_13.avi	run, scramble for last seat (2 subjects - subject A)	
+18_14	18_14.tvd	18_14.c3d	18_14.amc	18_14.mpg	18_14.avi	run, scramble for last seat (2 subjects - subject A)	
+18_15	18_15.tvd	18_15.c3d	18_15.amc	18_15.mpg	18_15.avi	chicken dance (2 subjects - subject A)	
+
+

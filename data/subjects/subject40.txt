@@ -1,0 +1,16 @@
+
+			Subject #40 (navigate from corner to corner, interact with stepstool)
+
+40_02	40_02.tvd	40_02.c3d	40_02.amc	40_02.mpg	40_02.avi	navigate - walk forward, backward, on a diagonal	
+40_03	40_03.tvd	40_03.c3d	40_03.amc	40_03.mpg	40_03.avi	navigate - walk forward, backward, on a diagonal	
+40_04	40_04.tvd	40_04.c3d	40_04.amc	40_04.mpg	40_04.avi	navigate - walk forward, backward, on a diagonal	
+40_05	40_05.tvd	40_05.c3d	40_05.amc	40_05.mpg	40_05.avi	navigate - walk forward, backward, on a diagonal	
+40_06	40_06.tvd	40_06.c3d	40_06.amc	40_06.mpg	40_06.avi	climb, step over, sit on, jump over stepstool	
+40_07	40_07.tvd	40_07.c3d	40_07.amc	40_07.mpg	40_07.avi	climb, step over, jump over stepstool	
+40_08	40_08.tvd	40_08.c3d	40_08.amc	40_08.mpg	40_08.avi	climb, step over, jump over stepstool	
+40_09	40_09.tvd	40_09.c3d	40_09.amc	40_09.mpg	40_09.avi	climb, step over, jump over stepstool	
+40_10	40_10.tvd	40_10.c3d	40_10.amc	40_10.mpg	40_10.avi	wait for bus	
+40_11	40_11.tvd	40_11.c3d	40_11.amc	40_11.mpg	40_11.avi	wait for bus	
+40_12	40_12.tvd	40_12.c3d	40_12.amc	40_12.mpg	40_12.avi	basketball signals	
+
+

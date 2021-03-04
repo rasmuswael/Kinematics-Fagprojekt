@@ -1,0 +1,63 @@
+
+			Subject #16 (run, jump, walk)
+
+16_01	16_01.tvd	16_01.c3d	16_01.amc	16_01.mpg	16_01.avi	jump	
+16_02	16_02.tvd	16_02.c3d	16_02.amc	16_02.mpg	16_02.avi	jump	
+16_03	16_03.tvd	16_03.c3d	16_03.amc	16_03.mpg	16_03.avi	high jump	
+16_04	16_04.tvd	16_04.c3d	16_04.amc	16_04.mpg	16_04.avi	high jump	
+16_05	16_05.tvd	16_05.c3d	16_05.amc	16_05.mpg	16_05.avi	forward jump	
+16_06	16_06.tvd	16_06.c3d	16_06.amc	16_06.mpg	16_06.avi	forward jump	
+16_07	16_07.tvd	16_07.c3d	16_07.amc	16_07.mpg	16_07.avi	forward jump	
+16_08	16_08.tvd	16_08.c3d	16_08.amc	16_08.mpg	16_08.avi	run/jog, sudden stop	
+16_09	16_09.tvd	16_09.c3d	16_09.amc	16_09.mpg	16_09.avi	forward jump	
+16_10	16_10.tvd	16_10.c3d	16_10.amc	16_10.mpg	16_10.avi	forward jump	
+16_11	16_11.tvd	16_11.c3d	16_11.amc	16_11.mpg	16_11.avi	walk, veer left	
+16_12	16_12.tvd	16_12.c3d	16_12.amc	16_12.mpg	16_12.avi	walk, veer left	
+16_13	16_13.tvd	16_13.c3d	16_13.amc	16_13.mpg	16_13.avi	walk, veer right	
+16_14	16_14.tvd	16_14.c3d	16_14.amc	16_14.mpg	16_14.avi	walk, veer right	
+16_15	16_15.tvd	16_15.c3d	16_15.amc	16_15.mpg	16_15.avi	walk	
+16_16	16_16.tvd	16_16.c3d	16_16.amc	16_16.mpg	16_16.avi	walk	
+16_17	16_17.tvd	16_17.c3d	16_17.amc	16_17.mpg	16_17.avi	walk, 90-degree left turn	
+16_18	16_18.tvd	16_18.c3d	16_18.amc	16_18.mpg	16_18.avi	walk, 90-degree left turn	
+16_19	16_19.tvd	16_19.c3d	16_19.amc	16_19.mpg	16_19.avi	walk, 90-degree right turn	
+16_20	16_20.tvd	16_20.c3d	16_20.amc	16_20.mpg	16_20.avi	walk, 90-degree right turn	
+16_21	16_21.tvd	16_21.c3d	16_21.amc	16_21.mpg	16_21.avi	walk	
+16_22	16_22.tvd	16_22.c3d	16_22.amc	16_22.mpg	16_22.avi	walk	
+16_23	16_23.tvd	16_23.c3d	16_23.amc	16_23.mpg	16_23.avi	walk, veer left	
+16_24	16_24.tvd	16_24.c3d	16_24.amc	16_24.mpg	16_24.avi	walk, veer left	
+16_25	16_25.tvd	16_25.c3d	16_25.amc	16_25.mpg	16_25.avi	walk, veer right	
+16_26	16_26.tvd	16_26.c3d	16_26.amc	16_26.mpg	16_26.avi	walk, veer right	
+16_27	16_27.tvd	16_27.c3d	16_27.amc	16_27.mpg	16_27.avi	walk, 90-degree left turn	
+16_28	16_28.tvd	16_28.c3d	16_28.amc	16_28.mpg	16_28.avi	walk, 90-degree left turn	
+16_29	16_29.tvd	16_29.c3d	16_29.amc	16_29.mpg	16_29.avi	walk, 90-degree right turn	
+16_30	16_30.tvd	16_30.c3d	16_30.amc	16_30.mpg	16_30.avi	walk, 90-degree right turn	
+16_31	16_31.tvd	16_31.c3d	16_31.amc	16_31.mpg	16_31.avi	walk	
+16_32	16_32.tvd	16_32.c3d	16_32.amc	16_32.mpg	16_32.avi	walk	
+16_33	16_33.tvd	16_33.c3d	16_33.amc	16_33.mpg	16_33.avi	slow walk, stop	
+16_34	16_34.tvd	16_34.c3d	16_34.amc	16_34.mpg	16_34.avi	slow walk, stop	
+16_35	16_35.tvd	16_35.c3d	16_35.amc	16_35.mpg	16_35.avi	run/jog	
+16_36	16_36.tvd	16_36.c3d	16_36.amc	16_36.mpg	16_36.avi	run/jog	
+16_37	16_37.tvd	16_37.c3d	16_37.amc	16_37.mpg	16_37.avi	run/jog, veer left	
+16_38	16_38.tvd	16_38.c3d	16_38.amc	16_38.mpg	16_38.avi	run/jog, veer left	
+16_39	16_39.tvd	16_39.c3d	16_39.amc	16_39.mpg	16_39.avi	run/jog, veer right	
+16_40	16_40.tvd	16_40.c3d	16_40.amc	16_40.mpg	16_40.avi	run/jog, veer right	
+16_41	16_41.tvd	16_41.c3d	16_41.amc	16_41.mpg	16_41.avi	run/jog, 90-degree left turn	
+16_42	16_42.tvd	16_42.c3d	16_42.amc	16_42.mpg	16_42.avi	run/jog, 90-degree left turn	
+16_43	16_43.tvd	16_43.c3d	16_43.amc	16_43.mpg	16_43.avi	run/jog, 90-degree right turn	
+16_44	16_44.tvd	16_44.c3d	16_44.amc	16_44.mpg	16_44.avi	run/jog, 90-degree right turn	
+16_45	16_45.tvd	16_45.c3d	16_45.amc	16_45.mpg	16_45.avi	run/jog	
+16_46	16_46.tvd	16_46.c3d	16_46.amc	16_46.mpg	16_46.avi	run/jog	
+16_47	16_47.tvd	16_47.c3d	16_47.amc	16_47.mpg	16_47.avi	walk	
+16_48	16_48.tvd	16_48.c3d	16_48.amc	16_48.mpg	16_48.avi	run, veer left	
+16_49	16_49.tvd	16_49.c3d	16_49.amc	16_49.mpg	16_49.avi	run, veer right	
+16_50	16_50.tvd	16_50.c3d	16_50.amc	16_50.mpg	16_50.avi	run, veer right	
+16_51	16_51.tvd	16_51.c3d	16_51.amc	16_51.mpg	16_51.avi	run, 90-degree left turn	
+16_52	16_52.tvd	16_52.c3d	16_52.amc	16_52.mpg	16_52.avi	run, 90-degree left turn	
+16_53	16_53.tvd	16_53.c3d	16_53.amc	16_53.mpg	16_53.avi	run, 90-degree right turn	
+16_54	16_54.tvd	16_54.c3d	16_54.amc	16_54.mpg	16_54.avi	run, 90-degree right turn	
+16_55	16_55.tvd	16_55.c3d	16_55.amc	16_55.mpg	16_55.avi	run	
+16_56	16_56.tvd	16_56.c3d	16_56.amc	16_56.mpg	16_56.avi	run/jog	
+16_57	16_57.tvd	16_57.c3d	16_57.amc	16_57.mpg	16_57.avi	run/jog, sudden stop	
+16_58	16_58.tvd	16_58.c3d	16_58.amc	16_58.mpg	16_58.avi	walk	
+
+

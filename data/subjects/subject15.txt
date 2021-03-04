@@ -1,0 +1,19 @@
+
+			Subject #15 (various everyday behaviors, dance moves)
+
+15_01	15_01.tvd	15_01.c3d	15_01.amc	15_01.mpg	15_01.avi	walk/wander	
+15_02	15_02.tvd	15_02.c3d	15_02.amc	15_02.mpg	15_02.avi	climb, step over, sit on, stand on stepstool	
+15_03	15_03.tvd	15_03.c3d	15_03.amc	15_03.mpg	15_03.avi	walk/wander	
+15_04	15_04.tvd	15_04.c3d	15_04.amc	15_04.mpg	15_04.avi	wash windows, paint; hand signals; dance - Egyptian walk, the Dive, the Twist, the Cabbage Patch; boxing	
+15_05	15_05.tvd	15_05.c3d	15_05.amc	15_05.avi	wash windows, paint; hand signals; dance - Egyptian walk, the Dive, the Twist, the Cabbage Patch; boxing	
+15_06	15_06.tvd	15_06.c3d	15_06.amc	15_06.mpg	15_06.avi	lean forward, reach for	
+15_07	15_07.tvd	15_07.c3d	15_07.amc	15_07.mpg	15_07.avi	lean forward, tiptoe, reach for	
+15_08	15_08.tvd	15_08.c3d	15_08.amc	15_08.avi	hand signals - horizontally revolve forearms	
+15_09	15_09.tvd	15_09.c3d	15_09.amc	15_09.mpg	15_09.avi	walk/wander	
+15_10	15_10.tvd	15_10.c3d	15_10.amc	15_10.mpg	15_10.avi	sit on high stool, stand up	
+15_11	15_11.tvd	15_11.c3d	15_11.amc	15_11.mpg	15_11.avi	wash windows, paint figure eights; hand signals	
+15_12	15_12.tvd	15_12.c3d	15_12.amc	15_12.mpg	15_12.avi	wash windows; basketball - dribble, lay-up shot, pass; throw ball; dance - Egyptian walk, the Dive, the Twist; strew	
+15_13	15_13.tvd	15_13.c3d	15_13.amc	15_13.mpg	15_13.avi	boxing	
+15_14	15_14.tvd	15_14.c3d	15_14.amc	15_14.mpg	15_14.avi	walk/wander	
+
+

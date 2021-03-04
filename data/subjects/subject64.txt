@@ -1,0 +1,65 @@
+
+			Subject #64 (golf)
+
+64_01	64_01.tvd	64_01.c3d	64_01.amc	64_01.mpg	64_01.avi	Swing
+	
+64_02	64_02.tvd	64_02.c3d	64_02.amc	64_02.mpg	64_02.avi	Swing
+	
+64_03	64_03.tvd	64_03.c3d	64_03.amc	64_03.mpg	64_03.avi	Swing
+	
+64_04	64_04.tvd	64_04.c3d	64_04.amc	64_04.mpg	64_04.avi	Swing
+	
+64_05	64_05.tvd	64_05.c3d	64_05.amc	64_05.mpg	64_05.avi	Swing
+	
+64_06	64_06.tvd	64_06.c3d	64_06.amc	64_06.mpg	64_06.avi	Swing
+	
+64_07	64_07.tvd	64_07.c3d	64_07.amc	64_07.mpg	64_07.avi	Swing
+	
+64_08	64_08.tvd	64_08.c3d	64_08.amc	64_08.mpg	64_08.avi	Swing
+	
+64_09	64_09.tvd	64_09.c3d	64_09.amc	64_09.mpg	64_09.avi	Swing
+	
+64_10	64_10.tvd	64_10.c3d	64_10.amc	64_10.mpg	64_10.avi	Swing
+	
+64_11	64_11.tvd	64_11.c3d	64_11.amc	64_11.mpg	64_11.avi	Putt
+	
+64_12	64_12.tvd	64_12.c3d	64_12.amc	64_12.mpg	64_12.avi	Putt
+	
+64_13	64_13.tvd	64_13.c3d	64_13.amc	64_13.mpg	64_13.avi	Putt
+	
+64_14	64_14.tvd	64_14.c3d	64_14.amc	64_14.mpg	64_14.avi	Putt
+	
+64_15	64_15.tvd	64_15.c3d	64_15.amc	64_15.mpg	64_15.avi	Putt
+	
+64_16	64_16.tvd	64_16.c3d	64_16.amc	64_16.mpg	64_16.avi	Placing Tee
+	
+64_17	64_17.tvd	64_17.c3d	64_17.amc	64_17.mpg	64_17.avi	Placing Tee
+	
+64_18	64_18.tvd	64_18.c3d	64_18.amc	64_18.mpg	64_18.avi	Placing Tee
+	
+64_19	64_19.tvd	64_19.c3d	64_19.amc	64_19.mpg	64_19.avi	Placing Tee
+	
+64_20	64_20.tvd	64_20.c3d	64_20.amc	64_20.mpg	64_20.avi	Placing Tee
+	
+64_21	64_21.tvd	64_21.c3d	64_21.amc	64_21.mpg	64_21.avi	Placing Ball
+	
+64_22	64_22.tvd	64_22.c3d	64_22.amc	64_22.mpg	64_22.avi	Placing Ball
+	
+64_23	64_23.tvd	64_23.c3d	64_23.amc	64_23.mpg	64_23.avi	Placing Ball
+	
+64_24	64_24.tvd	64_24.c3d	64_24.amc	64_24.mpg	64_24.avi	Placing Ball
+	
+64_25	64_25.tvd	64_25.c3d	64_25.amc	64_25.mpg	64_25.avi	Placing Ball
+	
+64_26	64_26.tvd	64_26.c3d	64_26.amc	64_26.mpg	64_26.avi	Picking up Ball
+	
+64_27	64_27.tvd	64_27.c3d	64_27.amc	64_27.mpg	64_27.avi	Picking up Ball
+	
+64_28	64_28.tvd	64_28.c3d	64_28.amc	64_28.mpg	64_28.avi	Picking up Ball
+	
+64_29	64_29.tvd	64_29.c3d	64_29.amc	64_29.mpg	64_29.avi	Picking up Ball
+	
+64_30	64_30.tvd	64_30.c3d	64_30.amc	64_30.mpg	64_30.avi	Picking up Ball
+	
+
+

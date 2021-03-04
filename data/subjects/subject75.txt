@@ -1,0 +1,45 @@
+
+			Subject #75 (jumps; hopscotch; sits)
+
+75_01	75_01.tvd	75_01.c3d	75_01.amc	75_01.mpg	75_01.avi	run jump
+	
+75_02	75_02.tvd	75_02.c3d	75_02.amc	75_02.mpg	75_02.avi	run jump
+	
+75_03	75_03.tvd	75_03.c3d	75_03.amc	75_03.mpg	75_03.avi	run jump
+	
+75_04	75_04.tvd	75_04.c3d	75_04.amc	75_04.mpg	75_04.avi	wide leg run
+	
+75_05	75_05.tvd	75_05.c3d	75_05.amc	75_05.mpg	75_05.avi	cross leg run
+	
+75_06	75_06.tvd	75_06.c3d	75_06.amc	75_06.mpg	75_06.avi	180 jump
+	
+75_07	75_07.tvd	75_07.c3d	75_07.amc	75_07.mpg	75_07.avi	angle jumps
+	
+75_08	75_08.tvd	75_08.c3d	75_08.amc	75_08.mpg	75_08.avi	360 jumps
+	
+75_09	75_09.tvd	75_09.c3d	75_09.amc	75_09.mpg	75_09.avi	360 jump
+	
+75_10	75_10.tvd	75_10.c3d	75_10.amc	75_10.mpg	75_10.avi	2 jump
+	
+75_11	75_11.tvd	75_11.c3d	75_11.amc	75_11.mpg	75_11.avi	2 jump
+	
+75_12	75_12.tvd	75_12.c3d	75_12.amc	75_12.mpg	75_12.avi	box jump
+	
+75_13	75_13.tvd	75_13.c3d	75_13.amc	75_13.mpg	75_13.avi	hopscotch
+	
+75_14	75_14.tvd	75_14.c3d	75_14.amc	75_14.mpg	75_14.avi	hopscotch
+	
+75_15	75_15.tvd	75_15.c3d	75_15.amc	75_15.mpg	75_15.avi	long jumps
+	
+75_16	75_16.tvd	75_16.c3d	75_16.amc	75_16.mpg	75_16.avi	jump kick
+	
+75_17	75_17.tvd	75_17.c3d	75_17.amc	75_17.mpg	75_17.avi	medium sit
+	
+75_18	75_18.tvd	75_18.c3d	75_18.amc	75_18.mpg	75_18.avi	high sit
+	
+75_19	75_19.tvd	75_19.c3d	75_19.amc	75_19.mpg	75_19.avi	medium sit
+	
+75_20	75_20.tvd	75_20.c3d	75_20.amc	75_20.mpg	75_20.avi	low sit
+	
+
+

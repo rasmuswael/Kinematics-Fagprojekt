@@ -1,0 +1,11 @@
+
+			Subject #10 (kick soccer ball)
+
+10_01	10_01.tvd	10_01.c3d	10_01.amc	10_01.avi	soccer - kick ball	
+10_02	10_02.tvd	10_02.c3d	10_02.amc	10_02.avi	soccer - kick ball	
+10_03	10_03.tvd	10_03.c3d	10_03.amc	10_03.avi	soccer - kick ball	
+10_04	10_04.tvd	10_04.c3d	10_04.amc	10_04.avi	walk	
+10_05	10_05.tvd	10_05.c3d	10_05.amc	10_05.avi	soccer - kick ball	
+10_06	10_06.tvd	10_06.c3d	10_06.amc	10_06.avi	soccer - kick ball	
+
+

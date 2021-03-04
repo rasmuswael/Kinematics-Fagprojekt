@@ -1,0 +1,18 @@
+
+			Subject #21 (human interaction - at play, formations (2 subjects - subject B))
+
+21_01	21_01.tvd	21_01.c3d	21_01.amc	21_01.mpg	21_01.avi	chicken dance (2 subjects - subject B)	
+21_02	21_02.tvd	21_02.c3d	21_02.amc	21_02.mpg	21_02.avi	link arms, walk (2 subjects - subject B)	
+21_03	21_03.tvd	21_03.c3d	21_03.amc	21_03.mpg	21_03.avi	link arms, walk (2 subjects - subject B)	
+21_04	21_04.tvd	21_04.c3d	21_04.amc	21_04.mpg	21_04.avi	synchronized walk (2 subjects - subject B)	
+21_05	21_05.tvd	21_05.c3d	21_05.amc	21_05.mpg	21_05.avi	synchronized walk (2 subjects - subject B)	
+21_06	21_06.tvd	21_06.c3d	21_06.amc	21_06.mpg	21_06.avi	soldiers march (2 subjects - subject B)	
+21_07	21_07.tvd	21_07.c3d	21_07.amc	21_07.mpg	21_07.avi	soldiers march (2 subjects - subject B)	
+21_08	21_08.tvd	21_08.c3d	21_08.amc	21_08.mpg	21_08.avi	zombie march (2 subjects - subject B)	
+21_09	21_09.tvd	21_09.c3d	21_09.amc	21_09.mpg	21_09.avi	nursery rhyme - ring around the rosey (2 subjects - subject B)	
+21_10	21_10.tvd	21_10.c3d	21_10.amc	21_10.mpg	21_10.avi	360-degree two-person whip (2 subjects - subject B)	
+21_11	21_11.tvd	21_11.c3d	21_11.amc	21_11.mpg	21_11.avi	high-five, walk (2 subjects - subject B)	
+21_12	21_12.tvd	21_12.c3d	21_12.amc	21_12.mpg	21_12.avi	low-five, walk (2 subjects - subject B)	
+21_13	21_13.tvd	21_13.c3d	21_13.amc	21_13.mpg	21_13.avi	blind man's bluff (blindfold tag) (2 subjects - subject B)	
+
+

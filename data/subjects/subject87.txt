@@ -1,0 +1,10 @@
+
+			Subject #87 (acrobatics)
+
+87_01	87_01.tvd	87_01.c3d	87_01.amc	87_01.avi	Jump with kick and spin	
+87_02	87_02.tvd	87_02.c3d	87_02.amc	87_02.avi	T-Pose	
+87_03	87_03.tvd	87_03.c3d	87_03.amc	87_03.avi	Backflip	
+87_04	87_04.tvd	87_04.c3d	87_04.amc	87_04.avi	backflip	
+87_05	87_05.tvd	87_05.c3d	87_05.amc	87_05.avi	cartwheels	
+
+

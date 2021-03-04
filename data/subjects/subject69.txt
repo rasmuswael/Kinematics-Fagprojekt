@@ -1,0 +1,80 @@
+
+			Subject #69 (walking)
+
+69_01	69_01.amc	69_01.avi	walk forward	
+69_02	69_02.amc	69_02.avi	walk forward	
+69_03	69_03.amc	69_03.avi	walk forward	
+69_04	69_04.amc	69_04.avi	walk forward	
+69_05	69_05.amc	69_05.avi	walk forward	
+69_06	69_06.amc	69_06.avi	walk and turn (repeated)	
+69_07	69_07.amc	69_07.avi	walk and turn (repeated)	
+69_08	69_08.amc	69_08.avi	walk and turn (repeated)	
+69_09	69_09.amc	69_09.avi	walk and turn (repeated)	
+69_10	69_10.amc	69_10.avi	walk and turn (repeated)	
+69_11	69_11.amc	69_11.avi	walk and turn (repeated)	
+69_12	69_12.amc	69_12.avi	walk and turn both directions (repeated)	
+69_13	69_13.amc	69_13.avi	walk, turn in place (repeated)	
+69_14	69_14.amc	69_14.avi	walk, turn in place (repeated)	
+69_15	69_15.amc	69_15.avi	walk, turn in place (repeated)	
+69_16	69_16.amc	69_16.avi	turn in place	
+69_17	69_17.amc	69_17.avi	turn in place	
+69_18	69_18.amc	69_18.avi	turn in place (opposite direction)	
+69_19	69_19.amc	69_19.avi	turn in place (opposite direction)	
+69_20	69_20.amc	69_20.avi	walk forward 90 degree right turn	
+69_21	69_21.amc	69_21.avi	walk forward 90 degree right turn	
+69_22	69_22.amc	69_22.avi	walk forward 90 degree right turn	
+69_23	69_23.amc	69_23.avi	walk forward 90 degree right turn	
+69_24	69_24.amc	69_24.avi	walk forward 90 degree left turn	
+69_25	69_25.amc	69_25.avi	walk forward 90 degree left turn	
+69_26	69_26.amc	69_26.avi	walk forward 90 degree left turn	
+69_27	69_27.amc	69_27.avi	walk forward 90 degree left turn	
+69_28	69_28.amc	69_28.avi	walk forward 90 degree smooth right turn	
+69_29	69_29.amc	69_29.avi	walk forward 90 degree smooth right turn	
+69_30	69_30.amc	69_30.avi	walk forward 90 degree smooth right turn	
+69_31	69_31.amc	69_31.avi	walk forward 90 degree smooth left turn	
+69_32	69_32.amc	69_32.avi	walk forward 90 degree smooth left turn	
+69_33	69_33.amc	69_33.avi	walk forward 90 degree smooth left turn	
+69_34	69_34.amc	69_34.avi	walk backwards and turn	
+69_35	69_35.amc	69_35.avi	walk backwards and turn	
+69_36	69_36.amc	69_36.avi	walk backwards and turn	
+69_37	69_37.amc	69_37.avi	walk backwards and turn	
+69_38	69_38.amc	69_38.avi	walk backwards and turn (repeated)	
+69_39	69_39.amc	69_39.avi	walk backward, turn in place	
+69_40	69_40.amc	69_40.avi	walk backward, turn in place	
+69_41	69_41.amc	69_41.avi	walk backward, turn in place	
+69_42	69_42.amc	69_42.avi	walk sideways and turn (repeated)	
+69_43	69_43.amc	69_43.avi	walk sideways and turn (repeated)	
+69_44	69_44.amc	69_44.avi	walk sideways and turn (repeated)	
+69_45	69_45.amc	69_45.avi	walk sideways and turn (repeated)	
+69_46	69_46.amc	69_46.avi	walk sideways and turn (repeated)	
+69_47	69_47.amc	69_47.avi	walk sideways and turn (repeated)	
+69_48	69_48.amc	69_48.avi	walk sideways and turn (opposite direction)	
+69_49	69_49.amc	69_49.avi	walk sideways and turn (opposite direction)	
+69_50	69_50.amc	69_50.avi	walk sideways and backwards	
+69_51	69_51.amc	69_51.avi	walk backwards and turn	
+69_52	69_52.amc	69_52.avi	walk backwards and turn	
+69_53	69_53.amc	69_53.avi	walk backwards and turn	
+69_54	69_54.amc	69_54.avi	walk backwards and turn	
+69_55	69_55.amc	69_55.avi	walk backwards and turn	
+69_56	69_56.amc	69_56.avi	walk sideways and turn (opposite direction)	
+69_57	69_57.amc	69_57.avi	walk sideways and turn (opposite direction)	
+69_58	69_58.amc	69_58.avi	walk sideways and turn (opposite direction)	
+69_59	69_59.amc	69_59.avi	walk sideways and turn	
+69_60	69_60.amc	69_60.avi	walk sideways and turn	
+69_61	69_61.amc	69_61.avi	walk sideways and turn	
+69_62	69_62.amc	69_62.avi	walk sideways and turn (opposite direction)	
+69_63	69_63.amc	69_63.avi	walk sideways and turn (opposite direction)	
+69_64	69_64.amc	69_64.avi	walk sideways and turn (opposite direction)	
+69_65	69_65.amc	69_65.avi	walk sideways and turn	
+69_66	69_66.amc	69_66.avi	walk sideways and turn	
+69_67	69_67.amc	69_67.avi	walk sideways and turn	
+69_68	69_68.amc	69_68.avi	walk forward and pick up object, set down object	
+69_69	69_69.amc	69_69.avi	walk forward and pick up object, carry back object	
+69_70	69_70.amc	69_70.avi	walk up to object, squat, pick up object, set down in another place.	
+69_71	69_71.amc	69_71.avi	walk up to object, squat, pick up object, set down in another place	
+69_72	69_72.amc	69_72.avi	walk up to object, pick up object, set down in another place	
+69_73	69_73.amc	69_73.avi	walk up to object, lean over, pick up object, set down in another place	
+69_74	69_74.amc	69_74.avi	walk up to object, lean over, pick up object, set down in another place	
+69_75	69_75.amc	69_75.avi	walk up to object, squat, pick up object, set down in another place	
+
+

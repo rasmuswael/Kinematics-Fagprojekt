@@ -1,0 +1,15 @@
+
+			Subject #17 (different walking styles)
+
+17_01	17_01.tvd	17_01.c3d	17_01.amc	17_01.mpg	17_01.avi	walk with anger, frustration	
+17_02	17_02.tvd	17_02.c3d	17_02.amc	17_02.mpg	17_02.avi	walk with anger, frustration	
+17_03	17_03.tvd	17_03.c3d	17_03.amc	17_03.mpg	17_03.avi	walk stealthily	
+17_04	17_04.tvd	17_04.c3d	17_04.amc	17_04.mpg	17_04.avi	walk stealthily	
+17_05	17_05.tvd	17_05.c3d	17_05.amc	17_05.mpg	17_05.avi	walk/hobble	
+17_06	17_06.tvd	17_06.c3d	17_06.amc	17_06.mpg	17_06.avi	whistle, walk jauntily	
+17_07	17_07.tvd	17_07.c3d	17_07.amc	17_07.mpg	17_07.avi	whistle, walk jauntily	
+17_08	17_08.tvd	17_08.c3d	17_08.amc	17_08.mpg	17_08.avi	muscular, heavyset person's walk	
+17_09	17_09.tvd	17_09.c3d	17_09.amc	17_09.mpg	17_09.avi	muscular, heavyset person's walk	
+17_10	17_10.tvd	17_10.c3d	17_10.amc	17_10.mpg	17_10.avi	boxing	
+
+

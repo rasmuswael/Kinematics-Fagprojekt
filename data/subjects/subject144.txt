@@ -1,0 +1,39 @@
+
+			Subject #144 (punching female)
+
+144_01	144_01.c3d	144_01.amc	Cartwheels	
+144_02	144_02.c3d	144_02.amc	Cartwheels001	
+144_03	144_03.c3d	144_03.amc	Figure8s	
+144_04	144_04.c3d	144_04.amc	Figure8s001	
+144_05	144_05.c3d	144_05.amc	Front_Kicking	
+144_06	144_06.c3d	144_06.amc	Front_Kicking001	
+144_07	144_07.c3d	144_07.amc	Left_Blocks	
+144_08	144_08.c3d	144_08.amc	Left_Blocks001	
+144_09	144_09.c3d	144_09.amc	Left_Front_Kicking	
+144_10	144_10.c3d	144_10.amc	Left_Front_Kicking001	
+144_11	144_11.c3d	144_11.amc	Left_Lunges	
+144_12	144_12.c3d	144_12.amc	Left_Lunges001	
+144_13	144_13.c3d	144_13.amc	Left_Punch_Sequence001	
+144_14	144_14.c3d	144_14.amc	Left_Punch_Sequence002	
+144_15	144_15.c3d	144_15.amc	Left_Spin_reach001	
+144_16	144_16.c3d	144_16.amc	Left_Spin_reach002	
+144_17	144_17.c3d	144_17.amc	Lunges	
+144_18	144_18.c3d	144_18.amc	Lunges001	
+144_19	144_19.c3d	144_19.amc	motorcycle pose	
+144_20	144_20.c3d	144_20.amc	Punch_Sequence	
+144_21	144_21.c3d	144_21.amc	Punch_Sequence001	
+144_22	144_22.c3d	144_22.amc	Reach_Left001	
+144_23	144_23.c3d	144_23.amc	Reach_Left002	
+144_24	144_24.c3d	144_24.amc	Reach_Right	
+144_25	144_25.c3d	144_25.amc	Reach_Right001	
+144_26	144_26.c3d	144_26.amc	Right_Blocks	
+144_27	144_27.c3d	144_27.amc	Right_Blocks001	
+144_28	144_28.c3d	144_28.amc	Right_Spin_reach	
+144_29	144_29.c3d	144_29.amc	Right_Spin_reach001	
+144_30	144_30.c3d	144_30.amc	Sun Salutation	
+144_31	144_31.c3d	144_31.amc	Sun Salutation001	
+144_32	144_32.c3d	144_32.amc	Sun Salutation002	
+144_33	144_33.c3d	144_33.amc	Walking	
+144_34	144_34.c3d	144_34.amc	Walking001	
+
+

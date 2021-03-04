@@ -1,0 +1,151 @@
+
+			Subject #80 (assorted motions)
+
+80_01	80_01.tvd	80_01.c3d	80_01.amc	80_01.mpg	80_01.avi	shaking hands
+	
+80_02	80_02.tvd	80_02.c3d	80_02.amc	80_02.mpg	80_02.avi	chopping onions
+	
+80_03	80_03.tvd	80_03.c3d	80_03.amc	80_03.mpg	80_03.avi	shooting a gun
+	
+80_04	80_04.tvd	80_04.c3d	80_04.amc	80_04.mpg	80_04.avi	sewing
+	
+80_05	80_05.tvd	80_05.c3d	80_05.amc	80_05.mpg	80_05.avi	digging a hole
+	
+80_06	80_06.tvd	80_06.c3d	80_06.amc	80_06.mpg	80_06.avi	paying for something
+	
+80_07	80_07.tvd	80_07.c3d	80_07.amc	80_07.mpg	80_07.avi	hanging picture
+	
+80_08	80_08.tvd	80_08.c3d	80_08.amc	80_08.mpg	80_08.avi	picking up something
+	
+80_09	80_09.tvd	80_09.c3d	80_09.amc	80_09.mpg	80_09.avi	planting a flower
+	
+80_10	80_10.tvd	80_10.c3d	80_10.amc	80_10.mpg	80_10.avi	boxing
+	
+80_11	80_11.tvd	80_11.c3d	80_11.amc	80_11.mpg	80_11.avi	putting on a sweater
+	
+80_12	80_12.tvd	80_12.c3d	80_12.amc	80_12.mpg	80_12.avi	fishing
+	
+80_13	80_13.tvd	80_13.c3d	80_13.amc	80_13.mpg	80_13.avi	drumming
+	
+80_14	80_14.tvd	80_14.c3d	80_14.amc	80_14.mpg	80_14.avi	teaching
+	
+80_15	80_15.tvd	80_15.c3d	80_15.amc	80_15.mpg	80_15.avi	putting on a coat
+	
+80_16	80_16.tvd	80_16.c3d	80_16.amc	80_16.mpg	80_16.avi	mixing batter
+	
+80_17	80_17.tvd	80_17.c3d	80_17.amc	80_17.mpg	80_17.avi	hand mixing dough
+	
+80_18	80_18.tvd	80_18.c3d	80_18.amc	80_18.mpg	80_18.avi	vacuuming
+	
+80_19	80_19.tvd	80_19.c3d	80_19.amc	80_19.mpg	80_19.avi	pushing broom
+	
+80_20	80_20.tvd	80_20.c3d	80_20.amc	80_20.mpg	80_20.avi	planting
+	
+80_21	80_21.tvd	80_21.c3d	80_21.amc	80_21.mpg	80_21.avi	pushing swing
+	
+80_22	80_22.tvd	80_22.c3d	80_22.amc	80_22.mpg	80_22.avi	putting on a hat
+	
+80_23	80_23.tvd	80_23.c3d	80_23.amc	80_23.mpg	80_23.avi	putting on a skirt
+	
+80_24	80_24.tvd	80_24.c3d	80_24.amc	80_24.mpg	80_24.avi	eating
+	
+80_25	80_25.tvd	80_25.c3d	80_25.amc	80_25.mpg	80_25.avi	answering a phone
+	
+80_26	80_26.tvd	80_26.c3d	80_26.amc	80_26.mpg	80_26.avi	dialing phone
+	
+80_27	80_27.tvd	80_27.c3d	80_27.amc	80_27.mpg	80_27.avi	setting glass of water
+	
+80_28	80_28.tvd	80_28.c3d	80_28.amc	80_28.mpg	80_28.avi	drinking and smoking
+	
+80_29	80_29.tvd	80_29.c3d	80_29.amc	80_29.mpg	80_29.avi	chugging
+	
+80_30	80_30.tvd	80_30.c3d	80_30.amc	80_30.mpg	80_30.avi	range of motion
+	
+80_31	80_31.tvd	80_31.c3d	80_31.amc	80_31.mpg	80_31.avi	making coffee
+	
+80_32	80_32.tvd	80_32.c3d	80_32.amc	80_32.mpg	80_32.avi	slicing
+	
+80_33	80_33.tvd	80_33.c3d	80_33.amc	80_33.mpg	80_33.avi	eating soup
+	
+80_34	80_34.tvd	80_34.c3d	80_34.amc	80_34.mpg	80_34.avi	rake leaves
+	
+80_35	80_35.tvd	80_35.c3d	80_35.amc	80_35.mpg	80_35.avi	putting on headphones
+	
+80_36	80_36.tvd	80_36.c3d	80_36.amc	80_36.mpg	80_36.avi	violin
+	
+80_37	80_37.tvd	80_37.c3d	80_37.amc	80_37.mpg	80_37.avi	TV
+	
+80_38	80_38.tvd	80_38.c3d	80_38.amc	80_38.mpg	80_38.avi	driving
+	
+80_39	80_39.tvd	80_39.c3d	80_39.amc	80_39.mpg	80_39.avi	
+	
+80_40	80_40.tvd	80_40.c3d	80_40.amc	80_40.mpg	80_40.avi	drinking from bottle
+	
+80_41	80_41.tvd	80_41.c3d	80_41.amc	80_41.mpg	80_41.avi	freezing
+	
+80_42	80_42.tvd	80_42.c3d	80_42.amc	80_42.mpg	80_42.avi	freezing
+	
+80_43	80_43.tvd	80_43.c3d	80_43.amc	80_43.mpg	80_43.avi	happy
+	
+80_44	80_44.tvd	80_44.c3d	80_44.amc	80_44.mpg	80_44.avi	laughing
+	
+80_45	80_45.tvd	80_45.c3d	80_45.amc	80_45.mpg	80_45.avi	crying
+	
+80_46	80_46.tvd	80_46.c3d	80_46.amc	80_46.mpg	80_46.avi	crying
+	
+80_47	80_47.tvd	80_47.c3d	80_47.amc	80_47.mpg	80_47.avi	
+	
+80_48	80_48.tvd	80_48.c3d	80_48.amc	80_48.mpg	80_48.avi	arguing
+	
+80_49	80_49.tvd	80_49.c3d	80_49.amc	80_49.mpg	80_49.avi	gorilla
+	
+80_50	80_50.tvd	80_50.c3d	80_50.amc	80_50.mpg	80_50.avi	cleaning window
+	
+80_51	80_51.tvd	80_51.c3d	80_51.amc	80_51.mpg	80_51.avi	chicken
+	
+80_52	80_52.tvd	80_52.c3d	80_52.amc	80_52.mpg	80_52.avi	dog
+	
+80_53	80_53.tvd	80_53.c3d	80_53.amc	80_53.mpg	80_53.avi	elephant
+	
+80_54	80_54.tvd	80_54.c3d	80_54.amc	80_54.mpg	80_54.avi	monkey
+	
+80_55	80_55.tvd	80_55.c3d	80_55.amc	80_55.mpg	80_55.avi	mouse
+	
+80_56	80_56.tvd	80_56.c3d	80_56.amc	80_56.mpg	80_56.avi	chip monk
+	
+80_57	80_57.tvd	80_57.c3d	80_57.amc	80_57.mpg	80_57.avi	prairie dog
+	
+80_58	80_58.tvd	80_58.c3d	80_58.amc	80_58.mpg	80_58.avi	snake
+	
+80_59	80_59.tvd	80_59.c3d	80_59.amc	80_59.mpg	80_59.avi	panther
+	
+80_60	80_60.tvd	80_60.c3d	80_60.amc	80_60.mpg	80_60.avi	
+	
+80_61	80_61.tvd	80_61.c3d	80_61.amc	80_61.mpg	80_61.avi	sweeping
+	
+80_62	80_62.tvd	80_62.c3d	80_62.amc	80_62.mpg	80_62.avi	bird
+	
+80_63	80_63.tvd	80_63.c3d	80_63.amc	80_63.mpg	80_63.avi	chicken 
+	
+80_64	80_64.tvd	80_64.c3d	80_64.amc	80_64.mpg	80_64.avi	cat
+	
+80_65	80_65.tvd	80_65.c3d	80_65.amc	80_65.mpg	80_65.avi	fish
+	
+80_66	80_66.tvd	80_66.c3d	80_66.amc	80_66.mpg	80_66.avi	
+	
+80_67	80_67.tvd	80_67.c3d	80_67.amc	80_67.mpg	80_67.avi	
+	
+80_68	80_68.tvd	80_68.c3d	80_68.amc	80_68.mpg	80_68.avi	
+	
+80_69	80_69.tvd	80_69.c3d	80_69.amc	80_69.mpg	80_69.avi	painting
+	
+80_70	80_70.tvd	80_70.c3d	80_70.amc	80_70.mpg	80_70.avi	piano
+	
+80_71	80_71.tvd	80_71.c3d	80_71.amc	80_71.mpg	80_71.avi	chopping wood
+	
+80_72	80_72.tvd	80_72.c3d	80_72.amc	80_72.mpg	80_72.avi	swimming
+	
+80_73	80_73.tvd	80_73.c3d	80_73.amc	80_73.mpg	80_73.avi	shaking hands
+	
+
+

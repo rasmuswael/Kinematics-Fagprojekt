@@ -1,0 +1,76 @@
+
+			Subject #90 (cartwheels; acrobatics; dances)
+
+90_01	90_01.tvd	90_01.c3d	90_01.amc	90_01.avi	bkwd summersult
+	
+90_02	90_02.tvd	90_02.c3d	90_02.amc	90_02.avi	cartwheel
+	
+90_03	90_03.tvd	90_03.c3d	90_03.amc	90_03.avi	cartwheel
+	
+90_04	90_04.tvd	90_04.c3d	90_04.amc	90_04.avi	cartwheel
+	
+90_05	90_05.tvd	90_05.c3d	90_05.amc	90_05.avi	jump kick
+	
+90_06	90_06.tvd	90_06.c3d	90_06.amc	90_06.avi	jump kick
+	
+90_07	90_07.tvd	90_07.c3d	90_07.amc	90_07.avi	jump kick
+	
+90_08	90_08.tvd	90_08.c3d	90_08.amc	90_08.avi	side flip
+	
+90_09	90_09.tvd	90_09.c3d	90_09.amc	90_09.avi	Flip forward onto hands and back again	
+90_10	90_10.tvd	90_10.c3d	90_10.amc	
+	
+90_11	90_11.tvd	90_11.c3d	90_11.amc	90_11.avi	hand spring
+	
+90_12	90_12.tvd	90_12.c3d	90_12.amc	90_12.avi	bck flp twst fall
+	
+90_13	90_13.tvd	90_13.c3d	90_13.amc	90_13.avi	bck flp twst fall
+	
+90_14	90_14.tvd	90_14.c3d	90_14.amc	90_14.avi	front hand flip
+	
+90_15	90_15.tvd	90_15.c3d	90_15.amc	90_15.avi	front hand flip
+	
+90_16	90_16.tvd	90_16.c3d	90_16.amc	90_16.avi	fall on face
+	
+90_17	90_17.tvd	90_17.c3d	90_17.amc	90_17.avi	BannanaPeelSlip
+	
+90_18	90_18.tvd	90_18.c3d	90_18.amc	90_18.avi	RugPullFall
+	
+90_19	90_19.tvd	90_19.c3d	90_19.amc	90_19.avi	monkey backflip
+	
+90_20	90_20.tvd	90_20.c3d	90_20.amc	90_20.avi	monkey sequence
+	
+90_21	90_21.tvd	90_21.c3d	90_21.amc	90_21.avi	monkey sequence
+	
+90_22	90_22.tvd	90_22.c3d	90_22.amc	90_22.avi	straight walk
+	
+90_23	90_23.tvd	90_23.c3d	90_23.amc	90_23.avi	straight walk
+	
+90_24	90_24.tvd	90_24.c3d	90_24.amc	90_24.avi	ball mount
+	
+90_25	90_25.tvd	90_25.c3d	90_25.amc	90_25.avi	fwd ball walk
+	
+90_26	90_26.tvd	90_26.c3d	90_26.amc	90_26.avi	fwd ball walk
+	
+90_27	90_27.tvd	90_27.c3d	90_27.amc	90_27.avi	bwk ball walk
+	
+90_28	90_28.tvd	90_28.c3d	90_28.amc	90_28.avi	breakdance
+	
+90_29	90_29.tvd	90_29.c3d	90_29.amc	90_29.avi	sequesnce
+	
+90_30	90_30.tvd	90_30.c3d	90_30.amc	90_30.avi	russian dance
+	
+90_31	90_31.tvd	90_31.c3d	90_31.amc	90_31.avi	russian dance
+	
+90_32	90_32.tvd	90_32.c3d	90_32.amc	90_32.avi	moonwalk
+	
+90_33	90_33.tvd	90_33.c3d	90_33.amc	90_33.avi	arm up wide leg roll
+	
+90_34	90_34.tvd	90_34.c3d	90_34.amc	90_34.avi	wide leg roll
+	
+90_35	90_35.tvd	90_35.c3d	90_35.amc	90_35.avi	wide leg roll
+	
+90_36	90_36.tvd	90_36.c3d	90_36.amc	90_36.avi	wide leg roll
+	
+
+

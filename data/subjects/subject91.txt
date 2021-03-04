@@ -1,0 +1,123 @@
+
+			Subject #91 (walks and turns)
+
+91_01	91_01.tvd	91_01.c3d	91_01.amc	91_01.avi	Walk digital figure eight	
+91_02	91_02.tvd	91_02.c3d	91_02.amc	91_02.avi	WalkStraight
+	
+91_03	91_03.tvd	91_03.c3d	91_03.amc	91_03.avi	Walk figure eight	
+91_04	91_04.tvd	91_04.c3d	91_04.amc	91_04.avi	Walking	
+91_05	91_05.tvd	91_05.c3d	91_05.amc	91_05.avi	Mummy Walk	
+91_06	91_06.tvd	91_06.c3d	91_06.amc	91_06.avi	Motorcycle Pose	
+91_07	91_07.tvd	91_07.c3d	91_07.amc	91_07.avi	mummy8
+	
+91_08	91_08.tvd	91_08.c3d	91_08.amc	91_08.avi	mummyDigital8
+	
+91_09	91_09.tvd	91_09.c3d	91_09.amc	91_09.avi	DrunkWalk
+	
+91_10	91_10.tvd	91_10.c3d	91_10.amc	91_10.avi	SlowWalk
+	
+91_11	91_11.tvd	91_11.c3d	91_11.amc	91_11.avi	LavishWalk
+	
+91_12	91_12.tvd	91_12.c3d	91_12.amc	91_12.avi	TooCoolWalk
+	
+91_13	91_13.tvd	91_13.c3d	91_13.amc	91_13.avi	SadWalk
+	
+91_14	91_14.tvd	91_14.c3d	91_14.amc	91_14.avi	DepressedWalk
+	
+91_15	91_15.tvd	91_15.c3d	91_15.amc	91_15.avi	ClumsyWalk
+	
+91_16	91_16.tvd	91_16.c3d	91_16.amc	91_16.avi	Limp
+	
+91_17	91_17.tvd	91_17.c3d	91_17.amc	91_17.avi	QuickWalk
+	
+91_18	91_18.tvd	91_18.c3d	91_18.amc	91_18.avi	CarefulWalk LookingAround
+	
+91_19	91_19.tvd	91_19.c3d	91_19.amc	91_19.avi	March
+	
+91_20	91_20.tvd	91_20.c3d	91_20.amc	91_20.avi	ShyWalk
+	
+91_21	91_21.tvd	91_21.c3d	91_21.amc	91_21.avi	acheyWalk
+	
+91_22	91_22.tvd	91_22.c3d	91_22.amc	91_22.avi	CasualQuickWalk
+	
+91_23	91_23.tvd	91_23.c3d	91_23.amc	91_23.avi	CoolWalk
+	
+91_24	91_24.tvd	91_24.c3d	91_24.amc	91_24.avi	HurtLegWalk
+	
+91_25	91_25.tvd	91_25.c3d	91_25.amc	91_25.avi	DragBadLegWalk
+	
+91_26	91_26.tvd	91_26.c3d	91_26.amc	91_26.avi	HurtStomachWalk
+	
+91_27	91_27.tvd	91_27.c3d	91_27.amc	91_27.avi	SlowWalk
+	
+91_28	91_28.tvd	91_28.c3d	91_28.amc	91_28.avi	GhettoWalk
+	
+91_29	91_29.tvd	91_29.c3d	91_29.amc	91_29.avi	NormalWalk
+	
+91_30	91_30.tvd	91_30.c3d	91_30.amc	91_30.avi	SexyWalk
+	
+91_31	91_31.tvd	91_31.c3d	91_31.amc	91_31.avi	NormalWalk
+	
+91_32	91_32.tvd	91_32.c3d	91_32.amc	91_32.avi	ScaredWalk
+	
+91_33	91_33.tvd	91_33.c3d	91_33.amc	91_33.avi	MachoWalk
+	
+91_34	91_34.tvd	91_34.c3d	91_34.amc	91_34.avi	NormalWalk
+	
+91_35	91_35.tvd	91_35.c3d	91_35.amc	91_35.avi	TrafficWalk
+	
+91_36	91_36.tvd	91_36.c3d	91_36.amc	91_36.avi	WalkStraight
+	
+91_37	91_37.tvd	91_37.c3d	91_37.amc	91_37.avi	Forward
+	
+91_38	91_38.tvd	91_38.c3d	91_38.amc	91_38.avi	SmallForward
+	
+91_39	91_39.tvd	91_39.c3d	91_39.amc	91_39.avi	JumpForward
+	
+91_40	91_40.tvd	91_40.c3d	91_40.amc	91_40.avi	JumpForward
+	
+91_41	91_41.tvd	91_41.c3d	91_41.amc	91_41.avi	JumpForward
+	
+91_42	91_42.tvd	91_42.c3d	91_42.amc	91_42.avi	JumpForward
+	
+91_43	91_43.tvd	91_43.c3d	91_43.amc	91_43.avi	JumpSmallForward
+	
+91_44	91_44.tvd	91_44.c3d	91_44.amc	91_44.avi	JumpSmallForward
+	
+91_45	91_45.tvd	91_45.c3d	91_45.amc	91_45.avi	JumpForward
+	
+91_46	91_46.tvd	91_46.c3d	91_46.amc	91_46.avi	Jump Turn
+	
+91_47	91_47.tvd	91_47.c3d	91_47.amc	91_47.avi	Jump Turn
+	
+91_48	91_48.tvd	91_48.c3d	91_48.amc	91_48.avi	JumpTurn
+	
+91_49	91_49.tvd	91_49.c3d	91_49.amc	91_49.avi	Jump Turn
+	
+91_50	91_50.tvd	91_50.c3d	91_50.amc	91_50.avi	JumpTurn
+	
+91_51	91_51.tvd	91_51.c3d	91_51.amc	91_51.avi	FurtherJumpTurn
+	
+91_52	91_52.tvd	91_52.c3d	91_52.amc	91_52.avi	SmallJumpTurn
+	
+91_53	91_53.tvd	91_53.c3d	91_53.amc	91_53.avi	180 degree jump	
+91_54	91_54.tvd	91_54.c3d	91_54.amc	91_54.avi	180
+	
+91_55	91_55.tvd	91_55.c3d	91_55.amc	91_55.avi	180
+	
+91_56	91_56.tvd	91_56.c3d	91_56.amc	91_56.avi	90
+	
+91_57	91_57.tvd	91_57.c3d	91_57.amc	91_57.avi	WalkForward
+	
+91_58	91_58.tvd	91_58.c3d	91_58.amc	91_58.avi	270
+	
+91_59	91_59.tvd	91_59.c3d	91_59.amc	91_59.avi	360 smallStumble
+	
+91_60	91_60.tvd	91_60.c3d	91_60.amc	91_60.avi	360
+	
+91_61	91_61.tvd	91_61.c3d	91_61.amc	91_61.avi	360
+	
+91_62	91_62.tvd	91_62.c3d	91_62.amc	91_62.avi	walkFigure8
+	
+
+

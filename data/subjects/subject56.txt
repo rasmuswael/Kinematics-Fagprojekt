@@ -1,0 +1,13 @@
+
+			Subject #56 (vignettes - locomotion, upper-body motions (focus: motion transitions))
+
+56_01	56_01.tvd	56_01.c3d	56_01.amc	56_01.mpg	56_01.avi	walk around	
+56_02	56_02.tvd	56_02.c3d	56_02.amc	56_02.avi	vignettes - fists up, wipe window, yawn, stretch, angrily grab, smash against wall	
+56_03	56_03.tvd	56_03.c3d	56_03.amc	56_03.avi	vignettes - fists up, wipe window, yawn, stretch, angrily grab, smash against wall, lift open window, throw punches, skip	
+56_04	56_04.tvd	56_04.c3d	56_04.amc	56_04.avi	vignettes - fists up, wipe window, grab, lift open window, throw punches, yawn, stretch, walk, jump	
+56_05	56_05.tvd	56_05.c3d	56_05.amc	56_05.avi	vignettes - walk, drink water, run/jog, jump, wipe window, lift open window, throw punches, yawn, stretch	
+56_06	56_06.tvd	56_06.c3d	56_06.amc	56_06.avi	vignettes - throw punches, grab, skip, yawn, stretch, leap, lift open window, walk, jump/bound	
+56_07	56_07.tvd	56_07.c3d	56_07.amc	56_07.avi	vignettes - yawn, stretch, walk, run/jog, angrily grab, jump, skip, halt	
+56_08	56_08.tvd	56_08.c3d	56_08.amc	56_08.avi	vignettes - lift open window, smash against wall, hop, walk, run/jog, yawn, stretch	
+
+

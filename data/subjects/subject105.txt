@@ -1,0 +1,129 @@
+
+			Subject #105 (motion)
+
+105_01	105_01.tvd	105_01.c3d	105_01.amc	105_01.avi	WalkDigital8
+	
+105_02	105_02.tvd	105_02.c3d	105_02.amc	105_02.avi	WalkStraight
+	
+105_03	105_03.tvd	105_03.c3d	105_03.amc	105_03.avi	Walk8
+	
+105_04	105_04.tvd	105_04.c3d	105_04.amc	105_04.avi	Digital8
+	
+105_05	105_05.tvd	105_05.c3d	105_05.amc	105_05.avi	mummyWalk
+	
+105_06	105_06.tvd	105_06.c3d	105_06.amc	105_06.avi	MotorCyclePose
+	
+105_07	105_07.tvd	105_07.c3d	105_07.amc	105_07.avi	mummy8
+	
+105_08	105_08.tvd	105_08.c3d	105_08.amc	105_08.avi	mummyDigital8
+	
+105_09	105_09.tvd	105_09.c3d	105_09.amc	105_09.avi	DrunkWalk
+	
+105_10	105_10.tvd	105_10.c3d	105_10.amc	105_10.avi	SlowWalk
+	
+105_11	105_11.tvd	105_11.c3d	105_11.amc	105_11.avi	LavishWalk
+	
+105_12	105_12.tvd	105_12.c3d	105_12.amc	105_12.avi	TooCoolWalk
+	
+105_13	105_13.tvd	105_13.c3d	105_13.amc	105_13.avi	SadWalk
+	
+105_14	105_14.tvd	105_14.c3d	105_14.amc	105_14.avi	DepressedWalk
+	
+105_15	105_15.tvd	105_15.c3d	105_15.amc	105_15.avi	ClumsyWalk
+	
+105_16	105_16.tvd	105_16.c3d	105_16.amc	105_16.avi	Limp
+	
+105_17	105_17.tvd	105_17.c3d	105_17.amc	105_17.avi	QuickWalk
+	
+105_18	105_18.tvd	105_18.c3d	105_18.amc	105_18.avi	CarefulWalk LookingAround
+	
+105_19	105_19.tvd	105_19.c3d	105_19.amc	105_19.avi	March
+	
+105_20	105_20.tvd	105_20.c3d	105_20.amc	105_20.avi	ShyWalk
+	
+105_21	105_21.tvd	105_21.c3d	105_21.amc	105_21.avi	acheyWalk
+	
+105_22	105_22.tvd	105_22.c3d	105_22.amc	105_22.avi	CasualQuickWalk
+	
+105_23	105_23.tvd	105_23.c3d	105_23.amc	105_23.avi	CoolWalk
+	
+105_24	105_24.tvd	105_24.c3d	105_24.amc	105_24.avi	HurtLegWalk
+	
+105_25	105_25.tvd	105_25.c3d	105_25.amc	105_25.avi	DragBadLegWalk
+	
+105_26	105_26.tvd	105_26.c3d	105_26.amc	105_26.avi	HurtStomachWalk
+	
+105_27	105_27.tvd	105_27.c3d	105_27.amc	105_27.avi	SlowWalk
+	
+105_28	105_28.tvd	105_28.c3d	105_28.amc	105_28.avi	GhettoWalk
+	
+105_29	105_29.tvd	105_29.c3d	105_29.amc	105_29.avi	NormalWalk
+	
+105_30	105_30.tvd	105_30.c3d	105_30.amc	105_30.avi	SexyWalk
+	
+105_31	105_31.tvd	105_31.c3d	105_31.amc	105_31.avi	NormalWalk
+	
+105_32	105_32.tvd	105_32.c3d	105_32.amc	105_32.avi	ScaredWalk
+	
+105_33	105_33.tvd	105_33.c3d	105_33.amc	105_33.avi	MachoWalk
+	
+105_34	105_34.tvd	105_34.c3d	105_34.amc	105_34.avi	NormalWalk
+	
+105_35	105_35.tvd	105_35.c3d	105_35.amc	105_35.avi	TrafficWalk
+	
+105_36	105_36.tvd	105_36.c3d	105_36.amc	105_36.avi	WalkStraight
+	
+105_37	105_37.tvd	105_37.c3d	105_37.amc	105_37.avi	Forward
+	
+105_38	105_38.tvd	105_38.c3d	105_38.amc	105_38.avi	SmallForward
+	
+105_39	105_39.tvd	105_39.c3d	105_39.amc	105_39.avi	JumpForward
+	
+105_40	105_40.tvd	105_40.c3d	105_40.amc	105_40.avi	JumpForward
+	
+105_41	105_41.tvd	105_41.c3d	105_41.amc	105_41.avi	JumpForward
+	
+105_42	105_42.tvd	105_42.c3d	105_42.amc	105_42.avi	JumpForward
+	
+105_43	105_43.tvd	105_43.c3d	105_43.amc	105_43.avi	JumpSmallForward
+	
+105_44	105_44.tvd	105_44.c3d	105_44.amc	105_44.avi	JumpSmallForward
+	
+105_45	105_45.tvd	105_45.c3d	105_45.amc	105_45.avi	JumpForward
+	
+105_46	105_46.tvd	105_46.c3d	105_46.amc	105_46.avi	Jump Turn
+	
+105_47	105_47.tvd	105_47.c3d	105_47.amc	105_47.avi	Jump Turn
+	
+105_48	105_48.tvd	105_48.c3d	105_48.amc	105_48.avi	JumpTurn
+	
+105_49	105_49.tvd	105_49.c3d	105_49.amc	105_49.avi	Jump Turn
+	
+105_50	105_50.tvd	105_50.c3d	105_50.amc	105_50.avi	JumpTurn
+	
+105_51	105_51.tvd	105_51.c3d	105_51.amc	105_51.avi	FurtherJumpTurn
+	
+105_52	105_52.tvd	105_52.c3d	105_52.amc	105_52.avi	SmallJumpTurn
+	
+105_53	105_53.tvd	105_53.c3d	105_53.amc	105_53.avi	180
+	
+105_54	105_54.tvd	105_54.c3d	105_54.amc	105_54.avi	180
+	
+105_55	105_55.tvd	105_55.c3d	105_55.amc	105_55.avi	180
+	
+105_56	105_56.tvd	105_56.c3d	105_56.amc	105_56.avi	90
+	
+105_57	105_57.tvd	105_57.c3d	105_57.amc	105_57.avi	WalkForward
+	
+105_58	105_58.tvd	105_58.c3d	105_58.amc	105_58.avi	270
+	
+105_59	105_59.tvd	105_59.c3d	105_59.amc	105_59.avi	360 smallStumble
+	
+105_60	105_60.tvd	105_60.c3d	105_60.amc	105_60.avi	360
+	
+105_61	105_61.tvd	105_61.c3d	105_61.amc	105_61.avi	360
+	
+105_62	105_62.tvd	105_62.c3d	105_62.amc	105_62.avi	walkFigure8
+	
+
+

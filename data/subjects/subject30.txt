@@ -1,0 +1,28 @@
+
+			Subject #30 (recreation, nursery rhymes, animal behaviors (pantomime - human subject))
+
+30_01	30_01.tvd	30_01.c3d	30_01.amc	30_01.mpg	30_01.avi	basketball signals	
+30_02	30_02.tvd	30_02.c3d	30_02.amc	30_02.mpg	30_02.avi	nursery rhyme - "I'm a little teapot..."	
+30_03	30_03.tvd	30_03.c3d	30_03.amc	30_03.mpg	30_03.avi	Alaskan vacation	
+30_04	30_04.tvd	30_04.c3d	30_04.amc	30_04.mpg	30_04.avi	Alaskan vacation	
+30_05	30_05.tvd	30_05.c3d	30_05.amc	30_05.mpg	30_05.avi	nursery rhyme - Cock Robin	
+30_06	30_06.tvd	30_06.c3d	30_06.amc	30_06.mpg	30_06.avi	nursery rhyme - Cock Robin	
+30_07	30_07.tvd	30_07.c3d	30_07.amc	30_07.mpg	30_07.avi	basketball signals	
+30_08	30_08.tvd	30_08.c3d	30_08.amc	30_08.mpg	30_08.avi	nursery rhyme - "I'm a little teapot..."	
+30_09	30_09.tvd	30_09.c3d	30_09.amc	30_09.mpg	30_09.avi	Alaskan vacation	
+30_10	30_10.tvd	30_10.c3d	30_10.amc	30_10.mpg	30_10.avi	nursery rhyme - Cock Robin	
+30_11	30_11.tvd	30_11.c3d	30_11.amc	30_11.mpg	30_11.avi	Alaskan vacation	
+30_12	30_12.tvd	30_12.c3d	30_12.amc	30_12.mpg	30_12.avi	Alaskan vacation	
+30_13	30_13.tvd	30_13.c3d	30_13.amc	30_13.mpg	30_13.avi	prairie dog (human subject)	
+30_14	30_14.tvd	30_14.c3d	30_14.amc	30_14.mpg	30_14.avi	whale (human subject)	
+30_15	30_15.tvd	30_15.c3d	30_15.amc	30_15.mpg	30_15.avi	bear (human subject)	
+30_16	30_16.tvd	30_16.c3d	30_16.amc	30_16.mpg	30_16.avi	dog (human subject)	
+30_17	30_17.tvd	30_17.c3d	30_17.amc	30_17.mpg	30_17.avi	cat (human subject)	
+30_18	30_18.tvd	30_18.c3d	30_18.amc	30_18.mpg	30_18.avi	elephant (human subject)	
+30_19	30_19.tvd	30_19.c3d	30_19.amc	30_19.mpg	30_19.avi	mouse (human subject)	
+30_20	30_20.tvd	30_20.c3d	30_20.amc	30_20.mpg	30_20.avi	chicken (human subject)	
+30_21	30_21.tvd	30_21.c3d	30_21.amc	30_21.mpg	30_21.avi	snake (human subject)	
+30_22	30_22.tvd	30_22.c3d	30_22.amc	30_22.mpg	30_22.avi	Tyrannosaurus rex (human subject)	
+30_23	30_23.tvd	30_23.c3d	30_23.amc	30_23.mpg	30_23.avi	monkey (human subject)	
+
+

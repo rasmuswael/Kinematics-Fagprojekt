@@ -1,0 +1,19 @@
+
+			Subject #39 (climb, swing, hang on playground equipment)
+
+39_01	39_01.tvd	39_01.c3d	39_01.amc	39_01.mpg	39_01.avi	walk	
+39_02	39_02.tvd	39_02.c3d	39_02.amc	39_02.mpg	39_02.avi	walk	
+39_03	39_03.tvd	39_03.c3d	39_03.amc	39_03.mpg	39_03.avi	walk	
+39_04	39_04.tvd	39_04.c3d	39_04.amc	39_04.mpg	39_04.avi	walk	
+39_05	39_05.tvd	39_05.c3d	39_05.amc	39_05.mpg	39_05.avi	walk	
+39_06	39_06.tvd	39_06.c3d	39_06.amc	39_06.mpg	39_06.avi	walk	
+39_07	39_07.tvd	39_07.c3d	39_07.amc	39_07.mpg	39_07.avi	walk	
+39_08	39_08.tvd	39_08.c3d	39_08.amc	39_08.mpg	39_08.avi	walk	
+39_09	39_09.tvd	39_09.c3d	39_09.amc	39_09.mpg	39_09.avi	walk	
+39_10	39_10.tvd	39_10.c3d	39_10.amc	39_10.mpg	39_10.avi	walk	
+39_11	39_11.tvd	39_11.c3d	39_11.amc	39_11.mpg	39_11.avi	walk forward, turn around, walk back	
+39_12	39_12.tvd	39_12.c3d	39_12.amc	39_12.mpg	39_12.avi	walk	
+39_13	39_13.tvd	39_13.c3d	39_13.amc	39_13.mpg	39_13.avi	walk	
+39_14	39_14.tvd	39_14.c3d	39_14.amc	39_14.mpg	39_14.avi	walk	
+
+

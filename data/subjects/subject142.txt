@@ -1,0 +1,27 @@
+
+			Subject #142 (Stylized Walks)
+
+142_01	142_01.c3d	142_01.amc	142_01.avi	Childish	
+142_02	142_02.c3d	142_02.amc	142_02.avi	Clumsy	
+142_03	142_03.c3d	142_03.amc	142_03.avi	Clumsy	
+142_04	142_04.c3d	142_04.amc	142_04.avi	Cool	
+142_05	142_05.c3d	142_05.amc	142_05.avi	Depressed	
+142_06	142_06.c3d	142_06.amc	142_06.avi	Elated	
+142_07	142_07.c3d	142_07.amc	142_07.avi	Elderlyman	
+142_08	142_08.c3d	142_08.amc	142_08.avi	Happy	
+142_09	142_09.c3d	142_09.amc	142_09.avi	Joy	
+142_10	142_10.c3d	142_10.amc	142_10.avi	Lavish	
+142_11	142_11.c3d	142_11.amc	142_11.avi	Marching	
+142_12	142_12.c3d	142_12.amc	142_12.avi	Painfulleftknee	
+142_13	142_13.c3d	142_13.amc	142_13.avi	Relaxed	
+142_14	142_14.c3d	142_14.amc	142_14.avi	Rushed	
+142_15	142_15.c3d	142_15.amc	142_15.avi	Sad	
+142_16	142_16.c3d	142_16.amc	142_16.avi	Scared	
+142_17	142_17.c3d	142_17.amc	142_17.avi	Scared	
+142_18	142_18.c3d	142_18.amc	142_18.avi	Sexy	
+142_19	142_19.c3d	142_19.amc	142_19.avi	Shy	
+142_20	142_20.c3d	142_20.amc	142_20.avi	Singing in the rain jump	
+142_21	142_21.c3d	142_21.amc	142_21.avi	Singing in the rain jump	
+142_22	142_22.c3d	142_22.amc	142_22.avi	Sneaky	
+
+

@@ -1,0 +1,55 @@
+
+			Subject #62 (construction work, random motions)
+
+62_01	62_01.tvd	62_01.c3d	62_01.amc	62_01.mpg	62_01.avi	bolt loosening, wrench
+	
+62_02	62_02.tvd	62_02.c3d	62_02.amc	62_02.mpg	62_02.avi	bolt tightening, wrench
+	
+62_03	62_03.tvd	62_03.c3d	62_03.amc	62_03.mpg	62_03.avi	sawing, hand saw
+	
+62_04	62_04.tvd	62_04.c3d	62_04.amc	62_04.mpg	62_04.avi	screwing
+	
+62_05	62_05.tvd	62_05.c3d	62_05.amc	62_05.mpg	62_05.avi	screwing
+	
+62_06	62_06.tvd	62_06.c3d	62_06.amc	62_06.mpg	62_06.avi	unscrewing
+	
+62_07	62_07.tvd	62_07.c3d	62_07.amc	62_07.mpg	62_07.avi	hammering a nail
+	
+62_08	62_08.tvd	62_08.c3d	62_08.amc	62_08.mpg	62_08.avi	hammering a nail
+	
+62_09	62_09.tvd	62_09.c3d	62_09.amc	62_09.mpg	62_09.avi	pulling a nail
+	
+62_10	62_10.tvd	62_10.c3d	62_10.amc	62_10.mpg	62_10.avi	hammering sequence
+	
+62_11	62_11.tvd	62_11.c3d	62_11.amc	62_11.mpg	62_11.avi	cleaning up
+	
+62_12	62_12.tvd	62_12.c3d	62_12.amc	62_12.mpg	62_12.avi	hard days drink
+	
+62_13	62_13.tvd	62_13.c3d	62_13.amc	62_13.mpg	62_13.avi	moving a stool
+	
+62_14	62_14.tvd	62_14.c3d	62_14.amc	62_14.mpg	62_14.avi	opening umbrella
+	
+62_15	62_15.tvd	62_15.c3d	62_15.amc	62_15.mpg	62_15.avi	opening umbrella
+	
+62_16	62_16.tvd	62_16.c3d	62_16.amc	62_16.mpg	62_16.avi	closing umbrella
+	
+62_17	62_17.tvd	62_17.c3d	62_17.amc	62_17.mpg	62_17.avi	opening and closing umbrella
+	
+62_18	62_18.tvd	62_18.c3d	62_18.amc	62_18.mpg	62_18.avi	closing a box
+	
+62_19	62_19.tvd	62_19.c3d	62_19.amc	62_19.mpg	62_19.avi	opening a box
+	
+62_20	62_20.tvd	62_20.c3d	62_20.amc	62_20.mpg	62_20.avi	closing, moving and opening a box
+	
+62_21	62_21.tvd	62_21.c3d	62_21.amc	62_21.mpg	62_21.avi	coiling a rope
+	
+62_22	62_22.tvd	62_22.c3d	62_22.amc	62_22.mpg	62_22.avi	dynamic calibration
+	
+62_23	62_23.tvd	62_23.c3d	62_23.amc	62_23.mpg	62_23.avi	bolt tightening
+	
+62_24	62_24.tvd	62_24.c3d	62_24.amc	62_24.mpg	62_24.avi	bolt tightening, with putting bolt in
+	
+62_25	62_25.tvd	62_25.c3d	62_25.amc	62_25.mpg	62_25.avi	bolt loosening, wrench
+	
+
+

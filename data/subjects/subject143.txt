@@ -1,0 +1,47 @@
+
+			Subject #143 (General Subject Capture)
+
+143_01	143_01.tvd	143_01.c3d	143_01.amc	143_01.avi	Run	
+143_02	143_02.tvd	143_02.c3d	143_02.amc	143_02.avi	Run to Stop	
+143_03	143_03.tvd	143_03.c3d	143_03.amc	143_03.avi	Start to Run	
+143_04	143_04.tvd	143_04.c3d	143_04.amc	143_04.avi	Run Figure 8	
+143_05	143_05.tvd	143_05.c3d	143_05.amc	143_05.avi	Jumping Distances	
+143_06	143_06.tvd	143_06.c3d	143_06.amc	143_06.avi	Jumping Heights	
+143_07	143_07.tvd	143_07.c3d	143_07.amc	143_07.avi	Jumping Sideways	
+143_08	143_08.tvd	143_08.c3d	143_08.amc	143_08.avi	Jumping Twists	
+143_09	143_09.tvd	143_09.c3d	143_09.amc	143_09.avi	Jumping Twists	
+143_10	143_10.tvd	143_10.c3d	143_10.amc	143_10.avi	Walk And Pick up Tool Box	
+143_11	143_11.tvd	143_11.c3d	143_11.amc	143_11.avi	Walk And Pick up Box	
+143_12	143_12.tvd	143_12.c3d	143_12.amc	143_12.avi	Walk And Pick up Toolbox	
+143_13	143_13.tvd	143_13.c3d	143_13.amc	143_13.avi	Walk and Pick up Laundry Basket	
+143_14	143_14.tvd	143_14.c3d	143_14.amc	143_14.avi	Walk And Step Over	
+143_15	143_15.tvd	143_15.c3d	143_15.amc	143_15.avi	Walk And Step Over	
+143_16	143_16.tvd	143_16.c3d	143_16.amc	143_16.avi	Walk And Step Over	
+143_17	143_17.tvd	143_17.c3d	143_17.amc	143_17.avi	Walk Up Stairs And Over	
+143_18	143_18.tvd	143_18.c3d	143_18.amc	143_18.avi	Sit Down And Get Up	
+143_19	143_19.tvd	143_19.c3d	143_19.amc	143_19.avi	Sit On Stool And Get Up	
+143_20	143_20.tvd	143_20.c3d	143_20.amc	143_20.avi	Catch And Throw	
+143_21	143_21.tvd	143_21.c3d	143_21.amc	143_21.avi	Range Of Motion	
+143_22	143_22.tvd	143_22.c3d	143_22.amc	143_22.avi	Catch And Throw Football	
+143_23	143_23.tvd	143_23.c3d	143_23.amc	143_23.avi	Punching	
+143_24	143_24.tvd	143_24.c3d	143_24.amc	143_24.avi	Kicking	
+143_25	143_25.tvd	143_25.c3d	143_25.amc	143_25.avi	Waving	
+143_26	143_26.tvd	143_26.c3d	143_26.amc	143_26.avi	Washing Window	
+143_27	143_27.tvd	143_27.c3d	143_27.amc	143_27.avi	Washing Window	
+143_28	143_28.tvd	143_28.c3d	143_28.amc	143_28.avi	Sweeping, Push Broom	
+143_29	143_29.tvd	143_29.c3d	143_29.amc	143_29.avi	Pacing	
+143_30	143_30.tvd	143_30.c3d	143_30.amc	143_30.avi	Stretch And Yawn	
+143_31	143_31.tvd	143_31.c3d	143_31.amc	143_31.avi	Hopscotch	
+143_32	143_32.tvd	143_32.c3d	143_32.amc	143_32.avi	Walk	
+143_33	143_33.tvd	143_33.c3d	143_33.amc	143_33.avi	Peek A Boo	
+143_34	143_34.tvd	143_34.c3d	143_34.amc	143_34.avi	Chicken Dance	
+143_35	143_35.tvd	143_35.c3d	143_35.amc	143_35.avi	Macarena Dance	
+143_36	143_36.tvd	143_36.c3d	143_36.amc	143_36.avi	Airplane	
+143_37	143_37.tvd	143_37.c3d	143_37.amc	143_37.avi	Climb Up And Down Ladder	
+143_38	143_38.tvd	143_38.c3d	143_38.amc	143_38.avi	Walk Digital 8	
+143_39	143_39.tvd	143_39.c3d	143_39.amc	143_39.avi	Walk Backwards	
+143_40	143_40.tvd	143_40.c3d	143_40.amc	143_40.avi	Walk Sideways	
+143_41	143_41.tvd	143_41.c3d	143_41.amc	143_41.avi	Sneak	
+143_42	143_42.tvd	143_42.c3d	143_42.amc	143_42.avi	Run	
+
+

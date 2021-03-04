@@ -1,0 +1,35 @@
+
+			Subject #60 (salsa)
+
+60_01	60_01.tvd	60_01.c3d	60_01.amc	60_01.avi	salsa dance
+	
+60_02	60_02.tvd	60_02.c3d	60_02.amc	60_02.avi	salsa dance
+	
+60_03	60_03.tvd	60_03.c3d	60_03.amc	60_03.avi	salsa dance
+	
+60_04	60_04.tvd	60_04.c3d	60_04.amc	60_04.avi	salsa dance
+	
+60_05	60_05.tvd	60_05.c3d	60_05.amc	60_05.avi	salsa dance
+	
+60_06	60_06.tvd	60_06.c3d	60_06.amc	60_06.avi	salsa dance
+	
+60_07	60_07.tvd	60_07.c3d	60_07.amc	60_07.avi	salsa dance
+	
+60_08	60_08.tvd	60_08.c3d	60_08.amc	60_08.avi	salsa dance
+	
+60_09	60_09.tvd	60_09.c3d	60_09.amc	60_09.avi	salsa dance
+	
+60_10	60_10.tvd	60_10.c3d	60_10.amc	60_10.avi	salsa dance
+	
+60_11	60_11.tvd	60_11.c3d	60_11.amc	60_11.avi	salsa dance
+	
+60_12	60_12.tvd	60_12.c3d	60_12.amc	60_12.avi	salsa dance
+	
+60_13	60_13.tvd	60_13.c3d	60_13.amc	60_13.avi	salsa dance
+	
+60_14	60_14.tvd	60_14.c3d	60_14.amc	60_14.avi	salsa dance
+	
+60_15	60_15.tvd	60_15.c3d	60_15.amc	60_15.avi	salsa dance
+	
+
+

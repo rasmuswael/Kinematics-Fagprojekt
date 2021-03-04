@@ -1,0 +1,6 @@
+
+			Subject #47 (walk)
+
+47_01	47_01.tvd	47_01.c3d	47_01.amc	47_01.avi	walk forward, turn around, walk back	
+
+

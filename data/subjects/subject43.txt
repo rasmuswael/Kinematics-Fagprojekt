@@ -1,0 +1,8 @@
+
+			Subject #43 (swing on playground equipment)
+
+43_01	43_01.tvd	43_01.c3d	43_01.amc	43_01.avi	walk	
+43_02	43_02.tvd	43_02.c3d	43_02.amc	43_02.mpg	43_02.avi	playground - grip bar, swing body	
+43_03	43_03.tvd	43_03.c3d	43_03.amc	43_03.mpg	43_03.avi	playground - grip bar, swing body	
+
+

@@ -1,0 +1,19 @@
+
+			Subject #131 (Michael Jackson Styled Motions)
+
+131_01	131_01.c3d	131_01.amc	131_01.avi	Start Walk Stop	
+131_02	131_02.c3d	131_02.amc	131_02.avi	Start Walk Stop	
+131_03	131_03.c3d	131_03.amc	131_03.avi	Start Hop Stop	
+131_04	131_04.c3d	131_04.amc	131_04.avi	Start Hop Stop	
+131_05	131_05.c3d	131_05.amc	131_05.avi	Start Duck Underneath Stop	
+131_06	131_06.c3d	131_06.amc	131_06.avi	Start Duck Underneath Stop	
+131_07	131_07.c3d	131_07.amc	131_07.avi	Jump Stop	
+131_08	131_08.c3d	131_08.amc	131_08.avi	Jump Stop	
+131_09	131_09.c3d	131_09.amc	131_09.avi	Start Walk Left	
+131_10	131_10.c3d	131_10.amc	131_10.avi	Start Walk Left	
+131_11	131_11.c3d	131_11.amc	131_11.avi	Start Walk Left	
+131_12	131_12.c3d	131_12.amc	131_12.avi	Start Walk Right	
+131_13	131_13.c3d	131_13.amc	131_13.avi	Start Walk Right	
+131_14	131_14.c3d	131_14.amc	131_14.avi	Start Walk Right	
+
+

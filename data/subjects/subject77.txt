@@ -1,0 +1,39 @@
+
+			Subject #77 (careful actions)
+
+77_01	77_01.tvd	77_01.c3d	77_01.amc	77_01.avi	looking around	
+77_02	77_02.tvd	77_02.c3d	77_02.amc	77_02.avi	standing	
+77_03	77_03.tvd	77_03.c3d	77_03.amc	77_03.avi	ready stance	
+77_04	77_04.tvd	77_04.c3d	77_04.amc	77_04.avi	Looking around	
+77_05	77_05.tvd	77_05.c3d	77_05.amc	77_05.avi	look around with flashlight	
+77_06	77_06.tvd	77_06.c3d	77_06.amc	77_06.avi	searching ground	
+77_07	77_07.tvd	77_07.c3d	77_07.amc	77_07.avi	poking ground	
+77_08	77_08.tvd	77_08.c3d	77_08.amc	77_08.avi	investigating thing on ground with two hands	
+77_09	77_09.tvd	77_09.c3d	77_09.amc	77_09.avi	duck to avoid flying object	
+77_10	77_10.tvd	77_10.c3d	77_10.amc	77_10.avi	careful run	
+77_11	77_11.tvd	77_11.c3d	77_11.amc	77_11.avi	careful run	
+77_12	77_12.tvd	77_12.c3d	77_12.amc	77_12.avi	careful run in circle	
+77_13	77_13.tvd	77_13.c3d	77_13.amc	77_13.avi	careful run in figure eight	
+77_14	77_14.tvd	77_14.c3d	77_14.amc	77_14.avi	careful creeping	
+77_15	77_15.tvd	77_15.c3d	77_15.amc	77_15.avi	careful creeping	
+77_16	77_16.tvd	77_16.c3d	77_16.amc	77_16.avi	laying down, getting up, careful ready pose	
+77_17	77_17.tvd	77_17.c3d	77_17.amc	77_17.avi	laying down, getting up, careful ready pose	
+77_18	77_18.tvd	77_18.c3d	77_18.amc	77_18.avi	laying down on back, getting up, careful ready pose	
+77_19	77_19.tvd	77_19.c3d	77_19.amc	77_19.avi	limping, hurt right leg	
+77_20	77_20.tvd	77_20.c3d	77_20.amc	77_20.avi	limping, hurt right leg	
+77_21	77_21.tvd	77_21.c3d	77_21.amc	77_21.avi	stretching	
+77_22	77_22.tvd	77_22.c3d	77_22.amc	77_22.avi	limping, hurt right leg	
+77_23	77_23.tvd	77_23.c3d	77_23.amc	77_23.avi	limping, hurt right leg	
+77_24	77_24.tvd	77_24.c3d	77_24.amc	77_24.avi	limping, hurt right leg	
+77_25	77_25.tvd	77_25.c3d	77_25.amc	77_25.avi	careful walk and search	
+77_26	77_26.tvd	77_26.c3d	77_26.amc	77_26.avi	careful walk and search	
+77_27	77_27.tvd	77_27.c3d	77_27.amc	77_27.avi	careful walk and search	
+77_28	77_28.tvd	77_28.c3d	77_28.amc	77_28.avi	careful walk	
+77_29	77_29.tvd	77_29.c3d	77_29.amc	77_29.avi	creeping walk	
+77_30	77_30.tvd	77_30.c3d	77_30.amc	77_30.avi	creeping walk	
+77_31	77_31.tvd	77_31.c3d	77_31.amc	77_31.avi	silent walk	
+77_32	77_32.tvd	77_32.c3d	77_32.amc	77_32.avi	creeping walk	
+77_33	77_33.tvd	77_33.c3d	77_33.amc	77_33.avi	creeping with limp	
+77_34	77_34.tvd	77_34.c3d	77_34.amc	77_34.avi	creep and pause, repeat	
+
+

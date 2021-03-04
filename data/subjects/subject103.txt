@@ -1,0 +1,21 @@
+
+			Subject #103 (Charelston Dancing)
+
+103_01	103_01.tvd	103_01.c3d	103_01.amc	103_01.avi	
+	
+103_02	103_02.tvd	103_02.c3d	103_02.amc	103_02.avi	rangeOfMotion_01
+	
+103_03	103_03.tvd	103_03.c3d	103_03.amc	103_03.avi	charleston_01
+	
+103_04	103_04.tvd	103_04.c3d	103_04.amc	103_04.avi	charleston_side_by_side_female
+	
+103_05	103_05.tvd	103_05.c3d	103_05.amc	103_05.avi	charleston_side_by_side_male
+	
+103_06	103_06.tvd	103_06.c3d	103_06.amc	103_06.avi	lindyHop2
+	
+103_07	103_07.tvd	103_07.c3d	103_07.amc	103_07.avi	Casual Walk
+	
+103_08	103_08.tvd	103_08.c3d	103_08.amc	103_08.avi	xtra fancY charleston
+	
+
+

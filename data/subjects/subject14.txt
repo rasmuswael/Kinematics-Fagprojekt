@@ -1,0 +1,42 @@
+
+			Subject #14 (various everyday behaviors)
+
+14_01	14_01.tvd	14_01.c3d	14_01.amc	14_01.mpg	14_01.avi	boxing	
+14_02	14_02.tvd	14_02.c3d	14_02.amc	14_02.mpg	14_02.avi	boxing	
+14_03	14_03.tvd	14_03.c3d	14_03.amc	14_03.mpg	14_03.avi	boxing	
+14_04	14_04.tvd	14_04.c3d	14_04.amc	14_04.mpg	14_04.avi	drink soda, screw on bottlecap	
+14_05	14_05.tvd	14_05.c3d	14_05.amc	14_05.mpg	14_05.avi	unscrew bottlecap, drink soda	
+14_06	14_06.tvd	14_06.c3d	14_06.amc	14_06.mpg	14_06.avi	jumping jacks, jog, squats, side twists, stretches	
+14_07	14_07.tvd	14_07.c3d	14_07.amc	14_07.mpg	14_07.avi	jump up to grab, reach for, tiptoe	
+14_08	14_08.tvd	14_08.c3d	14_08.amc	14_08.mpg	14_08.avi	jump up to grab, reach for, tiptoe	
+14_09	14_09.tvd	14_09.c3d	14_09.amc	14_09.mpg	14_09.avi	jump up to grab, reach for, tiptoe	
+14_10	14_10.tvd	14_10.c3d	14_10.amc	14_10.mpg	14_10.avi	wash windows	
+14_11	14_11.tvd	14_11.c3d	14_11.amc	14_11.mpg	14_11.avi	wash windows	
+14_12	14_12.tvd	14_12.c3d	14_12.amc	14_12.mpg	14_12.avi	wash windows	
+14_13	14_13.tvd	14_13.c3d	14_13.amc	14_13.mpg	14_13.avi	mop floor	
+14_14	14_14.tvd	14_14.c3d	14_14.amc	14_14.mpg	14_14.avi	jumping jacks, jog, squats, side twists, stretches	
+14_15	14_15.tvd	14_15.c3d	14_15.amc	14_15.mpg	14_15.avi	mop floor	
+14_16	14_16.tvd	14_16.c3d	14_16.amc	14_16.mpg	14_16.avi	sweep floor	
+14_17	14_17.tvd	14_17.c3d	14_17.amc	14_17.mpg	14_17.avi	laugh	
+14_18	14_18.tvd	14_18.c3d	14_18.amc	14_18.mpg	14_18.avi	laugh	
+14_19	14_19.tvd	14_19.c3d	14_19.amc	14_19.mpg	14_19.avi	laugh	
+14_20	14_20.tvd	14_20.c3d	14_20.amc	14_20.mpg	14_20.avi	jumping jacks, side twists, reach up, bend over	
+14_21	14_21.tvd	14_21.c3d	14_21.amc	14_21.mpg	14_21.avi	climb 3 steps	
+14_22	14_22.tvd	14_22.c3d	14_22.amc	14_22.mpg	14_22.avi	climb 3 steps	
+14_23	14_23.tvd	14_23.c3d	14_23.amc	14_23.mpg	14_23.avi	climb 3 steps	
+14_24	14_24.tvd	14_24.c3d	14_24.amc	14_24.mpg	14_24.avi	direct traffic, wave, point	
+14_25	14_25.tvd	14_25.c3d	14_25.amc	14_25.mpg	14_25.avi	direct traffic, wave, point	
+14_26	14_26.tvd	14_26.c3d	14_26.amc	14_26.mpg	14_26.avi	direct traffic, wave, point	
+14_27	14_27.tvd	14_27.c3d	14_27.amc	14_27.mpg	14_27.avi	sit on high stool, stand up	
+14_28	14_28.tvd	14_28.c3d	14_28.amc	14_28.mpg	14_28.avi	sit on high stool, stand up	
+14_29	14_29.tvd	14_29.c3d	14_29.amc	14_29.mpg	14_29.avi	sit on stepstool, stand up, swing legs	
+14_30	14_30.tvd	14_30.c3d	14_30.amc	14_30.mpg	14_30.avi	sit on stepstool, ankle on other knee, hand on chin	
+14_31	14_31.tvd	14_31.c3d	14_31.amc	14_31.mpg	14_31.avi	sit on stepstool, stand up	
+14_32	14_32.tvd	14_32.c3d	14_32.amc	14_32.mpg	14_32.avi	sit on stepstool, stand up	
+14_33	14_33.tvd	14_33.c3d	14_33.amc	14_33.mpg	14_33.avi	climb ladder	
+14_34	14_34.tvd	14_34.c3d	14_34.amc	14_34.mpg	14_34.avi	climb ladder	
+14_35	14_35.tvd	14_35.c3d	14_35.amc	14_35.mpg	14_35.avi	climb ladder	
+14_36	14_36.tvd	14_36.c3d	14_36.amc	14_36.mpg	14_36.avi	sit on stepstool, stand up	
+14_37	14_37.tvd	14_37.c3d	14_37.amc	14_37.mpg	14_37.avi	drink soda	
+
+

@@ -1,0 +1,73 @@
+
+			Subject #106 (Female General Subject)
+
+106_01	106_01.tvd	106_01.c3d	106_01.amc	clean
+	
+106_02	106_02.tvd	106_02.c3d	106_02.amc	clean
+	
+106_03	106_03.tvd	106_03.c3d	106_03.amc	clean
+	
+106_04	106_04.tvd	106_04.c3d	106_04.amc	clean
+	
+106_05	106_05.tvd	106_05.c3d	106_05.amc	clean
+	
+106_06	106_06.tvd	106_06.c3d	106_06.amc	clean
+	
+106_07	106_07.tvd	106_07.c3d	106_07.amc	clean
+	
+106_08	106_08.tvd	106_08.c3d	106_08.amc	clean
+	
+106_09	106_09.tvd	106_09.c3d	106_09.amc	clean
+	
+106_10	106_10.tvd	106_10.c3d	106_10.amc	clean
+	
+106_11	106_11.tvd	106_11.c3d	106_11.amc	clean
+	
+106_12	106_12.tvd	106_12.c3d	106_12.amc	clean
+	
+106_13	106_13.tvd	106_13.c3d	106_13.amc	clean
+	
+106_14	106_14.tvd	106_14.c3d	106_14.amc	clean
+	
+106_15	106_15.tvd	106_15.c3d	106_15.amc	
+	
+106_16	106_16.tvd	106_16.c3d	106_16.amc	clean
+	
+106_17	106_17.tvd	106_17.c3d	106_17.amc	clean
+	
+106_18	106_18.tvd	106_18.c3d	106_18.amc	clean
+	
+106_19	106_19.tvd	106_19.c3d	106_19.amc	clean
+	
+106_20	106_20.tvd	106_20.c3d	106_20.amc	clean
+	
+106_21	106_21.tvd	106_21.c3d	106_21.amc	bad AMC
+	
+106_22	106_22.tvd	106_22.c3d	106_22.amc	clean
+	
+106_23	106_23.tvd	106_23.c3d	106_23.amc	clean
+	
+106_24	106_24.tvd	106_24.c3d	106_24.amc	clean
+	
+106_25	106_25.tvd	106_25.c3d	106_25.amc	clean
+	
+106_26	106_26.tvd	106_26.c3d	106_26.amc	clean
+	
+106_27	106_27.tvd	106_27.c3d	106_27.amc	clean
+	
+106_28	106_28.tvd	106_28.c3d	106_28.amc	clean
+	
+106_29	106_29.tvd	106_29.c3d	106_29.amc	clean
+	
+106_30	106_30.tvd	106_30.c3d	106_30.amc	clean
+	
+106_31	106_31.tvd	106_31.c3d	106_31.amc	clean
+	
+106_32	106_32.tvd	106_32.c3d	106_32.amc	clean
+	
+106_33	106_33.tvd	106_33.c3d	106_33.amc	clean
+	
+106_34	106_34.tvd	106_34.c3d	106_34.amc	clean
+	
+
+

@@ -1,0 +1,23 @@
+
+			Subject #81 (pushing a box; jumping off a ledge; walks)
+
+81_01	81_01.tvd	81_01.amc	81_01.avi	fix hair and walk forward	
+81_02	81_02.tvd	81_02.amc	81_02.avi	walk forward	
+81_03	81_03.tvd	81_03.amc	81_03.avi	walk	
+81_04	81_04.tvd	81_04.amc	81_04.avi	walk at a brisk pace	
+81_05	81_05.tvd	81_05.amc	81_05.avi	push heavy object	
+81_06	81_06.tvd	81_06.amc	81_06.avi	push heavy box	
+81_07	81_07.tvd	81_07.amc	81_07.avi	pull heavy object	
+81_08	81_08.tvd	81_08.amc	81_08.avi	drag heavy object	
+81_09	81_09.tvd	81_09.amc	81_09.avi	drag heavy object	
+81_10	81_10.tvd	81_10.amc	81_10.avi	push object that is high in air	
+81_11	81_11.tvd	81_11.amc	81_11.avi	push object that is high in air	
+81_12	81_12.tvd	81_12.amc	81_12.avi	jump backwards off ledge	
+81_13	81_13.tvd	81_13.amc	81_13.avi	jump backwards off ledge	
+81_14	81_14.tvd	81_14.amc	81_14.avi	climb backwards off ledge	
+81_15	81_15.tvd	81_15.amc	81_15.avi	climb backwards off ledge	
+81_16	81_16.tvd	81_16.amc	81_16.avi		
+81_17	81_17.tvd	81_17.amc	81_17.avi	walk forward	
+81_18	81_18.tvd	81_18.amc	81_18.avi	adjust hair walk forward	
+
+

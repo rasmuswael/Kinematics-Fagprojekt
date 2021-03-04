@@ -1,0 +1,61 @@
+
+			Subject #132 (Varying Weird Walks)
+
+132_01	132_01.c3d	132_01.amc	132_01.avi	Walk With Arms Out,  balancing	
+132_02	132_02.c3d	132_02.amc	132_02.avi	Walk With Arms Out,  balancing	
+132_03	132_03.c3d	132_03.amc	132_03.avi	Walk With Arms Out,  balancing	
+132_04	132_04.c3d	132_04.amc	132_04.avi	Walk With Arms Out,  balancing	
+132_05	132_05.c3d	132_05.amc	132_05.avi	Walk With Arms Out,  balancing	
+132_06	132_06.c3d	132_06.amc	132_06.avi	Walk With Arms Out,  balancing	
+132_07	132_07.c3d	132_07.amc	132_07.avi	Walk With Arms Out,  balancing	
+132_08	132_08.c3d	132_08.amc	132_08.avi	Walk With Arms Out,  balancing	
+132_09	132_09.c3d	132_09.amc	132_09.avi	Walk With Arms Out,  balancing	
+132_10	132_10.c3d	132_10.amc	132_10.avi	Walk With Arms Out,  balancing	
+132_11	132_11.c3d	132_11.amc	132_11.avi	Walk With Arms Out,  balancing	
+132_12	132_12.c3d	132_12.amc	132_12.avi	Walk With Arms Out,  balancing	
+132_13	132_13.c3d	132_13.amc	132_13.avi	Walk Backwards	
+132_14	132_14.c3d	132_14.amc	132_14.avi	Walk Duck Footed	
+132_15	132_15.c3d	132_15.amc	132_15.avi	Walk With Knees Bent	
+132_16	132_16.c3d	132_16.amc	132_16.avi	Walk Crossover	
+132_17	132_17.c3d	132_17.amc	132_17.avi	Walk Fast	
+132_18	132_18.c3d	132_18.amc	132_18.avi	Walk Fast	
+132_19	132_19.c3d	132_19.amc	132_19.avi	Walk Fast	
+132_20	132_20.c3d	132_20.amc	132_20.avi	Walk Fast	
+132_21	132_21.c3d	132_21.amc	132_21.avi	Walk Fast	
+132_22	132_22.c3d	132_22.amc	132_22.avi	Walk Fast	
+132_23	132_23.c3d	132_23.amc	132_23.avi	Hop on left foot	
+132_24	132_24.c3d	132_24.amc	132_24.avi	Hop on left foot	
+132_25	132_25.c3d	132_25.amc	132_25.avi	Hop on left foot	
+132_26	132_26.c3d	132_26.amc	132_26.avi	Hop on left foot	
+132_27	132_27.c3d	132_27.amc	132_27.avi	Hop on left foot	
+132_28	132_28.c3d	132_28.amc	132_28.avi	Hop on left foot	
+132_29	132_29.c3d	132_29.amc	132_29.avi	Bouncy Walk	
+132_30	132_30.c3d	132_30.amc	132_30.avi	Bouncy Walk	
+132_31	132_31.c3d	132_31.amc	132_31.avi	Bouncy Walk	
+132_32	132_32.c3d	132_32.amc	132_32.avi	Bouncy Walk	
+132_33	132_33.c3d	132_33.amc	132_33.avi	Bouncy Walk	
+132_34	132_34.c3d	132_34.amc	132_34.avi	Bouncy Walk	
+132_35	132_35.c3d	132_35.amc	132_35.avi	Walk Leaning To The Right	
+132_36	132_36.c3d	132_36.amc	132_36.avi	Walk Leaning To The Right	
+132_37	132_37.c3d	132_37.amc	132_37.avi	Marching	
+132_38	132_38.c3d	132_38.amc	132_38.avi	Motorcycle	
+132_39	132_39.c3d	132_39.amc	132_39.avi	Pigeon Toed Walking	
+132_40	132_40.c3d	132_40.amc	132_40.avi	Walk With Stiff Arms	
+132_41	132_41.c3d	132_41.amc	132_41.avi	Walk With Stiff Arms	
+132_42	132_42.c3d	132_42.amc	132_42.avi	Walk Swinging Shoulders	
+132_43	132_43.c3d	132_43.amc	132_43.avi	Walk Swinging Shoulders	
+132_44	132_44.c3d	132_44.amc	132_44.avi	Walk Swinging Shoulders	
+132_45	132_45.c3d	132_45.amc	132_45.avi	Walk Slow	
+132_46	132_46.c3d	132_46.amc	132_46.avi	Walk Slow	
+132_47	132_47.c3d	132_47.amc	132_47.avi	Walk Slow	
+132_48	132_48.c3d	132_48.amc	132_48.avi	Walk Slow	
+132_49	132_49.c3d	132_49.amc	132_49.avi	Walk Slow	
+132_50	132_50.c3d	132_50.amc	132_50.avi	Walk Slow	
+132_51	132_51.c3d	132_51.amc	132_51.avi	Tpose	
+132_52	132_52.c3d	132_52.amc	132_52.avi	Range of Motion	
+132_53	132_53.c3d	132_53.amc	132_53.avi	Walk With Legs Apart	
+132_54	132_54.c3d	132_54.amc	132_54.avi	Walk With Wild Arms	
+132_55	132_55.c3d	132_55.amc	132_55.avi	Walk With Wild Legs	
+132_56	132_56.c3d	132_56.amc	132_56.avi	Walk With Wild Legs	
+
+

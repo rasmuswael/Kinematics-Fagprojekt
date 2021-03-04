@@ -1,0 +1,16 @@
+
+			Subject #140 (Getting Up From Ground)
+
+140_01	140_01.tvd	140_01.c3d	140_01.amc	140_01.avi	Get Up Face Down	
+140_02	140_02.tvd	140_02.c3d	140_02.amc	140_02.avi	Get Up Face Down	
+140_03	140_03.tvd	140_03.c3d	140_03.amc	140_03.avi	Get Up Laying on Side	
+140_04	140_04.tvd	140_04.c3d	140_04.amc	140_04.avi	Get Up Laying on Side	
+140_05	140_05.tvd	140_05.c3d	140_05.amc	140_05.avi	Motorcycle	
+140_06	140_06.tvd	140_06.c3d	140_06.amc	140_06.avi	Idle
+	
+140_07	140_07.tvd	140_07.c3d	140_07.amc	140_07.avi	Idle
+	
+140_08	140_08.tvd	140_08.c3d	140_08.amc	140_08.avi	Get Up From Ground Laying on Back	
+140_09	140_09.tvd	140_09.c3d	140_09.amc	140_09.avi	Get Up From Ground Laying on Back	
+
+

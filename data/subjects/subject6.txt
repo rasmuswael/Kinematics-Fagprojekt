@@ -1,0 +1,20 @@
+
+			Subject #6 (dribble, shoot basketball)
+
+06_01	06_01.tvd	06_01.c3d	06_01.amc	06_01.mpg	06_01.avi	walk	
+06_02	06_02.tvd	06_02.c3d	06_02.amc	06_02.mpg	06_02.avi	basketball - forward dribble	
+06_03	06_03.tvd	06_03.c3d	06_03.amc	06_03.mpg	06_03.avi	basketball - forward dribble	
+06_04	06_04.tvd	06_04.c3d	06_04.amc	06_04.mpg	06_04.avi	basketball - forward dribble	
+06_05	06_05.tvd	06_05.c3d	06_05.amc	06_05.mpg	06_05.avi	basketball - forward dribble	
+06_06	06_06.tvd	06_06.c3d	06_06.amc	06_06.mpg	06_06.avi	basketball - backward dribble	
+06_07	06_07.tvd	06_07.c3d	06_07.amc	06_07.mpg	06_07.avi	basketball - backward dribble	
+06_08	06_08.tvd	06_08.c3d	06_08.amc	06_08.mpg	06_08.avi	basketball - sideways dribble	
+06_09	06_09.tvd	06_09.c3d	06_09.amc	06_09.mpg	06_09.avi	basketball - sideways dribble	
+06_10	06_10.tvd	06_10.c3d	06_10.amc	06_10.mpg	06_10.avi	basketball - forward dribble, 90-degree left turns	
+06_11	06_11.tvd	06_11.c3d	06_11.amc	06_11.mpg	06_11.avi	basketball - forward dribble, 90-degree right turns	
+06_12	06_12.tvd	06_12.c3d	06_12.amc	06_12.mpg	06_12.avi	basketball - forward dribble, 90-degree right turns, crossover dribble	
+06_13	06_13.tvd	06_13.c3d	06_13.amc	06_13.mpg	06_13.avi	basketball - low, fast free style dribble, dribble through legs	
+06_14	06_14.tvd	06_14.c3d	06_14.amc	06_14.mpg	06_14.avi	basketball - crossover dribble, shoot	
+06_15	06_15.tvd	06_15.c3d	06_15.amc	06_15.mpg	06_15.avi	basketball - dribble, shoot	
+
+

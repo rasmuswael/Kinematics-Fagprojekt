@@ -1,0 +1,32 @@
+
+			Subject #54 (animal behaviors (pantomime - human subject))
+
+54_01	54_01.tvd	54_01.c3d	54_01.amc	54_01.mpg	54_01.avi	monkey (human subject)	
+54_02	54_02.tvd	54_02.c3d	54_02.amc	54_02.mpg	54_02.avi	bear (human subject)	
+54_03	54_03.tvd	54_03.c3d	54_03.amc	54_03.mpg	54_03.avi	penguin (human subject)	
+54_04	54_04.tvd	54_04.c3d	54_04.amc	54_04.mpg	54_04.avi	pterosaur (human subject)	
+54_05	54_05.tvd	54_05.c3d	54_05.amc	54_05.mpg	54_05.avi	pterosaur (human subject)	
+54_06	54_06.tvd	54_06.c3d	54_06.amc	54_06.mpg	54_06.avi	pterosaur (human subject)	
+54_07	54_07.tvd	54_07.c3d	54_07.amc	54_07.mpg	54_07.avi	prairie dog (human subject)	
+54_08	54_08.tvd	54_08.c3d	54_08.amc	54_08.mpg	54_08.avi	roadrunner (human subject)	
+54_09	54_09.tvd	54_09.c3d	54_09.amc	54_09.mpg	54_09.avi	insect/praying mantis (human subject)	
+54_10	54_10.tvd	54_10.c3d	54_10.amc	54_10.mpg	54_10.avi	ghost (human subject)	
+54_11	54_11.tvd	54_11.c3d	54_11.amc	54_11.mpg	54_11.avi	penguin (human subject)	
+54_12	54_12.tvd	54_12.c3d	54_12.amc	54_12.mpg	54_12.avi	dragon (human subject)	
+54_13	54_13.tvd	54_13.c3d	54_13.amc	54_13.mpg	54_13.avi	dragon (human subject)	
+54_14	54_14.tvd	54_14.c3d	54_14.amc	54_14.mpg	54_14.avi	monkey (human subject)	
+54_15	54_15.tvd	54_15.c3d	54_15.amc	54_15.mpg	54_15.avi	prairie dog (human subject)	
+54_16	54_16.tvd	54_16.c3d	54_16.amc	54_16.mpg	54_16.avi	superhero	
+54_17	54_17.tvd	54_17.c3d	54_17.amc	54_17.mpg	54_17.avi	squirrel (human subject)	
+54_18	54_18.tvd	54_18.c3d	54_18.amc	54_18.mpg	54_18.avi	squirrel (human subject)	
+54_19	54_19.tvd	54_19.c3d	54_19.amc	54_19.mpg	54_19.avi	squirrel - robotic like motion (human subject)	
+54_20	54_20.tvd	54_20.c3d	54_20.amc	54_20.mpg	54_20.avi	follow path, walk around obstacles	
+54_21	54_21.tvd	54_21.c3d	54_21.amc	54_21.mpg	54_21.avi	follow path, walk around obstacles	
+54_22	54_22.tvd	54_22.c3d	54_22.amc	54_22.mpg	54_22.avi	follow path, walk around obstacles	
+54_23	54_23.tvd	54_23.c3d	54_23.amc	54_23.mpg	54_23.avi	monkey (human subject)	
+54_24	54_24.tvd	54_24.c3d	54_24.amc	54_24.mpg	54_24.avi	hummingbird (human subject)	
+54_25	54_25.tvd	54_25.c3d	54_25.amc	54_25.mpg	54_25.avi	chicken (human subject)	
+54_26	54_26.tvd	54_26.c3d	54_26.amc	54_26.mpg	54_26.avi	chicken (human subject)	
+54_27	54_27.tvd	54_27.c3d	54_27.amc	54_27.mpg	54_27.avi	chicken (human subject)	
+
+

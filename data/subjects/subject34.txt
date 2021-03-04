@@ -1,0 +1,7 @@
+
+			Subject #34 (throw and catch football (2 subjects - subject B))
+
+34_01	34_01.tvd	34_01.c3d	34_01.amc	34_01.mpg	34_01.avi	football - throw, catch (2 subjects - subject B)	
+34_02	34_02.tvd	34_02.c3d	34_02.amc	34_02.mpg	34_02.avi	football - throw, catch, jump around (2 subjects - subject B)	
+
+

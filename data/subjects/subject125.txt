@@ -1,0 +1,12 @@
+
+			Subject #125 (Swimming)
+
+125_01	125_01.c3d	125_01.amc	125_01.avi	Breast Stroke	
+125_02	125_02.c3d	125_02.amc	125_02.avi	Breast Stroke	
+125_03	125_03.c3d	125_03.amc	125_03.avi	Break Stroke	
+125_04	125_04.c3d	125_04.amc	125_04.avi	Breast Stroke	
+125_05	125_05.c3d	125_05.amc	125_05.avi	Butterfly	
+125_06	125_06.c3d	125_06.amc	125_06.avi	Free Style	
+125_07	125_07.c3d	125_07.amc	125_07.avi	Motorcycle	
+
+

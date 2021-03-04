@@ -1,0 +1,23 @@
+
+			Subject #82 (jumping; pushing; emotional walks)
+
+82_01	82_01.tvd	82_01.c3d	82_01.amc	82_01.avi	Static pose	
+82_02	82_02.tvd	82_02.c3d	82_02.amc	82_02.avi	Jump off ledge	
+82_03	82_03.tvd	82_03.c3d	82_03.amc	82_03.avi	Jump off ledge	
+82_04	82_04.tvd	82_04.c3d	82_04.amc	82_04.avi	Jump off ledge	
+82_05	82_05.tvd	82_05.c3d	82_05.amc	82_05.avi	sitting on ground relaxing	
+82_06	82_06.tvd	82_06.c3d	82_06.amc	82_06.avi	Pushing on heavy object	
+82_07	82_07.tvd	82_07.c3d	82_07.amc	82_07.avi	Pushing on heavy object	
+82_08	82_08.tvd	82_08.c3d	82_08.amc	82_08.avi	stand still; casual walk forward	
+82_09	82_09.tvd	82_09.c3d	82_09.amc	82_09.avi	confident walk forward	
+82_10	82_10.tvd	82_10.c3d	82_10.amc	82_10.avi	sad walk forward	
+82_11	82_11.tvd	82_11.c3d	82_11.amc	82_11.avi	normal walk forward	
+82_12	82_12.tvd	82_12.c3d	82_12.amc	82_12.avi	happy or fast walk forward	
+82_13	82_13.tvd	82_13.c3d	82_13.amc	82_13.avi	normal walk forward	
+82_14	82_14.tvd	82_14.c3d	82_14.amc	82_14.avi	walk forward and slow down	
+82_15	82_15.tvd	82_15.c3d	82_15.amc	82_15.avi	walk forward and turn sideways	
+82_16	82_16.tvd	82_16.c3d	82_16.amc	82_16.avi	bang on high object	
+82_17	82_17.tvd	82_17.c3d	82_17.amc	82_17.avi	bang on high object	
+82_18	82_18.tvd	82_18.c3d	82_18.amc	82_18.avi	static pose	
+
+

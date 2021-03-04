@@ -1,0 +1,75 @@
+
+			Subject #78 (walking)
+
+78_01	78_01.tvd	78_01.c3d	78_01.amc	78_01.avi	LeftTightTurn         CleanedGRS
+	
+78_02	78_02.tvd	78_02.c3d	78_02.amc	78_02.avi	RightWideTurn            CleanedGRS
+	
+78_03	78_03.tvd	78_03.c3d	78_03.amc	78_03.avi	LeftWideTurn     CleanedGRS
+	
+78_04	78_04.tvd	78_04.c3d	78_04.amc	78_04.avi	SuperTightLeft        CleanedGRS
+	
+78_05	78_05.tvd	78_05.c3d	78_05.amc	78_05.avi	SuperTightRight         CleanedGRS
+	
+78_06	78_06.tvd	78_06.c3d	78_06.amc	78_06.avi	RunningStraight       CleanedGRS
+	
+78_07	78_07.tvd	78_07.c3d	78_07.amc	78_07.avi	RunningWideRight       CleanedGRS
+	
+78_08	78_08.tvd	78_08.c3d	78_08.amc	78_08.avi	RunningWideLeft      CleanedGRS
+	
+78_09	78_09.tvd	78_09.c3d	78_09.amc	78_09.avi	RunningTigherLeft      CleanedGRS
+	
+78_10	78_10.tvd	78_10.c3d	78_10.amc	78_10.avi	RunningTighterRight      CleanedGRS
+	
+78_11	78_11.tvd	78_11.c3d	78_11.amc	78_11.avi	calibration
+	
+78_12	78_12.tvd	78_12.c3d	78_12.amc	78_12.avi	RunningNoBall     CleanedGRS
+	
+78_13	78_13.tvd	78_13.c3d	78_13.amc	78_13.avi	OffensiveMoveSpinLeft            CleanedGRS
+	
+78_14	78_14.tvd	78_14.c3d	78_14.amc	78_14.avi	OffensiveMoveSpinLeft      CleanedGRS
+	
+78_15	78_15.tvd	78_15.c3d	78_15.amc	78_15.avi	OffensiveMoveGoRight     CleanedGRS
+	
+78_16	78_16.tvd	78_16.c3d	78_16.amc	78_16.avi	OffensiveMoveGoLeft         CleanedGRs
+	
+78_17	78_17.tvd	78_17.c3d	78_17.amc	78_17.avi	OffensiveMoveSpinRight             CleanedGRS
+	
+78_18	78_18.tvd	78_18.c3d	78_18.amc	78_18.avi	WalkEvasiveLeft      CleanedGRS
+	
+78_19	78_19.tvd	78_19.c3d	78_19.amc	78_19.avi	WalkEvasiveRight              CleanedGRS
+	
+78_20	78_20.tvd	78_20.c3d	78_20.amc	78_20.avi	FeintLeftMoveRight            CleanedGRS
+	
+78_21	78_21.tvd	78_21.c3d	78_21.amc	78_21.avi	FeintRightMoveLeft      CleanedGRS
+	
+78_22	78_22.tvd	78_22.c3d	78_22.amc	78_22.avi	FakeShotBreakRight     CleanedGRs
+	
+78_23	78_23.tvd	78_23.c3d	78_23.amc	78_23.avi	FakeShotBreakLeft            CleanedGRS
+	
+78_24	78_24.tvd	78_24.c3d	78_24.amc	78_24.avi	DefensiveStraightNoStop          CleanedGRS
+	
+78_25	78_25.tvd	78_25.c3d	78_25.amc	78_25.avi	DefensiveStraightWithStop          CleanedGRS
+	
+78_26	78_26.tvd	78_26.c3d	78_26.amc	78_26.avi	DefensiveRightStopToStop           CleanedGRS
+	
+78_27	78_27.tvd	78_27.c3d	78_27.amc	78_27.avi	DefensiveLeftStopToStop              CleanedGRS
+	
+78_28	78_28.tvd	78_28.c3d	78_28.amc	78_28.avi	DefensiveMoveZigZag           CleanedGRS
+	
+78_29	78_29.tvd	78_29.c3d	78_29.amc	78_29.avi	DefensiveMoveSideToSide           CleanedGRS
+	
+78_30	78_30.tvd	78_30.c3d	78_30.amc	78_30.avi	DefensiveMoveSideToSide           CleanedGRS
+	
+78_31	78_31.tvd	78_31.c3d	78_31.amc	78_31.avi	Pivoting     CleanedGRS
+	
+78_32	78_32.tvd	78_32.c3d	78_32.amc	78_32.avi	SraightDriveFromStop          Cleaned GRS
+	
+78_33	78_33.tvd	78_33.c3d	78_33.amc	78_33.avi	RightDrive (left then right)    Cleaned GRS
+	
+78_34	78_34.tvd	78_34.c3d	78_34.amc	78_34.avi	LeftDrive (right then left)    Cleaned GRS
+	
+78_35	78_35.tvd	78_35.c3d	78_35.amc	78_35.avi	RightTightTurn    CleanedGRS
+	
+
+

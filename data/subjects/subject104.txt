@@ -1,0 +1,119 @@
+
+			Subject #104 (motion)
+
+104_01	104_01.tvd	104_01.c3d	104_01.amc	104_01.avi	JogThrough
+	
+104_02	104_02.tvd	104_02.c3d	104_02.amc	104_02.avi	neutral Male walk, exact footfalls
+	
+104_03	104_03.tvd	104_03.c3d	104_03.amc	104_03.avi	Frankenstein male walk, exact footfalls
+	
+104_04	104_04.tvd	104_04.c3d	104_04.amc	104_04.avi	JogThrough
+	
+104_05	104_05.tvd	104_05.c3d	104_05.amc	104_05.avi	
+	
+104_06	104_06.tvd	104_06.c3d	104_06.amc	104_06.avi	StartJog
+	
+104_07	104_07.tvd	104_07.c3d	104_07.amc	104_07.avi	
+	
+104_08	104_08.tvd	104_08.c3d	104_08.amc	104_08.avi	StartJog
+	
+104_09	104_09.tvd	104_09.c3d	104_09.amc	104_09.avi	JogStop
+	
+104_10	104_10.tvd	104_10.c3d	104_10.amc	104_10.avi	JogStop
+	
+104_11	104_11.tvd	104_11.c3d	104_11.amc	104_11.avi	HappyGoLuckWalk
+	
+104_12	104_12.tvd	104_12.c3d	104_12.amc	104_12.avi	ExcitedWalk
+	
+104_13	104_13.tvd	104_13.c3d	104_13.amc	104_13.avi	StumbleWalk
+	
+104_14	104_14.tvd	104_14.c3d	104_14.amc	104_14.avi	HappyStartWalk
+	
+104_15	104_15.tvd	104_15.c3d	104_15.amc	104_15.avi	
+	
+104_16	104_16.tvd	104_16.c3d	104_16.amc	104_16.avi	SpasticWalk
+	
+104_17	104_17.tvd	104_17.c3d	104_17.amc	104_17.avi	SpasticStop
+	
+104_18	104_18.tvd	104_18.c3d	104_18.amc	104_18.avi	SpasticStop
+	
+104_19	104_19.tvd	104_19.c3d	104_19.amc	104_19.avi	CasualWalk
+	
+104_20	104_20.tvd	104_20.c3d	104_20.amc	104_20.avi	
+	
+104_21	104_21.tvd	104_21.c3d	104_21.amc	104_21.avi	
+	
+104_22	104_22.tvd	104_22.c3d	104_22.amc	104_22.avi	RegularWalk8
+	
+104_23	104_23.tvd	104_23.c3d	104_23.amc	104_23.avi	
+	
+104_24	104_24.tvd	104_24.c3d	104_24.amc	104_24.avi	
+	
+104_25	104_25.tvd	104_25.c3d	104_25.amc	104_25.avi	
+	
+104_26	104_26.tvd	104_26.c3d	104_26.amc	104_26.avi	
+	
+104_27	104_27.tvd	104_27.c3d	104_27.amc	104_27.avi	RegularWalkRightAngleTurns
+	
+104_28	104_28.tvd	104_28.c3d	104_28.amc	104_28.avi	SternWalk
+	
+104_29	104_29.tvd	104_29.c3d	104_29.amc	104_29.avi	SternWalk
+	
+104_30	104_30.tvd	104_30.c3d	104_30.amc	104_30.avi	SternWalk8
+	
+104_31	104_31.tvd	104_31.c3d	104_31.amc	104_31.avi	
+	
+104_32	104_32.tvd	104_32.c3d	104_32.amc	104_32.avi	SternWalkRightAngleTurns
+	
+104_33	104_33.tvd	104_33.c3d	104_33.amc	104_33.avi	
+	
+104_34	104_34.tvd	104_34.c3d	104_34.amc	104_34.avi	
+	
+104_35	104_35.tvd	104_35.c3d	104_35.amc	104_35.avi	SlowWalk
+	
+104_36	104_36.tvd	104_36.c3d	104_36.amc	104_36.avi	SlowWalk8
+	
+104_37	104_37.tvd	104_37.c3d	104_37.amc	104_37.avi	RunThrough
+	
+104_38	104_38.tvd	104_38.c3d	104_38.amc	104_38.avi	
+	
+104_39	104_39.tvd	104_39.c3d	104_39.amc	104_39.avi	SlowWalkRightAngleTurns
+	
+104_40	104_40.tvd	104_40.c3d	104_40.amc	104_40.avi	
+	
+104_41	104_41.tvd	104_41.c3d	104_41.amc	104_41.avi	ZombieWalk
+	
+104_42	104_42.tvd	104_42.c3d	104_42.amc	104_42.avi	ZombieWalk8
+	
+104_43	104_43.tvd	104_43.c3d	104_43.amc	104_43.avi	ZombieWalkRightAngleTurns
+	
+104_44	104_44.tvd	104_44.c3d	104_44.amc	104_44.avi	AttitudeWalk
+	
+104_45	104_45.tvd	104_45.c3d	104_45.amc	104_45.avi	AttitudeWalk8
+	
+104_46	104_46.tvd	104_46.c3d	104_46.amc	104_46.avi	AttitudeWalkRightAngleTurns
+	
+104_47	104_47.tvd	104_47.c3d	104_47.amc	104_47.avi	
+	
+104_48	104_48.tvd	104_48.c3d	104_48.amc	104_48.avi	RunThrough
+	
+104_49	104_49.tvd	104_49.c3d	104_49.amc	104_49.avi	
+	
+104_50	104_50.tvd	104_50.c3d	104_50.amc	104_50.avi	
+	
+104_51	104_51.tvd	104_51.c3d	104_51.amc	104_51.avi	
+	
+104_52	104_52.tvd	104_52.c3d	104_52.amc	104_52.avi	
+	
+104_53	104_53.tvd	104_53.c3d	104_53.amc	104_53.avi	StartRun
+	
+104_54	104_54.tvd	104_54.c3d	104_54.amc	104_54.avi	StartRun
+	
+104_55	104_55.tvd	104_55.c3d	104_55.amc	104_55.avi	StartRun
+	
+104_56	104_56.tvd	104_56.c3d	104_56.amc	104_56.avi	RunStop
+	
+104_57	104_57.tvd	104_57.c3d	104_57.amc	104_57.avi	RunStop
+	
+
+

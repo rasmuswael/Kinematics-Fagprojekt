@@ -1,0 +1,24 @@
+
+			Subject #28 (recreation, nursery rhymes, animal behaviors (pantomime - human subject))
+
+28_01	28_01.tvd	28_01.c3d	28_01.amc	28_01.mpg	28_01.avi	basketball signals	
+28_02	28_02.tvd	28_02.c3d	28_02.amc	28_02.mpg	28_02.avi	nursery rhyme - "I'm a little teapot..."	
+28_03	28_03.tvd	28_03.c3d	28_03.amc	28_03.mpg	28_03.avi	Alaskan vacation	
+28_04	28_04.tvd	28_04.c3d	28_04.amc	28_04.mpg	28_04.avi	nursery rhyme - Cock Robin	
+28_05	28_05.tvd	28_05.c3d	28_05.amc	28_05.mpg	28_05.avi	basketball signals	
+28_06	28_06.tvd	28_06.c3d	28_06.amc	28_06.mpg	28_06.avi	nursery rhyme - "I'm a little teapot..."	
+28_07	28_07.tvd	28_07.c3d	28_07.amc	28_07.mpg	28_07.avi	Alaskan vacation	
+28_08	28_08.tvd	28_08.c3d	28_08.amc	28_08.mpg	28_08.avi	nursery rhyme - Cock Robin	
+28_09	28_09.tvd	28_09.c3d	28_09.amc	28_09.mpg	28_09.avi	prairie dog (human subject)	
+28_10	28_10.tvd	28_10.c3d	28_10.amc	28_10.mpg	28_10.avi	whale (human subject)	
+28_11	28_11.tvd	28_11.c3d	28_11.amc	28_11.mpg	28_11.avi	bear (human subject)	
+28_12	28_12.tvd	28_12.c3d	28_12.amc	28_12.mpg	28_12.avi	dog (human subject)	
+28_13	28_13.tvd	28_13.c3d	28_13.amc	28_13.mpg	28_13.avi	snake (human subject)	
+28_14	28_14.tvd	28_14.c3d	28_14.amc	28_14.mpg	28_14.avi	chicken (human subject)	
+28_15	28_15.tvd	28_15.c3d	28_15.amc	28_15.mpg	28_15.avi	monkey (human subject)	
+28_16	28_16.tvd	28_16.c3d	28_16.amc	28_16.mpg	28_16.avi	mouse (human subject)	
+28_17	28_17.tvd	28_17.c3d	28_17.amc	28_17.mpg	28_17.avi	cat (human subject)	
+28_18	28_18.tvd	28_18.c3d	28_18.amc	28_18.mpg	28_18.avi	elephant (human subject)	
+28_19	28_19.tvd	28_19.c3d	28_19.amc	28_19.mpg	28_19.avi	dinosaur (human subject)	
+
+

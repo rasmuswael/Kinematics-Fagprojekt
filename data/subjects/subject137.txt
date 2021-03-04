@@ -1,0 +1,47 @@
+
+			Subject #137 (Stylized Motions)
+
+137_01	137_01.c3d	137_01.amc	137_01.avi	Cat Coffee Mug	
+137_02	137_02.c3d	137_02.amc	137_02.avi	Cat Pick Up	
+137_03	137_03.c3d	137_03.amc	137_03.avi	Cat Wait	
+137_04	137_04.c3d	137_04.amc	137_04.avi	Cat Walk	
+137_05	137_05.c3d	137_05.amc	137_05.avi	Chicken Coffee Mug	
+137_06	137_06.c3d	137_06.amc	137_06.avi	Chicken Pick Up	
+137_07	137_07.c3d	137_07.amc	137_07.avi	Chicken Wait	
+137_08	137_08.c3d	137_08.amc	137_08.avi	Chicken Walk	
+137_09	137_09.c3d	137_09.amc	137_09.avi	Dinosaur Coffee Mug	
+137_10	137_10.c3d	137_10.amc	137_10.avi	Dinosaur Pick Up	
+137_11	137_11.c3d	137_11.amc	137_11.avi	Dinosaur Wait	
+137_12	137_12.c3d	137_12.amc	137_12.avi	Dinosaur Walk	
+137_13	137_13.c3d	137_13.amc	137_13.avi	Drunk Coffee Mug	
+137_14	137_14.c3d	137_14.amc	137_14.avi	Drunk Pick Up	
+137_15	137_15.c3d	137_15.amc	137_15.avi	Drunk Wait	
+137_16	137_16.c3d	137_16.amc	137_16.avi	Drunk Walk	
+137_17	137_17.c3d	137_17.amc	137_17.avi	Gangly Teen Coffee Mug	
+137_18	137_18.c3d	137_18.amc	137_18.avi	Gangly Teen Pick Up	
+137_19	137_19.c3d	137_19.amc	137_19.avi	Gangly Teen Wait	
+137_20	137_20.c3d	137_20.amc	137_20.avi	Gangly Teen Walk	
+137_21	137_21.c3d	137_21.amc	137_21.avi	Graceful Lady Coffee Mug	
+137_22	137_22.c3d	137_22.amc	137_22.avi	Graceful Lady Pick Up	
+137_23	137_23.c3d	137_23.amc	137_23.avi	Graceful Lady Wait	
+137_24	137_24.c3d	137_24.amc	137_24.avi	Graceful Lady Walk	
+137_25	137_25.c3d	137_25.amc	137_25.avi	Motorcycle	
+137_26	137_26.c3d	137_26.amc	137_26.avi	Normal Coffee Mug	
+137_27	137_27.c3d	137_27.amc	137_27.avi	Normal Pick Up	
+137_28	137_28.c3d	137_28.amc	137_28.avi	Normal Wait	
+137_29	137_29.c3d	137_29.amc	137_29.avi	Normal Walk	
+137_30	137_30.c3d	137_30.amc	137_30.avi	Old Man Coffee Mug	
+137_31	137_31.c3d	137_31.amc	137_31.avi	Old Man Pick Up	
+137_32	137_32.c3d	137_32.amc	137_32.avi	Old Man Wait	
+137_33	137_33.c3d	137_33.amc	137_33.avi	Old Man Walk	
+137_34	137_34.c3d	137_34.amc	137_34.avi	Range of Motion	
+137_35	137_35.c3d	137_35.amc	137_35.avi	Sexy Lady Coffee Mug	
+137_36	137_36.c3d	137_36.amc	137_36.avi	Sexy Lady Pick Up	
+137_37	137_37.c3d	137_37.amc	137_37.avi	Sexy Lady Wait	
+137_38	137_38.c3d	137_38.amc	137_38.avi	Sexy Lady Walk	
+137_39	137_39.c3d	137_39.amc	137_39.avi	Strong Man Coffee Mug	
+137_40	137_40.c3d	137_40.amc	137_40.avi	Strong Man Pick Up	
+137_41	137_41.c3d	137_41.amc	137_41.avi	Strong Man Wait	
+137_42	137_42.c3d	137_42.amc	137_42.avi	Strong Man Walk	
+
+

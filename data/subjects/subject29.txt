@@ -1,0 +1,30 @@
+
+			Subject #29 (recreation, nursery rhymes, animal behaviors (pantomime - human subject))
+
+29_01	29_01.tvd	29_01.c3d	29_01.amc	29_01.mpg	29_01.avi	walk	
+29_02	29_02.tvd	29_02.c3d	29_02.amc	29_02.mpg	29_02.avi	basketball signals	
+29_03	29_03.tvd	29_03.c3d	29_03.amc	29_03.mpg	29_03.avi	nursery rhyme - "I'm a little teapot..."	
+29_04	29_04.tvd	29_04.c3d	29_04.amc	29_04.mpg	29_04.avi	Alaskan vacation	
+29_05	29_05.tvd	29_05.c3d	29_05.amc	29_05.mpg	29_05.avi	Alaskan vacation	
+29_06	29_06.tvd	29_06.c3d	29_06.amc	29_06.mpg	29_06.avi	nursery rhyme - Cock Robin	
+29_07	29_07.tvd	29_07.c3d	29_07.amc	29_07.mpg	29_07.avi	basketball signals	
+29_08	29_08.tvd	29_08.c3d	29_08.amc	29_08.mpg	29_08.avi	nursery rhyme - "I'm a little teapot..."	
+29_09	29_09.tvd	29_09.c3d	29_09.amc	29_09.mpg	29_09.avi	Alaskan vacation	
+29_10	29_10.tvd	29_10.c3d	29_10.amc	29_10.mpg	29_10.avi	nursery rhyme - Cock Robin	
+29_11	29_11.tvd	29_11.c3d	29_11.amc	29_11.mpg	29_11.avi	Alaskan vacation	
+29_12	29_12.tvd	29_12.c3d	29_12.amc	29_12.mpg	29_12.avi	Alaskan vacation	
+29_13	29_13.tvd	29_13.c3d	29_13.amc	29_13.mpg	29_13.avi	Alaskan vacation	
+29_14	29_14.tvd	29_14.c3d	29_14.amc	29_14.mpg	29_14.avi	prairie dog (human subject)	
+29_15	29_15.tvd	29_15.c3d	29_15.amc	29_15.mpg	29_15.avi	whale (human subject)	
+29_16	29_16.tvd	29_16.c3d	29_16.amc	29_16.mpg	29_16.avi	bear (human subject)	
+29_17	29_17.tvd	29_17.c3d	29_17.amc	29_17.mpg	29_17.avi	dog (human subject)	
+29_18	29_18.tvd	29_18.c3d	29_18.amc	29_18.mpg	29_18.avi	cat (human subject)	
+29_19	29_19.tvd	29_19.c3d	29_19.amc	29_19.mpg	29_19.avi	fish (human subject)	
+29_20	29_20.tvd	29_20.c3d	29_20.amc	29_20.mpg	29_20.avi	elephant (human subject)	
+29_21	29_21.tvd	29_21.c3d	29_21.amc	29_21.mpg	29_21.avi	mouse (human subject)	
+29_22	29_22.tvd	29_22.c3d	29_22.amc	29_22.mpg	29_22.avi	chicken (human subject)	
+29_23	29_23.tvd	29_23.c3d	29_23.amc	29_23.mpg	29_23.avi	dinosaur (human subject)	
+29_24	29_24.tvd	29_24.c3d	29_24.amc	29_24.mpg	29_24.avi	snake (human subject)	
+29_25	29_25.tvd	29_25.c3d	29_25.amc	29_25.mpg	29_25.avi	monkey (human subject)	
+
+

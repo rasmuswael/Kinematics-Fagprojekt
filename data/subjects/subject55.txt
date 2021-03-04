@@ -1,0 +1,33 @@
+
+			Subject #55 (animal behaviors (pantomime - human subject))
+
+55_01	55_01.tvd	55_01.c3d	55_01.amc	55_01.mpg	55_01.avi	dance, whirl	
+55_02	55_02.tvd	55_02.c3d	55_02.amc	55_02.mpg	55_02.avi	lambada dance	
+55_03	55_03.tvd	55_03.c3d	55_03.amc	55_03.mpg	55_03.avi	genie (human subject)	
+55_04	55_04.tvd	55_04.c3d	55_04.amc	55_04.mpg	55_04.avi	walk	
+55_05	55_05.tvd	55_05.c3d	55_05.amc	55_05.mpg	55_05.avi	hummingbird (human subject)	
+55_06	55_06.tvd	55_06.c3d	55_06.amc	55_06.mpg	55_06.avi	chicken (human subject)	
+55_07	55_07.tvd	55_07.c3d	55_07.amc	55_07.mpg	55_07.avi	chicken (human subject)	
+55_08	55_08.tvd	55_08.c3d	55_08.amc	55_08.mpg	55_08.avi	monkey (human subject)	
+55_09	55_09.tvd	55_09.c3d	55_09.amc	55_09.mpg	55_09.avi	monkey (human subject)	
+55_10	55_10.tvd	55_10.c3d	55_10.amc	55_10.mpg	55_10.avi	hummingbird (human subject)	
+55_11	55_11.tvd	55_11.c3d	55_11.amc	55_11.mpg	55_11.avi	animal (human subject)	
+55_12	55_12.tvd	55_12.c3d	55_12.amc	55_12.mpg	55_12.avi	dancing bear (human subject)	
+55_13	55_13.tvd	55_13.c3d	55_13.amc	55_13.mpg	55_13.avi	insect/praying mantis (human subject)	
+55_14	55_14.tvd	55_14.c3d	55_14.amc	55_14.mpg	55_14.avi	prairie dog (human subject)	
+55_15	55_15.tvd	55_15.c3d	55_15.amc	55_15.mpg	55_15.avi	roadrunner (human subject)	
+55_16	55_16.tvd	55_16.c3d	55_16.amc	55_16.mpg	55_16.avi	panda (human subject)	
+55_17	55_17.tvd	55_17.c3d	55_17.amc	55_17.mpg	55_17.avi	ghost (human subject)	
+55_18	55_18.tvd	55_18.c3d	55_18.amc	55_18.mpg	55_18.avi	penguin (human subject)	
+55_19	55_19.tvd	55_19.c3d	55_19.amc	55_19.mpg	55_19.avi	dragon (human subject)	
+55_20	55_20.tvd	55_20.c3d	55_20.amc	55_20.mpg	55_20.avi	hippo ballerina (human subject)	
+55_21	55_21.tvd	55_21.c3d	55_21.amc	55_21.mpg	55_21.avi	pterosaur (human subject)	
+55_22	55_22.tvd	55_22.c3d	55_22.amc	55_22.mpg	55_22.avi	superhero	
+55_23	55_23.tvd	55_23.c3d	55_23.amc	55_23.mpg	55_23.avi	devil	
+55_24	55_24.tvd	55_24.c3d	55_24.amc	55_24.mpg	55_24.avi	various animals (human subject)	
+55_25	55_25.tvd	55_25.c3d	55_25.amc	55_25.mpg	55_25.avi	dancing animal (human subject)	
+55_26	55_26.tvd	55_26.c3d	55_26.amc	55_26.mpg	55_26.avi	monkey (human subject)	
+55_27	55_27.tvd	55_27.c3d	55_27.amc	55_27.mpg	55_27.avi	dancing ant (human subject)	
+55_28	55_28.tvd	55_28.c3d	55_28.amc	55_28.mpg	55_28.avi	monkey/bear (human subject)	
+
+

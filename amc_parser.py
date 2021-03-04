@@ -119,7 +119,7 @@ def read_line(stream, idx):
   return line, idx
 
 
-def parse_asf(file_path):
+def parse_asf_np(file_path):
   '''read joint data only'''
   with open(file_path) as f:
     content = f.read().splitlines() # splits a string into a list. The splitting is done at line breaks
@@ -213,7 +213,7 @@ def parse_asf(file_path):
   return joints
 
 
-def parse_amc(file_path, ignore_translation = True):
+def parse_amc_np(file_path, ignore_translation = True):
   with open(file_path) as f:
     content = f.read().splitlines()
 

@@ -26,6 +26,7 @@ def simple_experiment():
 
     L = torch.cdist(yhat.transpose(0,1), y.transpose(0,1), p=2.0)
     # print(sum([i**2 for i in (y - yhat)])**(1/2))
+
     # initialize as tensor of zeros
     a = torch.zeros(3, requires_grad=True)
 

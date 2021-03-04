@@ -1,0 +1,16 @@
+
+			Subject #26 (nursery rhymes, basketball, bending)
+
+26_01	26_01.tvd	26_01.c3d	26_01.amc	26_01.mpg	26_01.avi	walk	
+26_02	26_02.tvd	26_02.c3d	26_02.amc	26_02.mpg	26_02.avi	basketball signals	
+26_03	26_03.tvd	26_03.c3d	26_03.amc	26_03.mpg	26_03.avi	nursery rhyme - "I'm a little teapot..."	
+26_04	26_04.tvd	26_04.c3d	26_04.amc	26_04.mpg	26_04.avi	nursery rhyme - "I'm a little teapot..."	
+26_05	26_05.tvd	26_05.c3d	26_05.amc	26_05.mpg	26_05.avi	Alaska vacation	
+26_06	26_06.tvd	26_06.c3d	26_06.amc	26_06.mpg	26_06.avi	Alaska vacation	
+26_07	26_07.tvd	26_07.c3d	26_07.amc	26_07.mpg	26_07.avi	nursery rhyme - Cock Robin	
+26_08	26_08.tvd	26_08.c3d	26_08.amc	26_08.mpg	26_08.avi	nursery rhyme - Cock Robin	
+26_09	26_09.tvd	26_09.c3d	26_09.amc	26_09.mpg	26_09.avi	bend, pick up	
+26_10	26_10.tvd	26_10.c3d	26_10.amc	26_10.mpg	26_10.avi	bend, lift	
+26_11	26_11.tvd	26_11.c3d	26_11.amc	26_11.mpg	26_11.avi	bend, lift	
+
+

@@ -1,0 +1,25 @@
+
+			Subject #5 (modern dance)
+
+05_01	05_01.tvd	05_01.c3d	05_01.amc	05_01.mpg	05_01.avi	walk	
+05_02	05_02.tvd	05_02.c3d	05_02.amc	05_02.mpg	05_02.avi	dance - expressive arms, pirouette	
+05_03	05_03.tvd	05_03.c3d	05_03.amc	05_03.mpg	05_03.avi	dance - sideways arabesque, turn step, folding arms	
+05_04	05_04.tvd	05_04.c3d	05_04.amc	05_04.mpg	05_04.avi	dance - sideways arabesque, folding arms, bending back	
+05_05	05_05.tvd	05_05.c3d	05_05.amc	05_05.mpg	05_05.avi	dance - quasi-cou-de-pied, raised leg above hip-height, jete en tourant	
+05_06	05_06.tvd	05_06.c3d	05_06.amc	05_06.mpg	05_06.avi	dance - cartwheel-like start, pirouettes, jete	
+05_07	05_07.tvd	05_07.c3d	05_07.amc	05_07.mpg	05_07.avi	dance - small jetes, attitude/arabesque, shifted-axis pirouette, turn	
+05_08	05_08.tvd	05_08.c3d	05_08.amc	05_08.mpg	05_08.avi	dance - rond de jambe in the air, jete, turn	
+05_09	05_09.tvd	05_09.c3d	05_09.amc	05_09.mpg	05_09.avi	dance - glissade devant, glissade derriere, attitude/arabesque	
+05_10	05_10.tvd	05_10.c3d	05_10.amc	05_10.mpg	05_10.avi	dance - glissade devant, glissade derriere, attitude/arabesque	
+05_11	05_11.tvd	05_11.c3d	05_11.amc	05_11.mpg	05_11.avi	dance - sideways steps, pirouette	
+05_12	05_12.tvd	05_12.c3d	05_12.amc	05_12.mpg	05_12.avi	dance - arms held high, pointe tendue a terre, upper body rotation	
+05_13	05_13.tvd	05_13.c3d	05_13.amc	05_13.mpg	05_13.avi	dance - small jetes, pirouette	
+05_14	05_14.tvd	05_14.c3d	05_14.amc	05_14.mpg	05_14.avi	dance - retire derriere, attitude/arabesque	
+05_15	05_15.tvd	05_15.c3d	05_15.amc	05_15.mpg	05_15.avi	dance - retire derriere, attitude/arabesque	
+05_16	05_16.tvd	05_16.c3d	05_16.amc	05_16.mpg	05_16.avi	dance - coupe dessous, jete en tourant	
+05_17	05_17.tvd	05_17.c3d	05_17.amc	05_17.mpg	05_17.avi	dance - coupe dessous, grand jete en tourant	
+05_18	05_18.tvd	05_18.c3d	05_18.amc	05_18.mpg	05_18.avi	dance - attitude/arabesque, jete en tourant, bending back	
+05_19	05_19.tvd	05_19.c3d	05_19.amc	05_19.mpg	05_19.avi	dance - attitude/arabesque, jete en tourant, bending back	
+05_20	05_20.tvd	05_20.c3d	05_20.amc	05_20.mpg	05_20.avi	dance - attitude/arabesque, jete en tourant, bending back	
+
+

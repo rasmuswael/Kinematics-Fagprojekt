@@ -1,0 +1,16 @@
+
+			Subject #8 (walk)
+
+08_01	08_01.tvd	08_01.c3d	08_01.amc	08_01.mpg	08_01.avi	walk	
+08_02	08_02.tvd	08_02.c3d	08_02.amc	08_02.mpg	08_02.avi	walk	
+08_03	08_03.tvd	08_03.c3d	08_03.amc	08_03.mpg	08_03.avi	walk	
+08_04	08_04.tvd	08_04.c3d	08_04.amc	08_04.mpg	08_04.avi	slow walk	
+08_05	08_05.tvd	08_05.c3d	08_05.amc	08_05.mpg	08_05.avi	walk/stride	
+08_06	08_06.tvd	08_06.c3d	08_06.amc	08_06.mpg	08_06.avi	walk	
+08_07	08_07.tvd	08_07.c3d	08_07.amc	08_07.mpg	08_07.avi	walk, exaggerated stride	
+08_08	08_08.tvd	08_08.c3d	08_08.amc	08_08.mpg	08_08.avi	walk	
+08_09	08_09.tvd	08_09.c3d	08_09.amc	08_09.mpg	08_09.avi	walk	
+08_10	08_10.tvd	08_10.c3d	08_10.amc	08_10.mpg	08_10.avi	walk	
+08_11	08_11.tvd	08_11.c3d	08_11.amc	08_11.mpg	08_11.avi	slow walk/stride	
+
+

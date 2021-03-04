@@ -1,0 +1,15 @@
+
+			Subject #41 (navigate from corner to corner, interact with stepstool)
+
+41_02	41_02.tvd	41_02.c3d	41_02.amc	41_02.avi	navigate - walk forward, backward, sideways, on a diagonal	
+41_03	41_03.tvd	41_03.c3d	41_03.amc	41_03.avi	navigate - walk forward, backward, sideways, on a diagonal	
+41_04	41_04.tvd	41_04.c3d	41_04.amc	41_04.avi	navigate - walk forward, backward, on a diagonal	
+41_05	41_05.tvd	41_05.c3d	41_05.amc	41_05.avi	navigate - walk forward, backward, on a diagonal	
+41_06	41_06.tvd	41_06.c3d	41_06.amc	41_06.avi	navigate - walk forward, backward, on a diagonal	
+41_07	41_07.tvd	41_07.c3d	41_07.amc	41_07.avi	climb, step over, jump over, navigate around stepstool	
+41_08	41_08.tvd	41_08.c3d	41_08.amc	41_08.avi	climb, step over, jump over, navigate around stepstool	
+41_09	41_09.tvd	41_09.c3d	41_09.amc	41_09.avi	climb, step over, jump over, navigate around stepstool	
+41_10	41_10.tvd	41_10.c3d	41_10.amc	41_10.avi	basketball signals	
+41_11	41_11.tvd	41_11.c3d	41_11.amc	41_11.avi	basketball signals	
+
+

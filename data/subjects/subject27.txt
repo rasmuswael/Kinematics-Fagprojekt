@@ -1,0 +1,16 @@
+
+			Subject #27 (recreation, nursery rhymes)
+
+27_01	27_01.tvd	27_01.c3d	27_01.amc	27_01.mpg	27_01.avi	walk	
+27_02	27_02.tvd	27_02.c3d	27_02.amc	27_02.mpg	27_02.avi	basketball signals	
+27_03	27_03.tvd	27_03.c3d	27_03.amc	27_03.mpg	27_03.avi	nursery rhyme - "I'm a little teapot..."	
+27_04	27_04.tvd	27_04.c3d	27_04.amc	27_04.mpg	27_04.avi	Alaskan vacation	
+27_05	27_05.tvd	27_05.c3d	27_05.amc	27_05.mpg	27_05.avi	nursery rhyme - Cock Robin	
+27_06	27_06.tvd	27_06.c3d	27_06.amc	27_06.mpg	27_06.avi	basketball signals	
+27_07	27_07.tvd	27_07.c3d	27_07.amc	27_07.mpg	27_07.avi	nursery rhyme - "I'm a little teapot..."	
+27_08	27_08.tvd	27_08.c3d	27_08.amc	27_08.mpg	27_08.avi	Alaskan vacation	
+27_09	27_09.tvd	27_09.c3d	27_09.amc	27_09.mpg	27_09.avi	Alaskan vacation	
+27_10	27_10.tvd	27_10.c3d	27_10.amc	27_10.mpg	27_10.avi	nursery rhyme - Cock Robin	
+27_11	27_11.tvd	27_11.c3d	27_11.amc	27_11.mpg	27_11.avi	prairie dog (human subject)	
+
+

@@ -1,0 +1,16 @@
+
+			Subject #135 (Martial Arts Walks)
+
+135_01	135_01.c3d	135_01.amc	135_01.avi	Bassai	
+135_02	135_02.c3d	135_02.amc	135_02.avi	Empi	
+135_03	135_03.c3d	135_03.amc	135_03.avi	Empi	
+135_04	135_04.c3d	135_04.amc	135_04.avi	Front Kick	
+135_05	135_05.c3d	135_05.amc	135_05.avi	Gedanbarai	
+135_06	135_06.c3d	135_06.amc	135_06.avi	Heiansyodan	
+135_07	135_07.c3d	135_07.amc	135_07.avi	Mawashigeri	
+135_08	135_08.c3d	135_08.amc	135_08.avi	Motorcycle	
+135_09	135_09.c3d	135_09.amc	135_09.avi	Oiduki	
+135_10	135_10.c3d	135_10.amc	135_10.avi	Syutouuke	
+135_11	135_11.c3d	135_11.amc	135_11.avi	Yokogeri	
+
+

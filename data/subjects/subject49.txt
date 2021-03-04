@@ -1,0 +1,27 @@
+
+			Subject #49 (modern dance, gymnastics)
+
+49_01	49_01.tvd	49_01.c3d	49_01.amc	49_01.avi	walk	
+49_02	49_02.tvd	49_02.c3d	49_02.amc	49_02.avi	jump up and down, hop on one foot	
+49_03	49_03.tvd	49_03.c3d	49_03.amc	49_03.avi	jump up and down, hop on one foot	
+49_04	49_04.tvd	49_04.c3d	49_04.amc	49_04.avi	run, leap	
+49_05	49_05.tvd	49_05.c3d	49_05.amc	49_05.avi	run, leap	
+49_06	49_06.tvd	49_06.c3d	49_06.amc	49_06.avi	cartwheel	
+49_07	49_07.tvd	49_07.c3d	49_07.amc	49_07.avi	cartwheel	
+49_08	49_08.tvd	49_08.c3d	49_08.amc	49_08.avi	cartwheels	
+49_09	49_09.tvd	49_09.c3d	49_09.amc	49_09.avi	dance - arms held high, side arabesque	
+49_10	49_10.tvd	49_10.c3d	49_10.amc	49_10.avi	dance - fold in from side arabesque, curl inwards	
+49_11	49_11.tvd	49_11.c3d	49_11.amc	49_11.avi	dance - fold in from side arabesque, curl inwards	
+49_12	49_12.tvd	49_12.c3d	49_12.amc	49_12.avi	dance - lean forward, bring back leg forward, arching arms	
+49_13	49_13.tvd	49_13.c3d	49_13.amc	49_13.avi	dance - fold in from side arabesque, curl inwards	
+49_14	49_14.tvd	49_14.c3d	49_14.amc	49_14.avi	dance - lean forward, bring back leg forward, arching arms	
+49_15	49_15.tvd	49_15.c3d	49_15.amc	49_15.avi	static dance pose - folded in, head lowered, leg bent	
+49_16	49_16.tvd	49_16.c3d	49_16.amc	49_16.avi	dance - fold in from side arabesque, curl inwards	
+49_17	49_17.tvd	49_17.c3d	49_17.amc	49_17.avi	dance - lean forward, bring back leg forward, arching arms	
+49_18	49_18.tvd	49_18.c3d	49_18.amc	49_18.avi	balance on one leg, outstretched arms	
+49_19	49_19.tvd	49_19.c3d	49_19.amc	49_19.avi	balance on one leg, outstretched arms	
+49_20	49_20.tvd	49_20.c3d	49_20.amc	49_20.avi	balance on one leg, outstretched arms	
+49_21	49_21.tvd	49_21.c3d	49_21.amc	49_21.avi	acrobatics - spin/twirl, hang on ropes	
+49_22	49_22.tvd	49_22.c3d	49_22.amc	49_22.avi	dance - lean back on bent leg, balance, bend elbow by ear	
+
+

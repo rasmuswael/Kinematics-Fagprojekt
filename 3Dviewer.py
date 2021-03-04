@@ -241,9 +241,9 @@ class Viewer:
 
 
 if __name__ == '__main__':
-  asf_path = './data/02/02.asf'
-  amc_path = './data/02/02_02.amc'
-  joints = parse_asf(asf_path)
-  motions = parse_amc(amc_path)
+  asf_path = './data/16/16.asf'
+  amc_path = './data/16/16_08.amc'
+  joints = parse_asf_np(asf_path)
+  motions = parse_amc_np(amc_path)
   v = Viewer(joints, motions)
   v.run()

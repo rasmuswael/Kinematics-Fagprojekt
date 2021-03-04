@@ -1,0 +1,39 @@
+
+			Subject #35 (walk, run)
+
+35_01	35_01.tvd	35_01.c3d	35_01.amc	35_01.mpg	35_01.avi	walk	
+35_02	35_02.tvd	35_02.c3d	35_02.amc	35_02.mpg	35_02.avi	walk	
+35_03	35_03.tvd	35_03.c3d	35_03.amc	35_03.mpg	35_03.avi	walk	
+35_04	35_04.tvd	35_04.c3d	35_04.amc	35_04.mpg	35_04.avi	walk	
+35_05	35_05.tvd	35_05.c3d	35_05.amc	35_05.mpg	35_05.avi	walk	
+35_06	35_06.tvd	35_06.c3d	35_06.amc	35_06.mpg	35_06.avi	walk	
+35_07	35_07.tvd	35_07.c3d	35_07.amc	35_07.mpg	35_07.avi	walk	
+35_08	35_08.tvd	35_08.c3d	35_08.amc	35_08.mpg	35_08.avi	walk	
+35_09	35_09.tvd	35_09.c3d	35_09.amc	35_09.mpg	35_09.avi	walk	
+35_10	35_10.tvd	35_10.c3d	35_10.amc	35_10.mpg	35_10.avi	walk	
+35_11	35_11.tvd	35_11.c3d	35_11.amc	35_11.mpg	35_11.avi	walk	
+35_12	35_12.tvd	35_12.c3d	35_12.amc	35_12.mpg	35_12.avi	walk	
+35_13	35_13.tvd	35_13.c3d	35_13.amc	35_13.mpg	35_13.avi	walk	
+35_14	35_14.tvd	35_14.c3d	35_14.amc	35_14.mpg	35_14.avi	walk	
+35_15	35_15.tvd	35_15.c3d	35_15.amc	35_15.mpg	35_15.avi	walk	
+35_16	35_16.tvd	35_16.c3d	35_16.amc	35_16.mpg	35_16.avi	walk	
+35_17	35_17.tvd	35_17.c3d	35_17.amc	35_17.mpg	35_17.avi	run/jog	
+35_18	35_18.tvd	35_18.c3d	35_18.amc	35_18.mpg	35_18.avi	run/jog	
+35_19	35_19.tvd	35_19.c3d	35_19.amc	35_19.mpg	35_19.avi	run/jog	
+35_20	35_20.tvd	35_20.c3d	35_20.amc	35_20.mpg	35_20.avi	run/jog	
+35_21	35_21.tvd	35_21.c3d	35_21.amc	35_21.mpg	35_21.avi	run/jog	
+35_22	35_22.tvd	35_22.c3d	35_22.amc	35_22.mpg	35_22.avi	run/jog	
+35_23	35_23.tvd	35_23.c3d	35_23.amc	35_23.mpg	35_23.avi	run/jog	
+35_24	35_24.tvd	35_24.c3d	35_24.amc	35_24.mpg	35_24.avi	run/jog	
+35_25	35_25.tvd	35_25.c3d	35_25.amc	35_25.mpg	35_25.avi	run/jog	
+35_26	35_26.tvd	35_26.c3d	35_26.amc	35_26.mpg	35_26.avi	run/jog	
+35_27	35_27.tvd	35_27.c3d	35_27.amc	35_27.mpg	35_27.avi	navigate around obstacles	
+35_28	35_28.tvd	35_28.c3d	35_28.amc	35_28.mpg	35_28.avi	walk	
+35_29	35_29.tvd	35_29.c3d	35_29.amc	35_29.mpg	35_29.avi	walk	
+35_30	35_30.tvd	35_30.c3d	35_30.amc	35_30.mpg	35_30.avi	walk	
+35_31	35_31.tvd	35_31.c3d	35_31.amc	35_31.mpg	35_31.avi	walk	
+35_32	35_32.tvd	35_32.c3d	35_32.amc	35_32.mpg	35_32.avi	walk	
+35_33	35_33.tvd	35_33.c3d	35_33.amc	35_33.mpg	35_33.avi	walk	
+35_34	35_34.tvd	35_34.c3d	35_34.amc	35_34.mpg	35_34.avi	walk	
+
+

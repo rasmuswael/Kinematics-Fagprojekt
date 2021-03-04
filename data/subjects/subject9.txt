@@ -1,0 +1,17 @@
+
+			Subject #9 (run)
+
+09_01	09_01.tvd	09_01.c3d	09_01.amc	09_01.mpg	09_01.avi	run	
+09_02	09_02.tvd	09_02.c3d	09_02.amc	09_02.mpg	09_02.avi	run	
+09_03	09_03.tvd	09_03.c3d	09_03.amc	09_03.mpg	09_03.avi	run	
+09_04	09_04.tvd	09_04.c3d	09_04.amc	09_04.mpg	09_04.avi	run	
+09_05	09_05.tvd	09_05.c3d	09_05.amc	09_05.mpg	09_05.avi	run	
+09_06	09_06.tvd	09_06.c3d	09_06.amc	09_06.mpg	09_06.avi	run	
+09_07	09_07.tvd	09_07.c3d	09_07.amc	09_07.mpg	09_07.avi	run	
+09_08	09_08.tvd	09_08.c3d	09_08.amc	09_08.mpg	09_08.avi	run	
+09_09	09_09.tvd	09_09.c3d	09_09.amc	09_09.mpg	09_09.avi	run	
+09_10	09_10.tvd	09_10.c3d	09_10.amc	09_10.mpg	09_10.avi	run	
+09_11	09_11.tvd	09_11.c3d	09_11.amc	09_11.mpg	09_11.avi	run	
+09_12	09_12.tvd	09_12.c3d	09_12.amc	09_12.mpg	09_12.avi	navigate - walk forward, backward, sideways	
+
+

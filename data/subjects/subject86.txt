@@ -1,0 +1,20 @@
+
+			Subject #86 (sports and various activities)
+
+86_01	86_01.c3d	86_01.amc	86_01.avi	jumps kicks and punches	
+86_02	86_02.c3d	86_02.amc	86_02.avi	walk, squats, run, stretch, jumps, punches, and drinking	
+86_03	86_03.c3d	86_03.amc	86_03.avi	walking, running, jumping, kicking, and stretching	
+86_04	86_04.c3d	86_04.amc	86_04.avi	walking, stretching, punching, chopping, and drinking	
+86_05	86_05.c3d	86_05.amc	86_05.avi	walking, jumping, jumping jacks,  jumping on one foot, punching, chopping,	
+86_06	86_06.c3d	86_06.amc	86_06.avi	walking, running, kicking, punching, knee kicking, and stretching	
+86_07	86_07.c3d	86_07.amc	86_07.avi	walking, swinging arms, stretching, jumping on one leg, and jumping	
+86_08	86_08.c3d	86_08.amc	86_08.avi	walking, squats, stretching, kicking, and punching	
+86_09	86_09.c3d	86_09.amc	86_09.avi	walking, sitting, looking, stand up	
+86_10	86_10.c3d	86_10.amc	86_10.avi	walk around, sit, stand up, and running	
+86_11	86_11.c3d	86_11.amc	86_11.avi	walking, stretching, walking and turning	
+86_12	86_12.c3d	86_12.amc	86_12.avi	walking, dragging, sweeping, dustpan, wipe window, and wipe mirror	
+86_13	86_13.c3d	86_13.amc	86_13.avi	walking around, walk up ladder, step down ladder	
+86_14	86_14.c3d	86_14.amc	86_14.avi	bouncing basketball, shooting basketball, dribble basketball, two handed dribble	
+86_15	86_15.c3d	86_15.amc	86_15.avi	walking, sitting, hand motions	
+
+
