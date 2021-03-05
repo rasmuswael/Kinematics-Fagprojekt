@@ -98,6 +98,29 @@ def dummy():
             joints[nm].parent = joints[line[0]]
 
     #Def t-pose
+    file_path = './data/01/01_01.amc'
+    with open(file_path) as f:
+        content = f.read().splitlines()
+
+    for idx, line in enumerate(content):
+        if line == ':DEGREES':
+            content = content[idx + 1:]
+            break
+
+    joint_names = []
+    idx = 0
+    line, idx = read_line(content, idx)
+    assert line[0].isnumeric(), line
+
+    while True:
+        line, idx = read_line(content, idx)
+        if line is None:
+            EOF = True
+            break
+        if line[0].isnumeric():
+            break
+        joint_names.append(line[0])
+
     pose = {'root': torch.tensor(6 * [float(0)], requires_grad=False)}
     for name in joints.keys():
         if name != 'root':
