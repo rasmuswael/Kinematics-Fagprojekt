@@ -120,8 +120,12 @@ def gather_all_np(data ,big_matrix = True):
 
 
 if __name__ == "__main__":
-    # selected = get_fnames( ["dance", "walk"] )
-    selected = get_fnames(["dance"])
+    # selected = get_fnames( ["walk"] )
+    selected = get_fnames(["walk","dance"])
     data = parse_selected(selected)
     X, y = gather_all_np(data)
+
+    #Save as numpy arrays for later use
+    #np.save('X_walk-dance_np', X)
+    #np.save('y_walk-dance_np', y) # save the file as "---.npy"
     123
