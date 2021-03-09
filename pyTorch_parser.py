@@ -74,7 +74,7 @@ class Joint:
     for child in self.children:
       child.set_motion(motion)
 
-  def draw(self):
+  def draw(self, *args):
     joints = self.to_dict()
     fig = plt.figure()
     ax = Axes3D(fig)
@@ -101,6 +101,9 @@ class Joint:
         ys = [child.coordinate[1, 0], parent.coordinate[1, 0]]
         zs = [child.coordinate[2, 0], parent.coordinate[2, 0]]
         plt.plot(zs, xs, ys, 'r')
+    if args != ():
+      ax.plot(args[0][0], args[0][1], args[0][2], markerfacecolor='k', markeredgecolor='k', marker='o',
+              markersize=5, alpha=1)
     plt.show()
 
   def to_dict(self):
@@ -280,11 +283,11 @@ def test_all():
 
 
 if __name__ == '__main__':
-  test_all()
-  # asf_path = './133.asf'
-  # amc_path = './133_01.amc'
-  # joints = parse_asf(asf_path)
-  # motions = parse_amc(amc_path)
-  # frame_idx = 0
-  # joints['root'].set_motion(motions[frame_idx])
-  # joints['root'].draw()
+  # test_all()
+  asf_path = './data/123/123.asf'
+  amc_path = './data/123/123_01.amc'
+  joints = parse_asf(asf_path)
+  motions = parse_amc(amc_path)
+  frame_idx = 0
+  joints['root'].set_motion(motions[frame_idx])
+  joints['root'].draw()
