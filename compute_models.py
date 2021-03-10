@@ -19,13 +19,7 @@ def compute_parameters_normal(queries):
     cov = np.cov(X, rowvar=False)
     return mean, cov
 
-def normal_prior(mean, cov):
-    # Has method prior_model.log_prob(*joint_angles as tensor*)
-    mean = torch.tensor(mean)
-    cov = torch.tensor(cov)
 
-    prior_model = MultivariateNormal(mean, covariance_matrix = cov)
-    return prior_model
 
 if __name__ == "__main__":
     output_file = "./models/normal_params"
