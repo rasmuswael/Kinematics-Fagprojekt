@@ -37,7 +37,7 @@ class Joint:
         self.length = length
         axis = np.deg2rad(axis)  # Convert angles from degrees to radians
         self.C = euler2mat(*axis)  # return rotation matrix from Euler angles and axis sequence.
-        self.Cinv = np.linalg.inv(self.C)
+        self.Cinv = self.C.T
         self.limits = np.zeros([3, 2])
         for lm, nm in zip(limits, dof):
             if nm == 'rx':

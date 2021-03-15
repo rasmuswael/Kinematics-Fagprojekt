@@ -38,7 +38,8 @@ class Joint:
     self.length = length
     axis = torch.deg2rad(axis).flip(0) #Convert angles from degrees to radians
     self.C = euler_angles_to_matrix(axis, "ZYX") #return rotation matrix from Euler angles and axis sequence.
-    self.Cinv = torch.inverse(self.C)
+    # self.Cinv = torch.inverse(self.C)
+    self.Cinv = torch.transpose(self.C, 0, 1)
     self.limits = np.zeros([3, 2])
     for lm, nm in zip(limits, dof):
       if nm == 'rx':
@@ -250,10 +251,10 @@ def parse_amc(file_path, ignore_translation = True):
 
       # Ignore translations
       if line[0] == 'root' and ignore_translation:
-        joint_degree[line[0]] = torch.tensor([0,0,0] + [float(deg) for deg in line[4:]], requires_grad=True)
+        joint_degree[line[0]] = torch.tensor([0,0,0] + [float(deg) for deg in line[4:]], requires_grad=False)
       else:
-        joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
-      # joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=True)
+        joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=False)
+      # joint_degree[line[0]] = torch.tensor([float(deg) for deg in line[1:]], requires_grad=False)
     frames.append(joint_degree)
   return frames
 
