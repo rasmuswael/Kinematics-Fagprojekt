@@ -37,7 +37,7 @@ def normal_prior(mean, cov):
 
 def get_prior_model():
     """Returns means, covs and queries for different datasets of joint angles"""
-    fname = r'../models/normal_params.npz'
+    fname = r'./models/normal_params.npz'
     npzfile = np.load(fname, allow_pickle=True)
     means = npzfile['arr_0']
     covs = npzfile['arr_1']

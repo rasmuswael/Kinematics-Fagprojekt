@@ -122,9 +122,13 @@ def dummy():
         joint_names.append(line[0])
 
     pose = {'root': torch.tensor(6 * [float(0)], requires_grad=False)}
-    for name in joints.keys():
+    for name in joint_names:
         if name != 'root':
-            pose[name] = torch.tensor(3 * [float(0)], requires_grad=False)
+            numaxis = 0
+            for axis, lm in enumerate(joints[name].limits):
+                if not torch.equal(torch.tensor(lm).float(), torch.zeros(2)):
+                    numaxis += 1
+            pose[name] = torch.tensor(numaxis * [float(0)], requires_grad=False)
     return joints, pose
 
 if __name__ == '__main__':
