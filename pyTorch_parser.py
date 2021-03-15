@@ -102,7 +102,7 @@ class Joint:
         zs = [child.coordinate[2, 0], parent.coordinate[2, 0]]
         plt.plot(zs, xs, ys, 'r')
     if args != ():
-      ax.plot(args[0][0], args[0][1], args[0][2], markerfacecolor='k', markeredgecolor='k', marker='o',
+      ax.plot(args[0][2], args[0][0], args[0][1], markerfacecolor='k', markeredgecolor='k', marker='o',
               markersize=5, alpha=1)
     plt.show()
 
