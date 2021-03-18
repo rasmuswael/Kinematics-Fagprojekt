@@ -32,6 +32,10 @@ def normal_prior(mean, cov):
     mean = torch.tensor(mean)
     cov = torch.tensor(cov)
 
+    # #Experimental
+    # cov = torch.diagonal(cov)
+    # cov = torch.diag(cov) * 100
+
     prior_model = MultivariateNormal(mean, covariance_matrix = cov)
     return prior_model
 
@@ -45,8 +49,15 @@ def get_prior_model():
     return means, covs, queries
 
 
-def Loss_V1(joint_angles, coordinates, goal, prior_model):
-    LogLoss = log_likelihood(coordinates, goal) + prior_model.log_prob(joint_angles)
+def Loss_V1(joint_angles, coordinates, goal, prior_model, variance):
+    # print(joint_angles, coordinates, goal)
+    print(coordinates, goal)
+    likelihood = log_likelihood(coordinates, goal, variance)
+    prior = prior_model.log_prob(joint_angles)
+    print(likelihood, prior)
+    LogLoss = -(likelihood + prior)
+    # LogLoss = -log_likelihood(coordinates, goal, variance)
+    # LogLoss = -prior
     return LogLoss
 
 if __name__ == "__main__":

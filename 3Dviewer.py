@@ -241,8 +241,10 @@ class Viewer:
 
 
 if __name__ == '__main__':
-  asf_path = './data/16/16.asf'
-  amc_path = './data/16/16_08.amc'
+  subject = '120'
+  amc_num = '10'
+  asf_path = f'./data/{subject}/{subject}.asf'
+  amc_path = f'./data/{subject}/{subject}_{amc_num}.amc'
   joints = parse_asf_np(asf_path)
   motions = parse_amc_np(amc_path)
   v = Viewer(joints, motions)

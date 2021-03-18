@@ -13,8 +13,8 @@ def compute_parameters_normal(queries):
     selected = get_fnames(queries)
     data = parse_selected(selected)
     X, y = gather_all_np(data)
-    # Remove translations
-    X = X[:, :(X.shape[1] - 3)]
+    # Remove translations and modolo
+    X = X[:, :(X.shape[1] - 3)] % 360
     mean = X.mean(0)
     cov = np.cov(X, rowvar=False)
     return mean, cov
