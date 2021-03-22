@@ -50,7 +50,8 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
     return selected
 
 
-def parse_selected(selected, type="numpy", ignore_translation=True, motions_as_mat=True):
+def parse_selected(selected, type="numpy", relative_sample_rate=1, limit=None, ignore_translation=True, motions_as_mat=True):
+    count = 0
     data = {}
     for key, file in selected.items():
         asf_path = f'./data/{key}/{key}.asf'
@@ -68,10 +69,15 @@ def parse_selected(selected, type="numpy", ignore_translation=True, motions_as_m
             else:
                 motions = parse_amc(amc_path, ignore_translation)
 
+            sampled_motions = []
             for i, motion in enumerate(motions):
-                motions[i]['translation'] = motions[i]['root'][:3]
-                motions[i]['root'] = motions[i]['root'][3:]
-
+                if not i % relative_sample_rate:
+                    motions[i]['translation'] = motion['root'][:3]
+                    motions[i]['root'] = motion['root'][3:]
+                    sampled_motions.append(motions[i])
+            motions = sampled_motions
+            if limit:
+                count += len(motions)
             if motions_as_mat:
                 first = 1
                 motions_np = {}
@@ -90,10 +96,13 @@ def parse_selected(selected, type="numpy", ignore_translation=True, motions_as_m
         data[key]['joints'] = joints
         data[key]['actions'] = actions
         data[key]['labels'] = labels
+        if limit:
+            if count >= limit:
+                return data
     return data
 
 
-def gather_all_np(data ,big_matrix = True):
+def gather_all_np(data ,big_matrix=True):
     """Requires data as actions as np matrix. See parse_selected"""
     first = 1
     for set in data.values():
@@ -120,12 +129,11 @@ def gather_all_np(data ,big_matrix = True):
 
 
 if __name__ == "__main__":
-    # selected = get_fnames( ["walk"] )
-    selected = get_fnames(["walk","dance"])
-    data = parse_selected(selected)
+    selected = get_fnames( ["walk"] )
+    # selected = get_fnames(["walk","dance"])
+    data = parse_selected(selected, relative_sample_rate=4, limit=3000)
     X, y = gather_all_np(data)
-
+    123
     #Save as numpy arrays for later use
     #np.save('X_walk-dance_np', X)
     #np.save('y_walk-dance_np', y) # save the file as "---.npy"
-    123

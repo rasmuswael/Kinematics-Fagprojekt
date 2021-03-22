@@ -2,7 +2,7 @@ import torch
 from pyTorch_parser import Joint, read_line
 
 
-def dummy():
+def dummy(return_dof=False):
     # Read 01.asf (placeholder) to get rudementary information, but set all directions to zero.
     file_path = './data/01/01.asf'
     '''read joint data only'''
@@ -120,18 +120,23 @@ def dummy():
         if line[0].isnumeric():
             break
         joint_names.append(line[0])
-
+    dof = {'root': [0,1,2]}
     pose = {'root': torch.tensor(6 * [float(0)], requires_grad=False)}
     for name in joint_names:
         if name != 'root':
+            dof[name] = []
             numaxis = 0
             for axis, lm in enumerate(joints[name].limits):
                 if not torch.equal(torch.tensor(lm).float(), torch.zeros(2)):
+                    dof[name].append(axis)
                     numaxis += 1
             pose[name] = torch.tensor(numaxis * [float(0)], requires_grad=False)
-    return joints, pose
+    if return_dof:
+        return joints, pose, dof
+    else:
+        return joints, pose
 
 if __name__ == '__main__':
-    dummy_joints, dummy_pose = dummy()
+    dummy_joints, dummy_pose, dof = dummy(return_dof=True)
     dummy_joints['root'].set_motion(dummy_pose)
     dummy_joints['root'].draw()
