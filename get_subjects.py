@@ -133,7 +133,6 @@ if __name__ == "__main__":
     # selected = get_fnames(["walk","dance"])
     data = parse_selected(selected, relative_sample_rate=4, limit=3000)
     X, y = gather_all_np(data)
-    123
     #Save as numpy arrays for later use
     #np.save('X_walk-dance_np', X)
     #np.save('y_walk-dance_np', y) # save the file as "---.npy"

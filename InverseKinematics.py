@@ -1,129 +1,111 @@
-from dummy import *
 import torch.optim as optim
 from Loss import *
-
+from compute_models import *
+from get_subjects import *
+from pyTorch_3Dviewer import *
 torch.manual_seed(1510)
 
-est_name = 'rclavicle'
-goal_name = 'rfoot'
+
+# example input:
+# goal_joints = ['rfoot']
+# pose = {'rfemur': [-60, 0, 0]}
 
 
+def set_goal(goal_joints, pose):
+    '''
+    Sets constraints.
+    Returns dictionary of goal joints and their desired cartesian coordinates
 
-dummy_joints, dummy_pose = dummy()
-
-goal_pose = dummy_pose.copy()
-goal_pose['rfemur'] = torch.tensor([-60, 0, 0])
-
-
-dummy_joints['root'].set_motion(goal_pose)
-goal_coord = dummy_joints[goal_name].coordinate
-
-def inverse_kinematics(goal_name, goal_coord):
+    Arguments:
+        goal_joints: type list. The joints that we wish to set constraints for
+        pose: type dictionary. Any pose that produces the desired constraints for the goal joints. Not all joint angles
+            have to be specified.
+    '''
     dummy_joints, dummy_pose = dummy()
+
+    for joint, angles in pose.items():
+        dummy_pose[joint] = torch.tensor(angles)
+
     dummy_joints['root'].set_motion(dummy_pose)
-    y = goal_coord
+
+    goal = {}
+    for goal_joint in goal_joints:
+        goal[goal_joint] = dummy_joints[goal_joint].coordinate
+    return goal
+
+
+def inverse_kinematics(goal, prior = (None,), excluded=None, saveframes = False, plot=False):
+    prior_type, prior_model = prior
+
+    frames = []
+
+    dummy_joints, dummy_pose, dof = dummy(return_dof=True)
+    dummy_joints['root'].set_motion(dummy_pose)
 
     # We exclude some joints for optimisation
-    children = [ 'root', 'lowerback','lfemur', 'ltibia','lfoot','rfemur','rtibia','rfoot','upperback','thorax', 'lowerneck',
-                 'lclavicle', 'rclavicle','upperneck', 'head','lhumerus','lradius','lwrist','lhand', 'rhumerus','rradius', 'rwrist','rhand']
+    children, indices = exclude(excluded, return_indices=True)
 
     # initialize as tensor of zeros
-    OptimJoints = [torch.zeros(1, requires_grad=True), torch.zeros(1, requires_grad=True), torch.zeros(1, requires_grad=True)]
-    n_angles = [3]
-
-    for child in children[1:]:
-        count = 0
-        for lim in range(3):
-            if dummy_joints[child].limits[lim].any():
-                OptimJoints.append(torch.zeros(1, requires_grad=True))
-
-                count += 1
-            # if (dummy_joints[children[i]].limits[lim][0] == 0) and (dummy_joints[children[i]].limits[lim][1] == 0):
-            #     pass
-            # else:
-            #     OptimJoints.append(torch.zeros(1, requires_grad=True))
-            #
-            #     count += 1
-        n_angles.append(count)
-
-    means, covs, queries = get_prior_model()
-    mean, cov = means[0], covs[0]
-
-    # Draw prior
-    mean_pose = dummy_pose.copy()
-    print(torch.cat([torch.zeros(3), torch.tensor(mean[:3])]))
-    mean_pose['root'] = torch.cat([torch.zeros(3), torch.tensor(mean[:3])]).float()
-
-    count = 2
-    for i, child in enumerate(children[1:]):
-        # est_pose[children[i]] = OptimJoints[i]-
-        # mean_pose[child] = torch.cat(OptimJoints[count: count + n_angles[i + 1]])
-        mean_pose[child] = torch.tensor(mean[count: count + n_angles[i + 1]])
-        count += n_angles[i + 1]
-    dummy_joints['root'].set_motion(mean_pose)
-    dummy_joints['root'].draw()
-
-    #make sure we remove unnecessary joints from prior!!
-    jump = 2
-    delete_indices = []
-    for joint_name in dummy_pose.keys():
-        prev_jump = jump
-        if joint_name != 'root':
-            joint_name
-            jump += dummy_pose[joint_name].size()[0]
-            if joint_name not in children:
-                print(joint_name)
-                delete_indices.append(list(range(prev_jump, jump)))
-    delete_indices = [item for sublist in delete_indices for item in sublist]
-    delete_indices = np.array(delete_indices)
-
-    mean = np.delete(mean, delete_indices)
-    cov = np.delete(np.delete(cov, delete_indices, 0), delete_indices, 1)
-    prior = normal_prior(mean, cov)
-
+    optim_joints = [torch.tensor([0.], requires_grad=True) for i in range(np.size(indices))]
 
     lr = 1
     n_epochs = 100
-    optimizer = optim.Adam(OptimJoints, lr=lr)
+    optimizer = optim.Adam(optim_joints, lr=lr)
+
+    y = [y for y in goal.values()]
 
     for epoch in range(n_epochs+1):
-        if not epoch % 25:
+        if plot and not epoch % 10:
             print(epoch)
-            dummy_joints['root'].draw(goal_coord.detach().numpy())
+            dummy_joints['root'].draw(list(goal.values())[0].numpy())
 
         def closure():
             optimizer.zero_grad()
 
+            #model outpout
+            # pose = [torch.zeros(3).float()]
+            pose = []
+            idx = 0
+            for i in range(59):
+                if i in indices:
+                    pose.append(optim_joints[idx])
+                    idx += 1
+                else:
+                    pose.append(torch.tensor([0.], requires_grad=False))
 
-            est_pose = dummy_pose.copy()
-            #loop and set new values
-            est_pose['root'] = torch.cat([torch.zeros(3, requires_grad=False), torch.cat(OptimJoints[:3])])
+            pose = torch.cat(pose)
+            pose_dict = array2pose(pose)
+            # print(pose)
+            dummy_joints['root'].set_motion(pose_dict)
+            yhat = [dummy_joints[goal_joint].coordinate for goal_joint in goal.keys()]
 
-            count = 2
-            for i, child in enumerate(children[1:]):
-                # est_pose[children[i]] = OptimJoints[i]-
-                est_pose[child] = torch.cat(OptimJoints[count : count+n_angles[i+1]])
-                count += n_angles[i+1]
-            dummy_joints['root'].set_motion(est_pose)
+            if saveframes:
+                frames.append(pose_dict)
 
-
-            yhat = dummy_joints[goal_name].coordinate
-            # loss = torch.cdist(yhat.transpose(0, 1), y.transpose(0, 1), p=2.0)
-            loss = Loss_V1(torch.cat(OptimJoints), yhat, y, prior, 10)
+            if prior_type == None:
+                loss = Loss_Euclidian(yhat, y)
+            elif prior_type == 'normal':
+                loss = Loss_Normal(pose[indices], yhat, y, prior_model, 1e-2)
             print(loss)
             loss.backward(retain_graph=True)
             return loss
         optimizer.step(closure)
 
-        with torch.no_grad():
-            for child in children:
-                count = 0
-                for lim in range(3):
-                    if dummy_joints[child].limits[lim].any():
-                        OptimJoints[count].clamp_(dummy_joints[child].limits[lim][0], dummy_joints[child].limits[lim][1])
-                        count += 1
+        # with torch.no_grad():
+        #     for child in children:
+        #         limits = dummy_joints[child].limits
+        #         for
+            # for child in children:
+            #     count = 0
+            #     for lim in range(3):
+            #         if dummy_joints[child].limits[lim].any():
+            #             OptimJoints[count].clamp_(dummy_joints[child].limits[lim][0], dummy_joints[child].limits[lim][1])
+            #             count += 1
 
-    print(OptimJoints)
+    print(optim_joints)
     print(children)
+    if saveframes:
+        return frames
 if __name__ == '__main__':
-    inverse_kinematics(goal_name, goal_coord)
+    A = 123
+    # inverse_kinematics(goal_name, goal_coord)

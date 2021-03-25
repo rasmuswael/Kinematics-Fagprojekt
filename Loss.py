@@ -4,7 +4,7 @@ import timeit
 from torch.distributions import MultivariateNormal
 
 
-def log_likelihood(coordinates, goal, variance = 1):
+def log_likelihood(yhat, y, variance = 1):
     """Goal coordinates is 3xN tensor (in the same order as in the joint class)
     Takes joint coordinates as a 3xN tensor. where N is the number of goal joints
     Variance is chosen somewhat arbitrarily"""
@@ -16,12 +16,12 @@ def log_likelihood(coordinates, goal, variance = 1):
     # return likelihood_model.log_prob(goal)
 
     #Method 2
-    N = goal.size(1)
+    N = y.size(1)
     likelihoods = []
     cov = torch.eye(3) * variance
     for i in range(N):
-        mean = coordinates[:,i]
-        goal_point = goal[:,i]
+        mean = yhat[:,i]
+        goal_point = y[:,i]
         likelihood_model = MultivariateNormal(mean, covariance_matrix=cov)
         likelihoods.append(likelihood_model.log_prob(goal_point))
     return sum(likelihoods)
@@ -32,9 +32,9 @@ def normal_prior(mean, cov):
     mean = torch.tensor(mean)
     cov = torch.tensor(cov)
 
-    # #Experimental
-    # cov = torch.diagonal(cov)
-    # cov = torch.diag(cov) * 100
+    #Experimental
+    cov = torch.diagonal(cov)
+    cov = torch.diag(cov)
 
     prior_model = MultivariateNormal(mean, covariance_matrix = cov)
     return prior_model
@@ -49,16 +49,21 @@ def get_prior_model():
     return means, covs, queries
 
 
-def Loss_V1(joint_angles, coordinates, goal, prior_model, variance):
+def Loss_Normal(pose, yhat, y, prior, variance):
     # print(joint_angles, coordinates, goal)
-    print(coordinates, goal)
-    likelihood = log_likelihood(coordinates, goal, variance)
-    prior = prior_model.log_prob(joint_angles)
-    print(likelihood, prior)
+    likelihood = 0
+    for i in range(len(yhat)):
+        likelihood += log_likelihood(yhat[i], y[i], variance)
+    prior = prior.log_prob(pose)
     LogLoss = -(likelihood + prior)
-    # LogLoss = -log_likelihood(coordinates, goal, variance)
-    # LogLoss = -prior
+    #LogLoss = -prior
     return LogLoss
+
+def Loss_Euclidian(yhat, y):
+    loss = 0
+    for i in range(len(yhat)):
+        loss += torch.cdist(yhat[i].transpose(0, 1), y[i].transpose(0, 1), p=2.0)
+    return loss
 
 if __name__ == "__main__":
     #make a test
