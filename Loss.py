@@ -8,12 +8,6 @@ def log_likelihood(yhat, y, variance = 1):
     """Goal coordinates is 3xN tensor (in the same order as in the joint class)
     Takes joint coordinates as a 3xN tensor. where N is the number of goal joints
     Variance is chosen somewhat arbitrarily"""
-    # #Method 1
-    # mean = coordinates.flatten()
-    # cov = torch.eye(mean.size(0)) * variance
-    # goal = goal.flatten()
-    # likelihood_model = MultivariateNormal(mean, covariance_matrix=cov)
-    # return likelihood_model.log_prob(goal)
 
     #Method 2
     N = y.size(1)
@@ -48,15 +42,24 @@ def get_prior_model():
     queries = npzfile['arr_2']
     return means, covs, queries
 
-
-def Loss_Normal(pose, yhat, y, prior, variance):
-    # print(joint_angles, coordinates, goal)
+def Loss_Likelihood(yhat, y, variance):
     likelihood = 0
     for i in range(len(yhat)):
         likelihood += log_likelihood(yhat[i], y[i], variance)
-    prior = prior.log_prob(pose)
+    return likelihood
+
+def Loss_Normal(pose, yhat, y, normal_prior, variance):
+    # print(joint_angles, coordinates, goal)
+    likelihood = Loss_Likelihood(yhat, y, variance)
+    prior = normal_prior.log_prob(pose)
     LogLoss = -(likelihood + prior)
     #LogLoss = -prior
+    return LogLoss
+
+def Loss_GM(pose, yhat, y, gm_prior, variance):
+    likelihood = Loss_Likelihood(yhat, y, variance)
+    prior = gm_prior.score_samples(pose)
+    LogLoss = -(likelihood + prior)
     return LogLoss
 
 def Loss_Euclidian(yhat, y):
@@ -65,6 +68,16 @@ def Loss_Euclidian(yhat, y):
         loss += torch.cdist(yhat[i].transpose(0, 1), y[i].transpose(0, 1), p=2.0)
     return loss
 
+def Loss(yhat, y, prior_model, prior_type, pose, lh_var=1e-2):
+    if prior_type == None:
+        loss = Loss_Euclidian(yhat, y)
+    elif prior_type == 'noprior':
+        loss = -Loss_Likelihood(yhat, y, lh_var)
+    elif prior_type == 'normal':
+        loss = Loss_Normal(pose, yhat, y, prior_model, lh_var)
+    elif prior_type == 'gaussian':
+        loss = Loss_GM(pose, yhat, y, prior_model, lh_var)
+    return loss
 if __name__ == "__main__":
     #make a test
     variance = 1
