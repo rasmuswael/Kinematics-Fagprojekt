@@ -66,13 +66,13 @@ class Viewer:
     )
     self.clock = pygame.time.Clock()
 
-    glClearColor(0, 0, 0, 0)
+    glClearColor(0.99, 0.99, 0.99, 0)
     glShadeModel(GL_SMOOTH)
     glMaterialfv(
       GL_FRONT, GL_SPECULAR, np.array([1, 1, 1, 1], dtype=np.float32)
     )
     glMaterialfv(
-      GL_FRONT, GL_SHININESS, np.array([100.0], dtype=np.float32)
+      GL_FRONT, GL_SHININESS, np.array([75], dtype=np.float32)
     )
     glMaterialfv(
       GL_FRONT, GL_AMBIENT, np.array([0.7, 0.7, 0.7, 0.7], dtype=np.float32)
@@ -82,11 +82,14 @@ class Viewer:
     glLightfv(GL_LIGHT0, GL_POSITION, np.array([1, 1, 1, 0], dtype=np.float32))
     glEnable(GL_LIGHT0)
     glEnable(GL_LIGHTING)
-    glEnable(GL_DEPTH_TEST)
+    #glEnable(GL_DEPTH_TEST)
     gluPerspective(45, (self.screen_size[0]/self.screen_size[1]), 0.1, 500.0)
 
-    glPointSize(10)
-    glLineWidth(2.5)
+    glEnable(GL_BLEND)
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
+    glEnable(GL_LINE_SMOOTH)
+    glPointSize(11.5)
+    glLineWidth(5)
 
   def process_event(self):
     """
@@ -194,12 +197,18 @@ class Viewer:
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
     glBegin(GL_POINTS)
+    glMaterialfv(
+      GL_FRONT, GL_EMISSION, np.array([0.5, 0.1, 0.1, 1], dtype=np.float32)
+    )
     for j in self.joints.values():
       coord = np.array(
         np.squeeze(j.coordinate.detach().numpy()).dot(self.rotation_R) + \
         self.translate, dtype=np.float32
       )
       glVertex3f(*coord)
+    glMaterialfv(
+      GL_FRONT, GL_EMISSION, np.array([0, 0, 0, 1], dtype=np.float32)
+    )
     glEnd()
 
     glBegin(GL_LINES)
@@ -208,16 +217,20 @@ class Viewer:
       parent = j.parent
       if parent is not None:
         coord_x = np.array(
-          np.squeeze(child.coordinate.detach().numpy()).dot(self.rotation_R)+self.translate,
+          np.squeeze(child.coordinate.detach().numpy()).dot(self.rotation_R) + self.translate,
           dtype=np.float32
         )
         coord_y = np.array(
-          np.squeeze(parent.coordinate.detach().numpy()).dot(self.rotation_R)+self.translate,
+          np.squeeze(parent.coordinate.detach().numpy()).dot(self.rotation_R) + self.translate,
           dtype=np.float32
         )
         glVertex3f(*coord_x)
         glVertex3f(*coord_y)
     glEnd()
+
+
+
+
 
   def run(self):
     """
