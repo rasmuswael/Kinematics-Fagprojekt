@@ -34,7 +34,7 @@ def set_goal(goal_joints, pose):
     return goal
 
 class Inverse_model:
-    def __init__(self, prior = (None, None), excluded=None, saveframes = True, plot=False):
+    def __init__(self, prior = (None, None), excluded=None, saveframes=True, plot=False):
         self.prior_type, self.prior_model = prior
         self.excluded = excluded
         self.children, self.indices = exclude(excluded, return_indices=True)
@@ -54,7 +54,7 @@ class Inverse_model:
                 pose.append(torch.tensor([0.], requires_grad=False))
         return torch.cat(pose)
 
-    def inverse_kinematics(self, goal, lr=1, n_epochs=100):
+    def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0):
         #saveframes = self.saveframes
         frames = []
         #prior_type, prior_model = self.prior_type, self.prior_model
@@ -65,7 +65,7 @@ class Inverse_model:
         # initialize as tensor of zeros
         optim_joints = [torch.tensor([0.], requires_grad=True) for i in range(np.size(self.indices))]
 
-        optimizer = optim.Adam(optim_joints, lr=lr)
+        optimizer = optim.Adam(optim_joints, lr=lr, weight_decay=weight_decay)
 
         y = [y for y in goal.values()]
 
@@ -82,9 +82,11 @@ class Inverse_model:
                 if self.saveframes:
                     frames.append(pose_dict)
 
-                loss = Loss(yhat, y, self.prior_model, self.prior_type, pose[self.indices])
+                loss = Loss(yhat, y, self.prior_model, self.prior_type, pose[self.indices], lh_var)
                 loss.backward(retain_graph=True)
                 return loss
             optimizer.step(closure)
         self.result = optim_joints
         self.frames = frames
+        if self.plot:
+            draw_cluster(torch.cat(optim_joints), self.indices)

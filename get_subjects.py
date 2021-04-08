@@ -52,6 +52,7 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
 
 def parse_selected(selected, type="numpy", relative_sample_rate=1, limit=None, ignore_translation=True, motions_as_mat=True):
     count = 0
+    done = False
     data = {}
     for key, file in selected.items():
         asf_path = f'./data/{key}/{key}.asf'
@@ -78,6 +79,9 @@ def parse_selected(selected, type="numpy", relative_sample_rate=1, limit=None, i
             motions = sampled_motions
             if limit:
                 count += len(motions)
+                if count >= limit:
+                    motions = motions[:(len(motions) - (count - limit))]
+                    done = True
             if motions_as_mat:
                 first = 1
                 motions_np = {}
@@ -92,13 +96,14 @@ def parse_selected(selected, type="numpy", relative_sample_rate=1, limit=None, i
                 motions = motions_np
             actions.append(motions)
             labels.append(label)
+            if done:
+                break
         data[key] = {}
         data[key]['joints'] = joints
         data[key]['actions'] = actions
         data[key]['labels'] = labels
-        if limit:
-            if count >= limit:
-                return data
+        if done:
+            return data
     return data
 
 

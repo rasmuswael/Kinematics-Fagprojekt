@@ -6,8 +6,6 @@ from torch.distributions import MultivariateNormal
 from scipy.stats import circmean, circvar
 from gmm_torch.gmm import GaussianMixture
 
-
-
 def truncate(X, root_limit=None):
     '''Remove translation from X coloumns first'''
     X = (X + 180) % 360 - 180
@@ -92,6 +90,19 @@ def array2pose(A, indices=[]):
                 dummy_pose[j][i] = A[idx + i]
         idx += len(d)
     return dummy_pose
+
+def array2motions(X, indices):
+    motions = []
+    for x in X:
+        motions.append((array2pose(torch.tensor(x), indices)))
+    return motions
+
+
+def draw_cluster(mean, indices=[]):
+    joints, pose, dof = dummy(return_dof=True)
+    mean_pose = array2pose(mean, indices)
+    joints['root'].set_motion(mean_pose)
+    joints['root'].draw()
 ###
 
 def compute_circ_params(X):
@@ -108,25 +119,16 @@ def compute_parameters_normal(X):
     cov = np.cov(X, rowvar=False)
     return mean, cov
 
-# def compute_GMM(X, n_components, n_features=59):
-#     '''Input truncated X and remove translations'''
-#     gm = GaussianMixture(n_components=)
-
-
-def draw_cluster(mean, indices=[]):
-    joints, pose, dof = dummy(return_dof=True)
-
-    mean_pose = array2pose(mean, indices)
-    # mean_pose = pose.copy()
-    # mean_pose['root'] = torch.cat([torch.zeros(3), torch.tensor(mean[:3])]).float()
-    # count = 3
-    # for joint in list(mean_pose.keys())[1:]:
-    #     n_angles = len(dof[joint])
-    #     mean_pose[joint] = torch.tensor(mean[count: count + n_angles])
-    #     # print(joint, mean_pose[joint], n_angles, torch.tensor(cmean[count: count + n_angles]))
-    #     count += n_angles
-    joints['root'].set_motion(mean_pose)
-    joints['root'].draw()
+def compute_gm(X, n_components, indices=np.arange(59), initiliaze_mu=True):
+    n_features = len(indices)
+    X = remove_excluded(truncate(X), indices, type='numpy')
+    if initiliaze_mu:
+        mu_init = X[np.random.choice(X.shape[0], size=n_components), :]
+        gm = GaussianMixture(n_components=n_components, n_features=n_features, mu_init=torch.tensor([mu_init]))
+    else:
+        gm = GaussianMixture(n_components=n_components, n_features=n_features)
+    gm.fit(torch.tensor(X), n_iter=250)
+    return gm
 
 
 ### EXPERIMENTAL ###
@@ -169,55 +171,41 @@ if __name__ == "__main__":
     # mean, cov = means[0], covs[0]
     # Lets try visualizing the circular mean
     selected = get_fnames(["walk"])
-    data = parse_selected(selected, relative_sample_rate=8, limit=10000)
+    data = parse_selected(selected, relative_sample_rate=8, limit=2000)
     X, y = gather_all_np(data)
     X = X[:, :(X.shape[1] - 3)]
 
+    dummy_joints, dummy_pose = dummy()
+
     included, indices = exclude(return_indices=True)
+    mean, cov = compute_parameters_normal(truncate(X))
 
-    X = remove_excluded(truncate(X), indices, type='numpy')
+    truncmean, trunccov = np.zeros(mean.shape), np.zeros(cov.shape)
+    truncmean[indices], trunccov[indices, indices] = mean[indices], cov[indices, indices]
+    mean, cov = torch.tensor(truncmean), torch.tensor(trunccov)
+    # Draw prior
+    mean_pose = array2pose(mean)
 
-    n_components, n_features = 16, len(indices)
+    dummy_joints['root'].set_motion(mean_pose)
+    dummy_joints['root'].draw()
 
-    mu_init = X[np.random.choice(X.shape[0], size = n_components), :]
+    # Ignore orientation
+    # X[:, 1] = np.zeros(X.shape[0])
 
-    gm = GaussianMixture(n_components=n_components, n_features=n_features, mu_init=torch.tensor([mu_init]))
-    gm.fit(torch.tensor(X), n_iter=250)
-    for cluster in gm.mu[0]:
-        draw_cluster(cluster, indices)
+    cmean, _ = compute_circ_params(X)
+    trunccmean, _ = compute_circ_params(truncate(X))
 
-    123
-    # dummy_joints, dummy_pose = dummy()
-    #
-    # included, indices = exclude(return_indices=True)
-    # mean, cov = compute_parameters_normal(truncate(X))
-    #
-    # truncmean, trunccov = np.zeros(mean.shape), np.zeros(cov.shape)
-    # truncmean[indices], trunccov[indices, indices] = mean[indices], cov[indices, indices]
-    # mean, cov = torch.tensor(truncmean), torch.tensor(trunccov)
-    # # Draw prior
-    # mean_pose = array2pose(mean)
-    #
-    # dummy_joints['root'].set_motion(mean_pose)
-    # dummy_joints['root'].draw()
-    #
-    # # Ignore orientation
-    # # X[:, 1] = np.zeros(X.shape[0])
-    #
-    # cmean, _ = compute_circ_params(X)
-    # trunccmean, _ = compute_circ_params(truncate(X))
-    #
-    # # Xcart = angle2cartesian(X)
-    # # Xangle = cartesian2angle(Xcart)
-    # # cart_mean = np.mean(Xcart, axis=0)
-    # # angle_mean = cartesian2angle(cart_mean)
-    # # cart_cov = np.var(Xcart, axis=0)
-    # # angle_cov = cartesian2angle(cart_cov)
-    # mean, cov = compute_parameters_normal(X)
-    # truncmean, trunccov = compute_parameters_normal(truncate(X))
-    #
-    # draw_cluster(cmean)
-    # draw_cluster(trunccmean)
-    # draw_cluster(truncmean)
-    # #draw_cluster(angle_mean)
-    # #draw_cluster(mean)
+    # Xcart = angle2cartesian(X)
+    # Xangle = cartesian2angle(Xcart)
+    # cart_mean = np.mean(Xcart, axis=0)
+    # angle_mean = cartesian2angle(cart_mean)
+    # cart_cov = np.var(Xcart, axis=0)
+    # angle_cov = cartesian2angle(cart_cov)
+    mean, cov = compute_parameters_normal(X)
+    truncmean, trunccov = compute_parameters_normal(truncate(X))
+
+    draw_cluster(cmean)
+    draw_cluster(trunccmean)
+    draw_cluster(truncmean)
+    #draw_cluster(angle_mean)
+    #draw_cluster(mean)
