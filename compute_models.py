@@ -171,7 +171,7 @@ if __name__ == "__main__":
     # mean, cov = means[0], covs[0]
     # Lets try visualizing the circular mean
     selected = get_fnames(["walk"])
-    data = parse_selected(selected, relative_sample_rate=8, limit=2000)
+    data = parse_selected(selected, sample_rate=8, limit=2000)
     X, y = gather_all_np(data)
     X = X[:, :(X.shape[1] - 3)]
 

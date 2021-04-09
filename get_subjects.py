@@ -50,7 +50,7 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
     return selected
 
 
-def parse_selected(selected, type="numpy", relative_sample_rate=1, limit=None, ignore_translation=True, motions_as_mat=True):
+def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_translation=True, sep_trans_root=True, motions_as_mat=True):
     count = 0
     done = False
     data = {}
@@ -72,9 +72,10 @@ def parse_selected(selected, type="numpy", relative_sample_rate=1, limit=None, i
 
             sampled_motions = []
             for i, motion in enumerate(motions):
-                if not i % relative_sample_rate:
-                    motions[i]['translation'] = motion['root'][:3]
-                    motions[i]['root'] = motion['root'][3:]
+                if not i % sample_rate:
+                    if sep_trans_root:
+                        motions[i]['translation'] = motion['root'][:3]
+                        motions[i]['root'] = motion['root'][3:]
                     sampled_motions.append(motions[i])
             motions = sampled_motions
             if limit:
@@ -133,10 +134,32 @@ def gather_all_np(data ,big_matrix=True):
     return gathered, y
 
 
+def get_motion_samples(selected, length, num_samples, random=True, sample_rate=1):
+    '''Input the length of the sample in terms of frames.
+    Input the selected files to be used for sampling.
+    Returns 'num_samples' amount of coordinate sets of 'length' for each tracked joint in 'joints' '''
+    data = parse_selected(selected, limit=length * num_samples * 20, sample_rate=sample_rate, sep_trans_root=False, motions_as_mat=False)
+    actions = [action for sublist in [data[key]['actions'] for key in data.keys()] for action in sublist]
+    num_actions = len(actions)
+    choices = np.random.choice(np.arange(num_actions), num_samples, replace=True)
+    samples = []
+    for choice in choices:
+        action = actions[choice]
+        if length < len(action):
+            high_idx = np.random.randint(low=length, high=len(action))
+            low_idx = high_idx - length
+        else:
+            high_idx = len(action)
+            low_idx = 0
+        sample = action[low_idx:high_idx]
+        samples.append(sample)
+    return samples
+
 if __name__ == "__main__":
     selected = get_fnames( ["walk"] )
     # selected = get_fnames(["walk","dance"])
-    data = parse_selected(selected, relative_sample_rate=4, limit=3000)
+    samples = get_motion_samples(selected, 50, 10, sample_rate=4)
+    data = parse_selected(selected, sample_rate=4, limit=3000, motions_as_mat=False)
     X, y = gather_all_np(data)
     #Save as numpy arrays for later use
     #np.save('X_walk-dance_np', X)

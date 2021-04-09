@@ -2,7 +2,7 @@ from InverseKinematics import *
 torch.manual_seed(1510)
 
 selected = get_fnames(["walk"])
-data = parse_selected(selected, relative_sample_rate=8, limit=10000)
+data = parse_selected(selected, sample_rate=8, limit=10000)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1] - 3)]
 

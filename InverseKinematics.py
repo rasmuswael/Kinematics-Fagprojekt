@@ -33,8 +33,9 @@ def set_goal(goal_joints, pose):
         goal[goal_joint] = dummy_joints[goal_joint].coordinate
     return goal
 
+
 class Inverse_model:
-    def __init__(self, prior = (None, None), excluded=None, saveframes=True, plot=False):
+    def __init__(self, prior = (None, None), excluded=None, saveframes=True, plot=False, pose=None):
         self.prior_type, self.prior_model = prior
         self.excluded = excluded
         self.children, self.indices = exclude(excluded, return_indices=True)
@@ -42,7 +43,11 @@ class Inverse_model:
         self.frames = []
         self.plot = plot
         self.result = None
-
+        self.joints, dummy_pose, dof = dummy(return_dof=True)
+        if not pose:
+            self.joints['root'].set_motion(dummy_pose)
+        else:
+            self.joints['root'].set_motion(pose)
     def stitch(self, optim_joints):
         pose = []
         idx = 0
@@ -58,10 +63,6 @@ class Inverse_model:
         #saveframes = self.saveframes
         frames = []
         #prior_type, prior_model = self.prior_type, self.prior_model
-
-        joints, dummy_pose, dof = dummy(return_dof=True)
-        joints['root'].set_motion(dummy_pose)
-
         # initialize as tensor of zeros
         optim_joints = [torch.tensor([0.], requires_grad=True) for i in range(np.size(self.indices))]
 
@@ -76,8 +77,8 @@ class Inverse_model:
                 pose = self.stitch(optim_joints)
                 pose_dict = array2pose(pose)
 
-                joints['root'].set_motion(pose_dict)
-                yhat = [joints[goal_joint].coordinate for goal_joint in goal.keys()]
+                self.joints['root'].set_motion(pose_dict)
+                yhat = [self.joints[goal_joint].coordinate for goal_joint in goal.keys()]
 
                 if self.saveframes:
                     frames.append(pose_dict)
@@ -86,7 +87,7 @@ class Inverse_model:
                 loss.backward(retain_graph=True)
                 return loss
             optimizer.step(closure)
-        self.result = optim_joints
+        self.result = array2pose(self.stitch(optim_joints))
         self.frames = frames
         if self.plot:
             draw_cluster(torch.cat(optim_joints), self.indices)
