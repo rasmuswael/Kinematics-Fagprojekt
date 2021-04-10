@@ -27,8 +27,8 @@ def normal_prior(mean, cov):
     cov = torch.tensor(cov)
 
     #Experimental
-    cov = torch.diagonal(cov)
-    cov = torch.diag(cov)
+    # cov = torch.diagonal(cov)
+    # cov = torch.diag(cov)
 
     prior_model = MultivariateNormal(mean, covariance_matrix = cov)
     return prior_model
@@ -46,7 +46,7 @@ def Loss_Likelihood(yhat, y, variance):
     likelihood = 0
     for i in range(len(yhat)):
         likelihood += log_likelihood(yhat[i], y[i], variance)
-    return likelihood
+    return likelihood / len(yhat)
 
 def Loss_Normal(pose, yhat, y, normal_prior, variance):
     # print(joint_angles, coordinates, goal)

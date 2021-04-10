@@ -34,6 +34,22 @@ def set_goal(goal_joints, pose):
     return goal
 
 
+def get_goal_sequences(goal_joints, samples):
+    sequences = []
+    for sample in samples:
+        goals = []
+        for pose in sample:
+            goals.append(set_goal(goal_joints, pose))
+        sequences.append(goals)
+    return sequences
+
+
+def unpack_sequence(joint, sequence):
+    coordinate_list = []
+    for goal in sequence:
+        coordinate_list.append(goal[joint])
+    return coordinate_list
+
 class Inverse_model:
     def __init__(self, prior = (None, None), excluded=None, saveframes=True, plot=False, pose=None):
         self.prior_type, self.prior_model = prior
@@ -42,12 +58,13 @@ class Inverse_model:
         self.saveframes = saveframes
         self.frames = []
         self.plot = plot
-        self.result = None
         self.joints, dummy_pose, dof = dummy(return_dof=True)
         if not pose:
-            self.joints['root'].set_motion(dummy_pose)
+            self.pose = dummy_pose
         else:
-            self.joints['root'].set_motion(pose)
+            self.pose = pose
+        self.joints['root'].set_motion(self.pose)
+
     def stitch(self, optim_joints):
         pose = []
         idx = 0
@@ -64,7 +81,7 @@ class Inverse_model:
         frames = []
         #prior_type, prior_model = self.prior_type, self.prior_model
         # initialize as tensor of zeros
-        optim_joints = [torch.tensor([0.], requires_grad=True) for i in range(np.size(self.indices))]
+        optim_joints = [torch.tensor([pose2tensor(self.pose)[i]], requires_grad=True) for i in self.indices]
 
         optimizer = optim.Adam(optim_joints, lr=lr, weight_decay=weight_decay)
 
@@ -87,7 +104,7 @@ class Inverse_model:
                 loss.backward(retain_graph=True)
                 return loss
             optimizer.step(closure)
-        self.result = array2pose(self.stitch(optim_joints))
+        self.pose = array2pose(self.stitch(optim_joints))
         self.frames = frames
         if self.plot:
             draw_cluster(torch.cat(optim_joints), self.indices)

@@ -91,6 +91,15 @@ def array2pose(A, indices=[]):
         idx += len(d)
     return dummy_pose
 
+
+def pose2tensor(pose):
+    A = pose['root'][3:]
+    angle_list = list(pose.values())
+    for angles in angle_list[1:]:
+        A = torch.cat([A,angles])
+    return A
+
+
 def array2motions(X, indices):
     motions = []
     for x in X:
@@ -118,6 +127,7 @@ def compute_parameters_normal(X):
     mean = X.mean(0)
     cov = np.cov(X, rowvar=False)
     return mean, cov
+
 
 def compute_gm(X, n_components, indices=np.arange(59), initiliaze_mu=True):
     n_features = len(indices)

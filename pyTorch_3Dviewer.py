@@ -11,7 +11,7 @@ from OpenGL.GLU import *
 
 
 class Viewer:
-  def __init__(self, joints=None, motions=None):
+  def __init__(self, joints=None, motions=None, points=None, trajectories=None):
     """
     Display motion sequence in 3D.
 
@@ -26,6 +26,9 @@ class Viewer:
     """
     self.joints = joints
     self.motions = motions
+    self.points = points
+    self.trajectories = trajectories
+
     self.frame = 0 # current frame of the motion sequence
     self.playing = False # whether is playing the motion sequence
     self.fps = 120 # frame rate
@@ -207,10 +210,19 @@ class Viewer:
       )
       glVertex3f(*coord)
     glMaterialfv(
+      GL_FRONT, GL_EMISSION, np.array([1, 0.1, 0.1, 1], dtype=np.float32)
+    )
+    if self.points != None:
+      for point in self.points:
+        point = np.array(
+        np.squeeze(point.detach().numpy()).dot(self.rotation_R) + \
+        self.translate, dtype=np.float32
+      )
+        glVertex3f(*point)
+    glMaterialfv(
       GL_FRONT, GL_EMISSION, np.array([0, 0, 0, 1], dtype=np.float32)
     )
     glEnd()
-
     glBegin(GL_LINES)
     for j in self.joints.values():
       child = j
@@ -227,9 +239,6 @@ class Viewer:
         glVertex3f(*coord_x)
         glVertex3f(*coord_y)
     glEnd()
-
-
-
 
 
   def run(self):
@@ -260,5 +269,5 @@ if __name__ == '__main__':
   amc_path = f'./data/{subject}/{subject}_{amc_num}.amc'
   joints = parse_asf(asf_path)
   motions = parse_amc(amc_path)
-  v = Viewer(joints, motions)
+  v = Viewer(joints, motions, points = [torch.tensor([0.,0.,0.])])
   v.run()
