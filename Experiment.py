@@ -15,11 +15,11 @@ included, indices = exclude(excluded, return_indices=True, root_exclude=[1])
 mean, cov = compute_parameters_normal(truncate(X))
 mean, cov = mean[indices], cov[indices, :][:, indices]
 
-gm = compute_gm(X, n_components=8, indices=indices, initiliaze_mu=True)
+means, covs, weights = compute_gm_params(X, n_components=3, indices=indices)
 
 noprior = ('noprior', None)
 normprior = ('normal', normal_prior(mean, cov))
-gmprior = ('gaussian', gm)
+gmprior = ('gaussian', gmm_prior(means, covs, weights))
 
 # goal_joints = ['rfoot']
 # pose = {'rfemur': [40, 0, 0]}
@@ -33,9 +33,9 @@ saveframes, plot = True, True
 
 n_epochs, lr, weight_decay, lh_var = 75, 6, 0, 1
 
-inv_noprior = Inverse_model(noprior, excluded, saveframes=saveframes, plot=plot)
-inv_normal = Inverse_model(normprior, excluded, saveframes=saveframes, plot=plot)
-inv_gm = Inverse_model(gmprior, excluded, saveframes=saveframes, plot=plot)
+inv_noprior = Inverse_model(noprior, indices, saveframes=saveframes, plot=plot)
+inv_normal = Inverse_model(normprior, indices, saveframes=saveframes, plot=plot)
+inv_gm = Inverse_model(gmprior, indices, saveframes=saveframes, plot=plot)
 
 inv_noprior.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var, weight_decay=weight_decay)
 inv_normal.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var, weight_decay=weight_decay)

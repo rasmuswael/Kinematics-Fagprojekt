@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 import timeit
 from torch.distributions import MultivariateNormal
@@ -33,14 +32,18 @@ def normal_prior(mean, cov):
     prior_model = MultivariateNormal(mean, covariance_matrix = cov)
     return prior_model
 
-def get_prior_model():
-    """Returns means, covs and queries for different datasets of joint angles"""
-    fname = r'./models/normal_params.npz'
-    npzfile = np.load(fname, allow_pickle=True)
-    means = npzfile['arr_0']
-    covs = npzfile['arr_1']
-    queries = npzfile['arr_2']
-    return means, covs, queries
+
+class gmm_prior:
+    def __init__(self, means, covs, weights):
+        self.weights = torch.tensor(weights)
+        self.means = torch.tensor(means)
+        self.covs = torch.tensor(covs)
+        self.n_components = len(weights)
+        self.gaussians = [MultivariateNormal(self.means[i], covariance_matrix=self.covs[i]) for i in range(self.n_components)]
+
+    def prior_prob(self, pose):
+        prior_prob = sum([self.gaussians[i].log_prob(pose) * self.weights[i] for i in range(self.n_components)])
+        return prior_prob
 
 def Loss_Likelihood(yhat, y, variance):
     likelihood = 0
@@ -56,9 +59,9 @@ def Loss_Normal(pose, yhat, y, normal_prior, variance):
     #LogLoss = -prior
     return LogLoss
 
-def Loss_GM(pose, yhat, y, gm_prior, variance):
+def Loss_GM(pose, yhat, y, gmm_prior, variance):
     likelihood = Loss_Likelihood(yhat, y, variance)
-    prior = gm_prior.score_samples(pose)
+    prior = gmm_prior.prior_prob(pose)
     LogLoss = -(likelihood + prior)
     return LogLoss
 

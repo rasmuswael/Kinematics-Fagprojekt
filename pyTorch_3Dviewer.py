@@ -11,7 +11,7 @@ from OpenGL.GLU import *
 
 
 class Viewer:
-  def __init__(self, joints=None, motions=None, points=None, trajectories=None):
+  def __init__(self, joints=None, motions=None, points=[], trajectories=[]):
     """
     Display motion sequence in 3D.
 
@@ -28,6 +28,8 @@ class Viewer:
     self.motions = motions
     self.points = points
     self.trajectories = trajectories
+    if len(self.trajectories):
+      self.trajectory_colours = [np.random.uniform(size=3) for i in range(len(self.trajectories))]
 
     self.frame = 0 # current frame of the motion sequence
     self.playing = False # whether is playing the motion sequence
@@ -209,6 +211,10 @@ class Viewer:
         self.translate, dtype=np.float32
       )
       glVertex3f(*coord)
+    glEnd()
+
+    glPointSize(8.5)
+    glBegin(GL_POINTS)
     glMaterialfv(
       GL_FRONT, GL_EMISSION, np.array([1, 0.1, 0.1, 1], dtype=np.float32)
     )
@@ -223,6 +229,32 @@ class Viewer:
       GL_FRONT, GL_EMISSION, np.array([0, 0, 0, 1], dtype=np.float32)
     )
     glEnd()
+    glPointSize(11.5)
+
+    glLineWidth(4)
+    glBegin(GL_LINES)
+    for i, trajectory in enumerate(self.trajectories):
+      glMaterialfv(
+        GL_FRONT, GL_EMISSION, np.array([*self.trajectory_colours[i], 1], dtype=np.float32)
+      )
+      prev_point = trajectory[self.frame]
+      for point in trajectory[(self.frame + 1):]:
+        coord_x = np.array(
+          np.squeeze(prev_point.detach().numpy()).dot(self.rotation_R) + self.translate,
+          dtype=np.float32)
+        coord_y = np.array(
+          np.squeeze(point.detach().numpy()).dot(self.rotation_R) + self.translate,
+          dtype=np.float32)
+        prev_point = point
+        glVertex3f(*coord_x)
+        glVertex3f(*coord_y)
+
+    glMaterialfv(
+      GL_FRONT, GL_EMISSION, np.array([0, 0, 0, 1], dtype=np.float32)
+    )
+    glEnd()
+    glLineWidth(5)
+
     glBegin(GL_LINES)
     for j in self.joints.values():
       child = j
@@ -239,6 +271,7 @@ class Viewer:
         glVertex3f(*coord_x)
         glVertex3f(*coord_y)
     glEnd()
+
 
 
   def run(self):

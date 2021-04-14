@@ -34,11 +34,12 @@ def set_goal(goal_joints, pose):
     return goal
 
 
-def get_goal_sequences(goal_joints, samples):
+def get_goal_sequences(goal_joints, samples, indices=np.arange(59)):
     sequences = []
     for sample in samples:
         goals = []
         for pose in sample:
+            pose = remove_excluded(pose, indices, datatype='dict', type='numpy')
             goals.append(set_goal(goal_joints, pose))
         sequences.append(goals)
     return sequences
@@ -51,10 +52,9 @@ def unpack_sequence(joint, sequence):
     return coordinate_list
 
 class Inverse_model:
-    def __init__(self, prior = (None, None), excluded=None, saveframes=True, plot=False, pose=None):
+    def __init__(self, prior = (None, None), indices=np.arange(59), saveframes=True, plot=False, pose=None):
         self.prior_type, self.prior_model = prior
-        self.excluded = excluded
-        self.children, self.indices = exclude(excluded, return_indices=True)
+        self.indices = indices
         self.saveframes = saveframes
         self.frames = []
         self.plot = plot
@@ -81,7 +81,7 @@ class Inverse_model:
         frames = []
         #prior_type, prior_model = self.prior_type, self.prior_model
         # initialize as tensor of zeros
-        optim_joints = [torch.tensor([pose2tensor(self.pose)[i]], requires_grad=True) for i in self.indices]
+        optim_joints = [torch.tensor([pose2array(self.pose)[i]], requires_grad=True) for i in self.indices]
 
         optimizer = optim.Adam(optim_joints, lr=lr, weight_decay=weight_decay)
 

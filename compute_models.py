@@ -4,14 +4,16 @@ from scipy.spatial.transform import Rotation
 import torch
 from torch.distributions import MultivariateNormal
 from scipy.stats import circmean, circvar
-from gmm_torch.gmm import GaussianMixture
+#from gmm_torch.gmm import GaussianMixture
+from sklearn.mixture import GaussianMixture
 
-def truncate(X, root_limit=None):
+
+def truncate(X, root_limit=[]):
     '''Remove translation from X coloumns first'''
     X = (X + 180) % 360 - 180
     joints, pose, dof = dummy(return_dof=True)
 
-    if not root_limit:
+    if not len(root_limit):
         root_limit = np.array([[-30., 30.],
                                [0., 0.],
                                [-30., 30.]])
@@ -52,8 +54,54 @@ def exclude(excluded=None, return_indices=True, root_exclude=[1]):
     return included
 
 
-def remove_excluded(A, indices, type='torch'):
+def array2pose(A, indices=[], type='torch'):
+    _, dummy_pose, dof = dummy(return_dof=True)
+
+    if len(indices):
+        if type == 'torch':
+            B = torch.zeros(59).float()
+            B[indices] = A.float()
+            A = B
+        elif type == 'numpy':
+            B = np.zeros(59)
+            B[indices] = A
+            A = B
+
+    idx = 0
+    for j, d in dof.items():
+        for i in range(len(d)):
+            if j == 'root':
+                dummy_pose[j][i+3] = A[idx + i]
+            else:
+                dummy_pose[j][i] = A[idx + i]
+        idx += len(d)
+    return dummy_pose
+
+
+def pose2array(pose, type='torch'):
+    A = pose['root'][3:]
+    angle_list = list(pose.values())
+
+    for angles in angle_list[1:]:
+        if type == 'torch':
+            A = torch.cat([A,angles])
+        elif type == 'numpy':
+            A = np.concatenate([A,angles])
+    return A
+
+
+def array2motions(X, indices=np.arange(59)):
+    motions = []
+    for x in X:
+        motions.append((array2pose(torch.tensor(x), indices)))
+    return motions
+
+
+def remove_excluded(A, indices, datatype='array', type='torch'):
     '''Assumes that nothing has been been removed'''
+    if datatype == 'dict':
+        A = pose2array(A, type=type)
+
     if type == 'torch':
         shape = A.size()
         A = A.flatten()
@@ -70,41 +118,10 @@ def remove_excluded(A, indices, type='torch'):
             B = np.concatenate((B, A[indices + rep * 59]))
     if len(shape) - 1:
         B = B.reshape((numreps, len(indices)))
+
+    if datatype == 'dict':
+        return array2pose(B, indices, type=type)
     return B
-
-
-def array2pose(A, indices=[]):
-    _, dummy_pose, dof = dummy(return_dof=True)
-
-    if len(indices):
-        B = torch.zeros(59).float()
-        B[indices] = A.float()
-        A = B
-
-    idx = 0
-    for j, d in dof.items():
-        for i in range(len(d)):
-            if j == 'root':
-                dummy_pose[j][i+3] = A[idx + i]
-            else:
-                dummy_pose[j][i] = A[idx + i]
-        idx += len(d)
-    return dummy_pose
-
-
-def pose2tensor(pose):
-    A = pose['root'][3:]
-    angle_list = list(pose.values())
-    for angles in angle_list[1:]:
-        A = torch.cat([A,angles])
-    return A
-
-
-def array2motions(X, indices):
-    motions = []
-    for x in X:
-        motions.append((array2pose(torch.tensor(x), indices)))
-    return motions
 
 
 def draw_cluster(mean, indices=[]):
@@ -129,16 +146,22 @@ def compute_parameters_normal(X):
     return mean, cov
 
 
-def compute_gm(X, n_components, indices=np.arange(59), initiliaze_mu=True):
-    n_features = len(indices)
+# def compute_gm(X, n_components, indices=np.arange(59), initiliaze_mu=True):
+#     n_features = len(indices)
+#     X = remove_excluded(truncate(X), indices, type='numpy')
+#     if initiliaze_mu:
+#         mu_init = X[np.random.choice(X.shape[0], size=n_components), :]
+#         gm = GaussianMixture(n_components=n_components, n_features=n_features, mu_init=torch.tensor([mu_init]))
+#     else:
+#         gm = GaussianMixture(n_components=n_components, n_features=n_features)
+#     gm.fit(torch.tensor(X), n_iter=250)
+#     return gm
+
+
+def compute_gm_params(X, n_components, indices=np.arange(59), covariance_type='full'):
     X = remove_excluded(truncate(X), indices, type='numpy')
-    if initiliaze_mu:
-        mu_init = X[np.random.choice(X.shape[0], size=n_components), :]
-        gm = GaussianMixture(n_components=n_components, n_features=n_features, mu_init=torch.tensor([mu_init]))
-    else:
-        gm = GaussianMixture(n_components=n_components, n_features=n_features)
-    gm.fit(torch.tensor(X), n_iter=250)
-    return gm
+    gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(X)
+    return gm.means_, gm.covariances_, gm.weights_
 
 
 ### EXPERIMENTAL ###
