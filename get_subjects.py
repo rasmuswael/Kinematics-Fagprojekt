@@ -61,8 +61,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
         else:
             joints = parse_asf(asf_path)
 
-        actions = []
-        labels = []
+        actions, labels, lengths = [], [], []
         for filename, label in file:
             amc_path = f'./data/{key}/{filename}.amc'
             if type == "numpy":
@@ -83,6 +82,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
                 if count >= limit:
                     motions = motions[:(len(motions) - (count - limit))]
                     done = True
+            length = len(motions)
             if motions_as_mat:
                 first = 1
                 motions_np = {}
@@ -97,12 +97,14 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
                 motions = motions_np
             actions.append(motions)
             labels.append(label)
+            lengths.append(length)
             if done:
                 break
         data[key] = {}
         data[key]['joints'] = joints
         data[key]['actions'] = actions
         data[key]['labels'] = labels
+        data[key]['lengths'] = lengths
         if done:
             return data
     return data
@@ -154,6 +156,13 @@ def get_motion_samples(selected, length, num_samples, random=True, sample_rate=1
         sample = action[low_idx:high_idx]
         samples.append(sample)
     return samples
+
+
+def get_lengths_np(data):
+    len_array = np.array([])
+    for key in data.keys():
+        len_array = np.concatenate((len_array, np.array(data[key]['lengths'])))
+    return len_array.astype(int)
 
 if __name__ == "__main__":
     selected = get_fnames( ["walk"] )

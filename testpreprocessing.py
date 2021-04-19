@@ -3,7 +3,7 @@ from pyTorch_3Dviewer import *
 
 joints, dummy_pose = dummy()
 selected = get_fnames(["walk"])
-data = parse_selected(selected, sample_rate=2, limit=20000)
+data = parse_selected(selected, sample_rate=2, limit=1500)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1])-3]
 

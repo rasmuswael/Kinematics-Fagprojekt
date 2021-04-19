@@ -6,11 +6,6 @@ from pyTorch_3Dviewer import *
 torch.manual_seed(1510)
 
 
-# example input:
-# goal_joints = ['rfoot']
-# pose = {'rfemur': [-60, 0, 0]}
-
-
 def set_goal(goal_joints, pose):
     '''
     Sets constraints.
@@ -53,7 +48,11 @@ def unpack_sequence(joint, sequence):
 
 class Inverse_model:
     def __init__(self, prior = (None, None), indices=np.arange(59), saveframes=True, plot=False, pose=None):
-        self.prior_type, self.prior_model = prior
+        self.prior = prior
+        if self.prior[0] == 'hmmGauss':
+            self.update = True
+        else:
+            self.update = False
         self.indices = indices
         self.saveframes = saveframes
         self.frames = []
@@ -64,6 +63,7 @@ class Inverse_model:
         else:
             self.pose = pose
         self.joints['root'].set_motion(self.pose)
+
 
     def stitch(self, optim_joints):
         pose = []
@@ -76,10 +76,16 @@ class Inverse_model:
                 pose.append(torch.tensor([0.], requires_grad=False))
         return torch.cat(pose)
 
+
     def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0):
         #saveframes = self.saveframes
         frames = []
-        #prior_type, prior_model = self.prior_type, self.prior_model
+
+        Loss_function = get_loss_func(self.prior, lh_var)
+
+        if self.update:
+            Loss_function.update_weights(pose2array(self.pose)[self.indices].reshape(1, -1))
+
         # initialize as tensor of zeros
         optim_joints = [torch.tensor([pose2array(self.pose)[i]], requires_grad=True) for i in self.indices]
 
@@ -100,11 +106,11 @@ class Inverse_model:
                 if self.saveframes:
                     frames.append(pose_dict)
 
-                loss = Loss(yhat, y, self.prior_model, self.prior_type, pose[self.indices], lh_var)
+                loss = Loss_function.Loss(yhat, y, pose[self.indices])
                 loss.backward(retain_graph=True)
                 return loss
             optimizer.step(closure)
-        self.pose = array2pose(self.stitch(optim_joints))
+        self.pose = array2pose(self.stitch(optim_joints).detach())
         self.frames = frames
         if self.plot:
             draw_cluster(torch.cat(optim_joints), self.indices)

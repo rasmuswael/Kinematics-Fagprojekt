@@ -19,7 +19,7 @@ means, covs, weights = compute_gm_params(X, n_components=3, indices=indices)
 
 noprior = ('noprior', None)
 normprior = ('normal', normal_prior(mean, cov))
-gmprior = ('gaussian', gmm_prior(means, covs, weights))
+gmprior = ('gaussianmixture', gmm_prior(means, covs, weights))
 
 # goal_joints = ['rfoot']
 # pose = {'rfemur': [40, 0, 0]}

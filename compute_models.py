@@ -6,6 +6,7 @@ from torch.distributions import MultivariateNormal
 from scipy.stats import circmean, circvar
 #from gmm_torch.gmm import GaussianMixture
 from sklearn.mixture import GaussianMixture
+from hmmlearn import hmm
 
 
 def truncate(X, root_limit=[]):
@@ -124,9 +125,9 @@ def remove_excluded(A, indices, datatype='array', type='torch'):
     return B
 
 
-def draw_cluster(mean, indices=[]):
+def draw_cluster(mean, indices=[], type='torch'):
     joints, pose, dof = dummy(return_dof=True)
-    mean_pose = array2pose(mean, indices)
+    mean_pose = array2pose(mean, indices, type)
     joints['root'].set_motion(mean_pose)
     joints['root'].draw()
 ###
@@ -162,6 +163,12 @@ def compute_gm_params(X, n_components, indices=np.arange(59), covariance_type='f
     X = remove_excluded(truncate(X), indices, type='numpy')
     gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(X)
     return gm.means_, gm.covariances_, gm.weights_
+
+
+def compute_hmmGauss(X, lengths, n_components, indices=np.arange(59), covariance_type='full'):
+    X = remove_excluded(truncate(X), indices, type='numpy')
+    model = hmm.GaussianHMM(n_components=n_components, covariance_type=covariance_type).fit(X, lengths=lengths)
+    return model
 
 
 ### EXPERIMENTAL ###
