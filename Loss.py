@@ -104,6 +104,7 @@ class hmmGaussprior_Loss(posterior_Loss):
 
     def update_weights(self, prev_result):
         self.prior_model.weights = torch.tensor(self.hmm_model.predict_proba(prev_result)[0])
+        print(self.hmm_model.predict(prev_result))
 
 
     def Loss(self, yhat, y, pose):

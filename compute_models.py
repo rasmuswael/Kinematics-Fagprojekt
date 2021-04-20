@@ -98,6 +98,14 @@ def array2motions(X, indices=np.arange(59)):
     return motions
 
 
+def motions2array(motions):
+    X = np.array(pose2array(motions[0]))
+    for pose in motions[1:]:
+        X = np.vstack((X,np.array(pose2array(pose))))
+    return X
+
+
+
 def remove_excluded(A, indices, datatype='array', type='torch'):
     '''Assumes that nothing has been been removed'''
     if datatype == 'dict':

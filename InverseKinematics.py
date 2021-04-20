@@ -1,8 +1,7 @@
 import torch.optim as optim
 from Loss import *
 from compute_models import *
-from get_subjects import *
-from pyTorch_3Dviewer import *
+# from pyTorch_3Dviewer import *
 torch.manual_seed(1510)
 
 
