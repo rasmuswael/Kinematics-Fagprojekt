@@ -61,7 +61,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
         else:
             joints = parse_asf(asf_path)
 
-        actions, labels, lengths = [], [], []
+        actions, labels, lengths, actionid = [], [], [], []
         for filename, label in file:
             amc_path = f'./data/{key}/{filename}.amc'
             if type == "numpy":
@@ -98,6 +98,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
             actions.append(motions)
             labels.append(label)
             lengths.append(length)
+            actionid.append(filename)
             if done:
                 break
         data[key] = {}
@@ -105,6 +106,8 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
         data[key]['actions'] = actions
         data[key]['labels'] = labels
         data[key]['lengths'] = lengths
+        data[key]['actionid'] = actionid
+
         if done:
             return data
     return data
