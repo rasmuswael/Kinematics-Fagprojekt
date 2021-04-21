@@ -2,7 +2,7 @@ import os
 import numpy as np
 from pyTorch_parser import parse_asf, parse_amc, read_line
 from amc_parser import parse_asf_np, parse_amc_np
-
+from tqdm import tqdm
 
 def get_subjects():
     dir_path = "./data/subjects"
@@ -54,7 +54,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
     count = 0
     done = False
     data = {}
-    for key, file in selected.items():
+    for key, file in tqdm(selected.items()):
         asf_path = f'./data/{key}/{key}.asf'
         if type == "numpy":
             joints = parse_asf_np(asf_path)
@@ -113,7 +113,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
 def gather_all_np(data ,big_matrix=True):
     """Requires data as actions as np matrix. See parse_selected"""
     first = 1
-    for set in data.values():
+    for set in tqdm(data.values()):
         labels = set['labels']
         for i, action in enumerate(set['actions']):
             if first:
