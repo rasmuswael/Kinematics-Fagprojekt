@@ -11,7 +11,7 @@ from OpenGL.GLU import *
 
 
 class Viewer:
-  def __init__(self, joints=None, motions=None, points=[], trajectories=[]):
+  def __init__(self, joints=None, motions=None, points=[], trajectories=[], sample_rate=1, motions_downsampled=False):
     """
     Display motion sequence in 3D.
 
@@ -30,6 +30,8 @@ class Viewer:
     self.trajectories = trajectories
     if len(self.trajectories):
       self.trajectory_colours = [np.random.uniform(size=3) for i in range(len(self.trajectories))]
+
+    self.sample_rate = sample_rate
 
     self.frame = 0 # current frame of the motion sequence
     self.playing = False # whether is playing the motion sequence
@@ -194,6 +196,8 @@ class Viewer:
     """
     self.motions = motions
 
+  def relative_framerate(self):
+    return self.frame // self.sample_rate
   def draw(self):
     """
     Draw the skeleton with balls and sticks.
@@ -218,7 +222,7 @@ class Viewer:
     glMaterialfv(
       GL_FRONT, GL_EMISSION, np.array([1, 0.1, 0.1, 1], dtype=np.float32)
     )
-    if self.points != None:
+    if len(self.points):
       for point in self.points:
         point = np.array(
         np.squeeze(point.detach().numpy()).dot(self.rotation_R) + \
@@ -237,8 +241,10 @@ class Viewer:
       glMaterialfv(
         GL_FRONT, GL_EMISSION, np.array([*self.trajectory_colours[i], 1], dtype=np.float32)
       )
-      prev_point = trajectory[self.frame]
-      for point in trajectory[(self.frame + 1):]:
+
+      frame = self.relative_framerate()
+      prev_point = trajectory[frame]
+      for point in trajectory[(frame + 1):]:
         coord_x = np.array(
           np.squeeze(prev_point.detach().numpy()).dot(self.rotation_R) + self.translate,
           dtype=np.float32)

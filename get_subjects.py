@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from pyTorch_parser import parse_asf, parse_amc, read_line
+from pyTorch_parser import parse_asf, parse_amc
 from amc_parser import parse_asf_np, parse_amc_np
 from tqdm import tqdm
 

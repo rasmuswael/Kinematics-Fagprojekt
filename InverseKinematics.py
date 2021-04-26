@@ -56,9 +56,9 @@ class Inverse_model:
         self.saveframes = saveframes
         self.frames = []
         self.plot = plot
-        self.joints, dummy_pose, dof = dummy(return_dof=True)
+        self.joints, self.dummy_pose, dof = dummy(return_dof=True)
         if not pose:
-            self.pose = dummy_pose
+            self.pose = self.dummy_pose
         else:
             self.pose = pose
         self.joints['root'].set_motion(self.pose)
@@ -76,7 +76,7 @@ class Inverse_model:
         return torch.cat(pose)
 
 
-    def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0):
+    def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0, opt_pose='dummy'):
         #saveframes = self.saveframes
         frames = []
 
@@ -85,8 +85,11 @@ class Inverse_model:
         if self.update:
             Loss_function.update_weights(pose2array(self.pose)[self.indices].reshape(1, -1))
 
-        # initialize as tensor of zeros
-        optim_joints = [torch.tensor([pose2array(self.pose)[i]], requires_grad=True) for i in self.indices]
+        if opt_pose == 'self':
+            ipose = self.pose
+        elif opt_pose == 'dummy':
+            ipose = self.dummy_pose
+        optim_joints = [torch.tensor([pose2array(ipose)[i]], requires_grad=True) for i in self.indices]
 
         optimizer = optim.Adam(optim_joints, lr=lr, weight_decay=weight_decay)
 
