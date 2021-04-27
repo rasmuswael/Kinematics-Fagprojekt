@@ -3,6 +3,8 @@ import numpy as np
 from pyTorch_parser import parse_asf, parse_amc
 from amc_parser import parse_asf_np, parse_amc_np
 from tqdm import tqdm
+import random
+
 
 def get_subjects():
     dir_path = "./data/subjects"
@@ -167,12 +169,77 @@ def get_lengths_np(data):
         len_array = np.concatenate((len_array, np.array(data[key]['lengths'])))
     return len_array.astype(int)
 
+
+def get_fold(data, K, type='Kfold', group='motion'):
+    """Maybe change this code later to account for representation of each label in the folds"""
+    len_array = get_lengths_np(data)
+    N = sum(len_array)
+    fold_size = N // K
+    if group == 'motion':
+        actionids = []
+        for key in data.keys():
+            actionids += data[key]['actionid']
+        actionids = np.array(actionids)
+        if type == 'leaveoneout':
+            random.shuffle(actionids)
+            return actionids
+        elif type == 'Kfold':
+            kfold_size = [0] * K
+            folds = [[] for _ in range(K)]
+            num_actions = len(actionids)
+            while num_actions:
+                for i in range(K):
+                    if kfold_size[i] < fold_size and num_actions:
+                        idx = np.random.randint(num_actions)
+                        folds[i].append(actionids[idx])
+                        kfold_size[i] += len_array[idx]
+                        len_array, actionids = np.delete(len_array, idx), np.delete(actionids, idx)
+                        num_actions -= 1
+            random.shuffle(folds)
+            return folds
+
+
+def get_Kfold_mat(data, folds):
+    """Requires data as actions as np matrix. See parse_selected"""
+    len_arrays = [np.array([]) for _ in range(len(folds))]
+    data_Kfold = {}
+    for i, fold in enumerate(folds):
+        data_Kfold[i] = {}
+        data_Kfold[i]['actions'], data_Kfold[i]['labels'] = [], []
+        for id in fold:
+            key = id[:2]
+            idx = int(np.argwhere(np.array(data[key]['actionid']) == id))
+            data_Kfold[i]['actions'].append(data[key]['actions'][idx])
+            data_Kfold[i]['labels'].append(data[key]['labels'][idx])
+            len_arrays[i] = np.append(len_arrays[i], data[key]['lengths'][idx])
+    X, y = gather_all_np(data_Kfold)
+    return X, y, len_arrays
+
+
+def get_train_test_split(X, k, len_arrays, y=None):
+    len_arrays_ = len_arrays.copy()
+    low = int(sum(np.concatenate(len_arrays_[:k] + [np.empty(0)])))
+    high = int(low + sum(len_arrays_[k]))
+    len_array_test = len_arrays_.pop(k).astype(int)
+    len_array_train = np.concatenate(len_arrays_).astype(int)
+    Xtest = X[low:high,:]
+    Xtrain = np.delete(X, slice(low, high), axis=0)
+    if y is not None:
+        ytest = y[low:high]
+        ytrain = np.delete(y, slice(low,high))
+        return Xtrain, Xtest, len_array_train, len_array_test, ytrain, ytest
+    return Xtrain, Xtest, len_array_train, len_array_test
+
 if __name__ == "__main__":
     selected = get_fnames( ["walk"] )
     # selected = get_fnames(["walk","dance"])
-    samples = get_motion_samples(selected, 50, 10, sample_rate=4)
-    data = parse_selected(selected, sample_rate=4, limit=3000, motions_as_mat=False)
-    X, y = gather_all_np(data)
+    data = parse_selected(selected, sample_rate=4, limit=10000)
+    K = 3
+    folds = get_fold(data, K, type='Kfold', group='motion')
+    X, y, len_arrays = get_Kfold_mat(data, folds)
+    for i in range(K):
+        Xtrain, Xtest, len_array_train, len_array_test = get_train_test_split(X, i, len_arrays)
+        a = 1
     #Save as numpy arrays for later use
     #np.save('X_walk-dance_np', X)
     #np.save('y_walk-dance_np', y) # save the file as "---.npy"

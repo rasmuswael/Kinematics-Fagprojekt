@@ -1,5 +1,5 @@
 from scipy import interpolate
-from pyTorch_3Dviewer import *
+# from pyTorch_3Dviewer import *
 from InverseKinematics import *
 
 def interpolatearray(X, sample_rate):

@@ -1,4 +1,3 @@
-from InverseKinematics import *
 from TimeSeries import *
 seed = 1510
 torch.manual_seed(seed)
@@ -6,7 +5,7 @@ torch.manual_seed(seed)
 sample_rate=6
 
 selected = get_fnames(["run", "walk"])
-data = parse_selected(selected, sample_rate=sample_rate, limit=20000)
+data = parse_selected(selected, sample_rate=sample_rate, limit=5000)
 len_array = get_lengths_np(data)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1] - 3)]
