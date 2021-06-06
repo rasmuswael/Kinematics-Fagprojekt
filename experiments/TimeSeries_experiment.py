@@ -1,4 +1,4 @@
-from TimeSeries import *
+from inverse_kinematics.TimeSeries import *
 seed = 1510
 torch.manual_seed(seed)
 

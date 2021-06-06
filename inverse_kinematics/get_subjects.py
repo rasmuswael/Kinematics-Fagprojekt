@@ -1,11 +1,12 @@
 import os
 import numpy as np
-from pyTorch_parser import parse_asf, parse_amc
-from amc_parser import parse_asf_np, parse_amc_np
+from inverse_kinematics.pyTorch_parser import parse_asf, parse_amc
+from inverse_kinematics.amc_parser import parse_asf_np, parse_amc_np
 from tqdm import tqdm
 import random
 
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 def get_subjects():
     dir_path = "./data/subjects"
 
@@ -44,8 +45,6 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
                 elif query in description:
                     matching_queries.append(query)
             if matching_queries:
-                # if " and " in " and ".join(matching_queries):
-                #     print("BINGO", filename)
                 match.append((filename, " and ".join(matching_queries)))
         if match:
             selected[subject_number] = match

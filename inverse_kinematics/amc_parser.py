@@ -6,7 +6,7 @@ from transforms3d.euler import euler2mat
 from mpl_toolkits.mplot3d import Axes3D
 
 
-class Joint:
+class Joint_np:
     def __init__(self, name, direction, length, axis, dof, limits):
         """
         Definition of basic joint. The joint also contains the information of the
@@ -131,7 +131,7 @@ def parse_asf_np(file_path):
             break
 
     # read joints
-    joints = {'root': Joint('root', np.zeros(3), 0, np.zeros(3), [], [])}
+    joints = {'root': Joint_np('root', np.zeros(3), 0, np.zeros(3), [], [])}
     idx = 0
     while True:
         # the order of each section is hard-coded
@@ -184,7 +184,7 @@ def parse_asf_np(file_path):
             line, idx = read_line(content, idx)
 
         assert line[0] == 'end'
-        joints[name] = Joint(
+        joints[name] = Joint_np(
             name,
             direction,
             length,

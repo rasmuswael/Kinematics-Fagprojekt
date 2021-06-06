@@ -1,17 +1,16 @@
 #Copyright (c) 2018 Yuxiao Zhou
 
 import pygame
-import numpy as np
-import time
 import transforms3d.euler as euler
-from pyTorch_parser import *
+from inverse_kinematics.pyTorch_parser import *
+from inverse_kinematics.amc_parser import *
 
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
 
 class Viewer:
-  def __init__(self, joints=None, motions=None, points=[], trajectories=[], sample_rate=1, motions_downsampled=False):
+  def __init__(self, joints=None, motions=None, points=[], trajectories=[], sample_rate=1):
     """
     Display motion sequence in 3D.
 
@@ -198,6 +197,7 @@ class Viewer:
 
   def relative_framerate(self):
     return self.frame // self.sample_rate
+
   def draw(self):
     """
     Draw the skeleton with balls and sticks.
@@ -211,7 +211,7 @@ class Viewer:
     )
     for j in self.joints.values():
       coord = np.array(
-        np.squeeze(j.coordinate.detach().numpy()).dot(self.rotation_R) + \
+        np.squeeze(j.coordinate).dot(self.rotation_R) + \
         self.translate, dtype=np.float32
       )
       glVertex3f(*coord)
@@ -225,7 +225,7 @@ class Viewer:
     if len(self.points):
       for point in self.points:
         point = np.array(
-        np.squeeze(point.detach().numpy()).dot(self.rotation_R) + \
+        np.squeeze(point).dot(self.rotation_R) + \
         self.translate, dtype=np.float32
       )
         glVertex3f(*point)
@@ -246,10 +246,10 @@ class Viewer:
       prev_point = trajectory[frame]
       for point in trajectory[(frame + 1):]:
         coord_x = np.array(
-          np.squeeze(prev_point.detach().numpy()).dot(self.rotation_R) + self.translate,
+          np.squeeze(prev_point).dot(self.rotation_R) + self.translate,
           dtype=np.float32)
         coord_y = np.array(
-          np.squeeze(point.detach().numpy()).dot(self.rotation_R) + self.translate,
+          np.squeeze(point).dot(self.rotation_R) + self.translate,
           dtype=np.float32)
         prev_point = point
         glVertex3f(*coord_x)
@@ -267,11 +267,11 @@ class Viewer:
       parent = j.parent
       if parent is not None:
         coord_x = np.array(
-          np.squeeze(child.coordinate.detach().numpy()).dot(self.rotation_R) + self.translate,
+          np.squeeze(child.coordinate).dot(self.rotation_R) + self.translate,
           dtype=np.float32
         )
         coord_y = np.array(
-          np.squeeze(parent.coordinate.detach().numpy()).dot(self.rotation_R) + self.translate,
+          np.squeeze(parent.coordinate).dot(self.rotation_R) + self.translate,
           dtype=np.float32
         )
         glVertex3f(*coord_x)
@@ -306,7 +306,7 @@ if __name__ == '__main__':
   amc_num = '10'
   asf_path = f'./data/{subject}/{subject}.asf'
   amc_path = f'./data/{subject}/{subject}_{amc_num}.amc'
-  joints = parse_asf(asf_path)
-  motions = parse_amc(amc_path)
-  v = Viewer(joints, motions, points = [torch.tensor([0.,0.,0.])])
+  joints = parse_asf_np(asf_path)
+  motions = parse_amc_np(amc_path)
+  v = Viewer(joints, motions, points = [np.array([0.,0.,0.])])
   v.run()

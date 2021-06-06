@@ -1,7 +1,7 @@
 import torch.optim as optim
-from Loss import *
-from compute_models import *
-# from pyTorch_3Dviewer import *
+from inverse_kinematics.Loss import *
+from inverse_kinematics.compute_models import *
+from inverse_kinematics.better_3Dviewer import *
 torch.manual_seed(1510)
 
 
@@ -42,11 +42,11 @@ def get_goal_sequences(goal_joints, samples, indices=np.arange(59)):
 def unpack_sequence(joint, sequence):
     coordinate_list = []
     for goal in sequence:
-        coordinate_list.append(goal[joint])
+        coordinate_list.append(goal[joint].detach().numpy())
     return coordinate_list
 
 class Inverse_model:
-    def __init__(self, prior = (None, None), indices=np.arange(59), saveframes=True, plot=False, pose=None):
+    def __init__(self, prior = (None, None), indices=np.arange(59), saveframes=True, plot=False):
         self.prior = prior
         if self.prior[0] == 'hmmGauss':
             self.update = True
@@ -57,10 +57,7 @@ class Inverse_model:
         self.frames = []
         self.plot = plot
         self.joints, self.dummy_pose, dof = dummy(return_dof=True)
-        if not pose:
-            self.pose = self.dummy_pose
-        else:
-            self.pose = pose
+        self.pose = self.dummy_pose
         self.joints['root'].set_motion(self.pose)
 
 
@@ -106,13 +103,15 @@ class Inverse_model:
                 yhat = [self.joints[goal_joint].coordinate for goal_joint in goal.keys()]
 
                 if self.saveframes:
-                    frames.append(pose_dict)
+                    frames.append(array2pose(pose.detach().numpy(), type='numpy'))
+                    #frames.append(pose_dict)
 
                 loss = Loss_function.Loss(yhat, y, pose[self.indices])
                 loss.backward(retain_graph=True)
                 return loss
             optimizer.step(closure)
         self.pose = array2pose(self.stitch(optim_joints).detach())
+        # self.pose_np = array2pose(self.stich(optim_joints).detach().numpy(), type='numpy')
         self.frames = frames
         if self.plot:
             draw_cluster(torch.cat(optim_joints), self.indices)

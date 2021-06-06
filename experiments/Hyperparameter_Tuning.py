@@ -1,4 +1,4 @@
-from compute_models import *
+from inverse_kinematics.compute_models import *
 import matplotlib.pyplot as plt
 sample_rate = 6
 

@@ -1,6 +1,6 @@
 import torch
-from pyTorch_parser import Joint, read_line
-
+from inverse_kinematics.pyTorch_parser import Joint, read_line
+from inverse_kinematics.amc_parser import parse_asf_np
 
 def dummy(return_dof=False):
     # Read 01.asf (placeholder) to get rudementary information, but set all directions to zero.
@@ -135,6 +135,10 @@ def dummy(return_dof=False):
         return joints, pose, dof
     else:
         return joints, pose
+
+def dummy_joints_np():
+    return parse_asf_np('./data/01/01.asf')
+
 
 if __name__ == '__main__':
     dummy_joints, dummy_pose, dof = dummy(return_dof=True)

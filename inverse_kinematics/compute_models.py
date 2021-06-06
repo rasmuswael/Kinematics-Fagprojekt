@@ -1,10 +1,7 @@
-from get_subjects import *
-from dummy import dummy
-from scipy.spatial.transform import Rotation
+from inverse_kinematics.get_subjects import *
+from inverse_kinematics.dummy import dummy, dummy_joints_np
 import torch
-from torch.distributions import MultivariateNormal
 from scipy.stats import circmean, circvar
-#from gmm_torch.gmm import GaussianMixture
 from sklearn.mixture import GaussianMixture
 from hmmlearn import hmm
 
@@ -55,8 +52,19 @@ def exclude(excluded=None, return_indices=True, root_exclude=[1]):
     return included
 
 
+def convertpose(pose, type):
+    """Will convert the pose from torch to numpy or numpy to torch. The type argument is the current type"""
+    if type == 'torch':
+        return {k: v.detach().numpy() for k,v in pose.items()}
+    if type == 'numpy':
+        return {{k: torch.tensor(v) for k,v in pose.items()}}
+
+
 def array2pose(A, indices=[], type='torch'):
     _, dummy_pose, dof = dummy(return_dof=True)
+
+    if type == 'numpy':
+        dummy_pose = convertpose(dummy_pose, 'torch')
 
     if len(indices):
         if type == 'torch':
@@ -91,10 +99,13 @@ def pose2array(pose, type='torch'):
     return A
 
 
-def array2motions(X, indices=np.arange(59)):
+def array2motions(X, indices=np.arange(59), type='torch'):
+    """Assumes that X is a numpy array"""
     motions = []
+    if type=='torch':
+        X = torch.tensor(X)
     for x in X:
-        motions.append((array2pose(torch.tensor(x), indices)))
+        motions.append((array2pose(x, indices, type=type)))
     return motions
 
 

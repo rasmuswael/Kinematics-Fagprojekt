@@ -1,4 +1,4 @@
-from InverseKinematics import *
+from inverse_kinematics.InverseKinematics import *
 torch.manual_seed(1510)
 
 selected = get_fnames(["walk"])
@@ -44,5 +44,5 @@ inv_gm.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var, weight_
 Frames = [inv_noprior.frames, inv_normal.frames, inv_gm.frames]
 
 for frames in Frames:
-    v = Viewer(dummy_joints, frames)
+    v = Viewer(dummy_joints_np(), frames)
     v.run()

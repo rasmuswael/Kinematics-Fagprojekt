@@ -1,6 +1,5 @@
 from scipy import interpolate
-# from pyTorch_3Dviewer import *
-from InverseKinematics import *
+from inverse_kinematics.InverseKinematics import *
 
 def interpolatearray(X, sample_rate):
     num_frames, num_features = X.shape
@@ -30,11 +29,12 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
             inv_model.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var,
                                             weight_decay=weight_decay, opt_pose=opt_pose)
             sequence_results.append(inv_model.pose)
+            # sequence_results.append(inv_model.pose)
             print(i + 1)
         goal_joints = goal.keys()
         if interpolate:
-            sequence_results = array2motions(interpolatearray(motions2array(sequence_results), sample_rate))
+            sequence_results = array2motions(interpolatearray(motions2array(sequence_results), sample_rate), type='numpy')
 
         if view:
-            v = Viewer(dummy_joints, sequence_results, trajectories=[unpack_sequence(goal_joint, sequence) for goal_joint in goal_joints], sample_rate=sample_rate)
+            v = Viewer(dummy_joints_np(), sequence_results, trajectories=[unpack_sequence(goal_joint, sequence) for goal_joint in goal_joints], sample_rate=sample_rate)
             v.run()
