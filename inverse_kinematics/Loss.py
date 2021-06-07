@@ -10,14 +10,15 @@ def log_likelihood(yhat, y, variance = 1):
 
     #Method 2
     N = y.size(1)
-    likelihoods = []
     cov = torch.eye(3) * variance
-    for i in range(N):
-        mean = yhat[:,i]
-        goal_point = y[:,i]
-        likelihood_model = MultivariateNormal(mean, covariance_matrix=cov)
-        likelihoods.append(likelihood_model.log_prob(goal_point))
-    return sum(likelihoods)
+    # likelihoods = []
+    # for i in range(N):
+    #     mean = yhat[:,i]
+    #     goal_point = y[:,i]
+    #     likelihood_model = MultivariateNormal(mean, covariance_matrix=cov)
+    #     likelihoods.append(likelihood_model.log_prob(goal_point))
+    # return sum(likelihoods)
+    return sum([MultivariateNormal(yhat[:,i], covariance_matrix=cov).log_prob(y[:,i]) for i in range(N)])
 
 
 def normal_prior(mean, cov):
@@ -43,9 +44,15 @@ class gmm_prior:
         self.gaussians = [MultivariateNormal(self.means[i], covariance_matrix=self.covs[i]) for i in range(self.n_components)]
 
     def log_prob(self, pose):
-        prior_prob = sum([self.gaussians[i].log_prob(pose) * self.weights[i] for i in range(self.n_components)])
-        return prior_prob
+        return sum([self.gaussians[i].log_prob(pose) * self.weights[i] for i in range(self.n_components)])
 
+
+class nf_prior:
+    def __init__(self, nf_model):
+        self.nf_dist, self.mean, self.std = nf_model
+
+    def log_prob(self, pose):
+        return self.nf_dist.log_prob((pose - self.mean) / self.std)
 
 
 class euclidian_Loss:
@@ -91,7 +98,6 @@ class gmprior_Loss(posterior_Loss):
     def __init__(self, gm_model, likelihood_variance):
         super().__init__(('Gaussian Mixture Model prior', gm_model), likelihood_variance)
 
-
     def Loss(self, yhat, y, pose):
         return -(super().Loss_likelihood(yhat, y) + self.prior_model.log_prob(pose))
 
@@ -111,20 +117,31 @@ class hmmGaussprior_Loss(posterior_Loss):
         return -(super().Loss_likelihood(yhat, y) + self.prior_model.log_prob(pose))
 
 
+class nfprior_Loss(posterior_Loss):
+    def __init__(self, nf_model, likelihood_variance):
+        super().__init__(('Normalizing Flows model prior', nf_model), likelihood_variance)
+
+
+    def Loss(self, yhat, y, pose):
+        return -(super().Loss_likelihood(yhat, y) + self.prior_model.log_prob(pose))
+
+
 def get_loss_func(prior, likelihood_variance):
     prior_type, prior_model = prior
     if prior_type == None:
-        func = euclidian_Loss()
+        return euclidian_Loss()
     elif prior_type == 'noprior':
-        func = noprior_Loss(likelihood_variance)
+        return noprior_Loss(likelihood_variance)
     elif prior_type == 'normal':
-        func = normalprior_Loss(prior_model, likelihood_variance)
+        return normalprior_Loss(prior_model, likelihood_variance)
     elif prior_type == 'gaussianmixture':
-        func = gmprior_Loss(prior_model, likelihood_variance)
+        return gmprior_Loss(prior_model, likelihood_variance)
     elif prior_type == 'hmmGauss':
         gm_prior, hmm_model = prior_model
-        func = hmmGaussprior_Loss(hmm_model, gm_prior, likelihood_variance)
-    return func
+        return hmmGaussprior_Loss(hmm_model, gm_prior, likelihood_variance)
+    elif prior_type == 'normalizingflows':
+        return nfprior_Loss(prior_model, likelihood_variance)
+
 
 
 # def Loss_Likelihood(yhat, y, variance):

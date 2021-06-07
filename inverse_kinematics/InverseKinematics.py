@@ -74,7 +74,6 @@ class Inverse_model:
 
 
     def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0, opt_pose='dummy'):
-        #saveframes = self.saveframes
         frames = []
 
         Loss_function = get_loss_func(self.prior, lh_var)
@@ -108,8 +107,13 @@ class Inverse_model:
 
                 loss = Loss_function.Loss(yhat, y, pose[self.indices])
                 loss.backward(retain_graph=True)
+                if epoch % 10 == 0:
+                    print('step: {}, loss: {}'.format(epoch, loss.detach()))
                 return loss
             optimizer.step(closure)
+
+
+
         self.pose = array2pose(self.stitch(optim_joints).detach())
         # self.pose_np = array2pose(self.stich(optim_joints).detach().numpy(), type='numpy')
         self.frames = frames

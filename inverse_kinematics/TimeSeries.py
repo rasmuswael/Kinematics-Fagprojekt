@@ -38,3 +38,5 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
         if view:
             v = Viewer(dummy_joints_np(), sequence_results, trajectories=[unpack_sequence(goal_joint, sequence) for goal_joint in goal_joints], sample_rate=sample_rate)
             v.run()
+
+        return sequence_results
