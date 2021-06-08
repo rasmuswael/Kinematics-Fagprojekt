@@ -3,6 +3,10 @@ from inverse_kinematics.dummy import dummy, dummy_joints_np
 import torch
 from scipy.stats import circmean, circvar
 from sklearn.mixture import GaussianMixture
+import pyro
+import pyro.distributions as dist
+import pyro.distributions.transforms as T
+
 from hmmlearn import hmm
 
 
@@ -28,6 +32,9 @@ def truncate(X, root_limit=[]):
             i +=1
     return(X)
 
+def standardize(X):
+    mean, std = X.mean(0), X.std(0)
+    return (X-mean)/std, mean, std
 
 ### Helper functions
 def exclude(excluded=None, return_indices=True, root_exclude=[1]):
@@ -116,7 +123,6 @@ def motions2array(motions):
     return X
 
 
-
 def remove_excluded(A, indices, datatype='array', type='torch'):
     '''Assumes that nothing has been been removed'''
     if datatype == 'dict':
@@ -166,18 +172,6 @@ def compute_parameters_normal(X):
     return mean, cov
 
 
-# def compute_gm(X, n_components, indices=np.arange(59), initiliaze_mu=True):
-#     n_features = len(indices)
-#     X = remove_excluded(truncate(X), indices, type='numpy')
-#     if initiliaze_mu:
-#         mu_init = X[np.random.choice(X.shape[0], size=n_components), :]
-#         gm = GaussianMixture(n_components=n_components, n_features=n_features, mu_init=torch.tensor([mu_init]))
-#     else:
-#         gm = GaussianMixture(n_components=n_components, n_features=n_features)
-#     gm.fit(torch.tensor(X), n_iter=250)
-#     return gm
-
-
 def compute_gm_params(X, n_components, indices=np.arange(59), covariance_type='full'):
     X = remove_excluded(truncate(X), indices, type='numpy')
     gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(X)
@@ -188,6 +182,29 @@ def compute_hmmGauss(X, lengths, n_components, indices=np.arange(59), covariance
     X = remove_excluded(truncate(X), indices, type='numpy')
     model = hmm.GaussianHMM(n_components=n_components, covariance_type=covariance_type).fit(X, lengths=lengths)
     return model
+
+
+def compute_NF(X, steps, indices=np.arange(59), lr=1e-2):
+    X = remove_excluded(truncate(X), indices, type='numpy')
+    X, mean, std = standardize(X)
+    n_features = X.shape[1]
+
+    base_dist = dist.Normal(torch.zeros(n_features), torch.ones(n_features))
+    spline_transform = T.spline_coupling(n_features, count_bins=16)
+    flow_dist = dist.TransformedDistribution(base_dist, [spline_transform])
+
+    dataset = torch.from_numpy(X).float()
+    optimizer = torch.optim.Adam(spline_transform.parameters(), lr=lr)
+    for step in range(steps + 1):
+        optimizer.zero_grad()
+        loss = -flow_dist.log_prob(dataset).mean()
+        loss.backward()
+        optimizer.step()
+        flow_dist.clear_cache()
+
+        if step % 10 == 0:
+            print('step: {}, loss: {}'.format(step, loss.item()))
+    return (flow_dist, torch.tensor(mean, dtype=torch.float), torch.tensor(std, dtype=torch.float))
 
 
 ### EXPERIMENTAL ###
