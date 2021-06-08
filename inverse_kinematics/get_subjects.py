@@ -32,7 +32,6 @@ def get_subjects():
     subjects = {k: v for k, v in sorted(subjects.items(), key=lambda item: int(item[0]))}
     return subjects
 
-
 def get_fnames(queries, limit=0, subjects=get_subjects()):
     selected = {}
     for subject_number, file in subjects.items():
@@ -49,6 +48,27 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
         if match:
             selected[subject_number] = match
     return selected
+
+def get_manual_names(folder_path, type):
+    selected = {}
+    rootdir = folder_path
+
+    for subdir, dirs, files in os.walk(rootdir):
+        for file in files:
+            subject = ""
+            for i in file:
+                if i != "_":
+                    subject += i
+                else:
+                    break
+            selected[subject] = [(file[:-4], type)]
+
+    return selected
+
+
+
+
+
 
 
 def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_translation=True, sep_trans_root=True, motions_as_mat=True):
@@ -228,6 +248,7 @@ def get_train_test_split(X, k, len_arrays, y=None):
         ytrain = np.delete(y, slice(low,high))
         return Xtrain, Xtest, len_array_train, len_array_test, ytrain, ytest
     return Xtrain, Xtest, len_array_train, len_array_test
+
 
 if __name__ == "__main__":
     selected = get_fnames( ["walk"] )
