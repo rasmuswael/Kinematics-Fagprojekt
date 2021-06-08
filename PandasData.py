@@ -1,10 +1,11 @@
 import pandas as pd
-from compute_models import *
+from inverse_kinematics.compute_models import *
 
 selected = get_fnames(["run"])
-data = parse_selected(selected, sample_rate=1, limit=None)
+data = parse_selected(selected, sample_rate=6, limit=1000)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1]) - 3]
+X = truncate(X)
 
 
 columns = ['root x', 'root y', 'root z',
@@ -55,7 +56,7 @@ for i, length in enumerate(lengths):
     curr_frame += length
 
 df = pd.concat(dataframe, keys = actionids)
-df.to_pickle('./run_data.pkl')
+df.to_pickle('./run_data_trun1.pkl')
 
 #How to get just one action example
 #df.loc[('02_01')]

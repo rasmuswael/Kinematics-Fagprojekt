@@ -20,4 +20,4 @@ def amc_converter(frames, filename):
             f.write(f"{key} {string}\n")
     f.close()
 
-amc_converter(motions, "tester")
+#amc_converter(motions, "tester")
