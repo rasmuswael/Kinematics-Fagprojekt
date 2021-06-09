@@ -63,6 +63,24 @@ def get_manual_names(types):
                 selected[subject].append((fname, type))
     return selected
 
+def get_testsample_names(seed):
+    np.random.seed(seed)
+    selected = {}
+    types = ('run', 'walk')
+    for type in types:
+        dir = f"./{type}_data"
+        samples = []
+        data = os.listdir(dir)
+        samples.extend(np.random.choice(data, 5))
+        for filename in samples:
+            fname = str(filename)[:-4]
+            subject = fname[:-3]
+            if subject not in selected:
+                selected[subject] = [(fname, type)]
+            else:
+                selected[subject].append((fname, type))
+    return selected
+
 
 def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_translation=True, sep_trans_root=True, motions_as_mat=True):
     count = 0
@@ -219,7 +237,7 @@ def get_Kfold_mat(data, folds):
         data_Kfold[i] = {}
         data_Kfold[i]['actions'], data_Kfold[i]['labels'] = [], []
         for id in fold:
-            key = id[:2]
+            key = id[:-3]
             idx = int(np.argwhere(np.array(data[key]['actionid']) == id))
             data_Kfold[i]['actions'].append(data[key]['actions'][idx])
             data_Kfold[i]['labels'].append(data[key]['labels'][idx])
