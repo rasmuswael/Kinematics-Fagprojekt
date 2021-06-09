@@ -49,26 +49,19 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
             selected[subject_number] = match
     return selected
 
-def get_manual_names(folder_path, type):
+def get_manual_names(types):
+    """The sequel"""
     selected = {}
-    rootdir = folder_path
-
-    for subdir, dirs, files in os.walk(rootdir):
-        for file in files:
-            subject = ""
-            for i in file:
-                if i != "_":
-                    subject += i
-                else:
-                    break
-            selected[subject] = [(file[:-4], type)]
-
+    for type in types:
+        dir = f"./{type}_data"
+        for filename in os.listdir(dir):
+            fname = str(filename)[:-4]
+            subject = fname[:-3]
+            if subject not in selected:
+                selected[subject] = [(fname, type)]
+            else:
+                selected[subject].append((fname, type))
     return selected
-
-
-
-
-
 
 
 def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_translation=True, sep_trans_root=True, motions_as_mat=True):
@@ -251,15 +244,4 @@ def get_train_test_split(X, k, len_arrays, y=None):
 
 
 if __name__ == "__main__":
-    selected = get_fnames( ["walk"] )
-    # selected = get_fnames(["walk","dance"])
-    data = parse_selected(selected, sample_rate=4, limit=10000)
-    K = 3
-    folds = get_fold(data, K, type='Kfold', group='motion')
-    X, y, len_arrays = get_Kfold_mat(data, folds)
-    for i in range(K):
-        Xtrain, Xtest, len_array_train, len_array_test = get_train_test_split(X, i, len_arrays)
-        a = 1
-    #Save as numpy arrays for later use
-    #np.save('X_walk-dance_np', X)
-    #np.save('y_walk-dance_np', y) # save the file as "---.npy"
+    selected = get_manual_names(["walk","run"])
