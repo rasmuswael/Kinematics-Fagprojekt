@@ -33,7 +33,9 @@ def get_goal_sequences(goal_joints, samples, indices=np.arange(59)):
     for sample in samples:
         goals = []
         for pose in sample:
-            pose = remove_excluded(pose, indices, datatype='dict', type='numpy')
+            posearr = pose2array(pose, type='numpy')
+            posearr = truncate(np.vstack((posearr,posearr)))[0]
+            pose = array2pose(remove_excluded(posearr, indices, type='numpy'), indices, type='numpy')
             goals.append(set_goal(goal_joints, pose))
         sequences.append(goals)
     return sequences
@@ -80,6 +82,7 @@ class Inverse_model:
 
         if self.update:
             Loss_function.update_weights(pose2array(self.pose)[self.indices].reshape(1, -1))
+            self.hstates = Loss_function.prior_model.weights
 
         if opt_pose == 'self':
             ipose = self.pose
@@ -107,8 +110,8 @@ class Inverse_model:
 
                 loss = Loss_function.Loss(yhat, y, pose[self.indices])
                 loss.backward(retain_graph=True)
-                if epoch % 10 == 0:
-                    print('step: {}, loss: {}'.format(epoch, loss.detach()))
+                # if epoch % 10 == 0:
+                #     print('step: {}, loss: {}'.format(epoch, loss.detach()))
                 return loss
             optimizer.step(closure)
 

@@ -1,5 +1,5 @@
 from inverse_kinematics.TimeSeries import *
-seed = 1510
+seed = 1511
 torch.manual_seed(seed)
 
 sample_rate=6
@@ -31,8 +31,11 @@ hmmGaussprior = ('hmmGauss', (gmm_prior(model.means_, model.covars_, torch.zeros
 
 goal_joints = ['rfoot','lfoot']
 
+#examples = selected
+examples = {'104': [('104_56','')]}
+
 np.random.seed(seed)
-samples = get_motion_samples(selected, 40, 2, sample_rate=sample_rate)
+samples = get_motion_samples(examples, 100, 2, sample_rate=sample_rate)
 sequences = get_goal_sequences(goal_joints, samples, indices)
 
 saveframes, plot = True, False

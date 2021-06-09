@@ -4,7 +4,7 @@ torch.manual_seed(1510)
 sample_rate = 12
 
 selected = get_fnames(["walk"])
-data = parse_selected(selected, sample_rate=sample_rate, limit=10000)
+data = parse_selected(selected, sample_rate=sample_rate, limit=1000)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1] - 3)]
 
@@ -29,7 +29,7 @@ goal = set_goal(goal_joints, pose)
 
 saveframes, plot = True, True
 
-n_epochs, lr, weight_decay, lh_var = 250, 1, 0, 1
+n_epochs, lr, weight_decay, lh_var = 500, 1, 0, 1
 
 inv_nf = Inverse_model(nfprior, indices, saveframes=saveframes, plot=plot)
 
