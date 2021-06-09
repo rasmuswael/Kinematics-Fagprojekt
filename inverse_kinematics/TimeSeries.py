@@ -12,9 +12,10 @@ def interpolatearray(X, sample_rate):
         X_interpolated = np.hstack((X_interpolated, f(x_interpolated).reshape(-1,1)))
     return X_interpolated
 
-def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_pose='first pose', opt_pose='self',
+def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_pose='first pose', init_inv_model=None, opt_pose='self',
                    interpolate=False, sample_rate=1, save=False):
     dummy_joints, dummy_pose = dummy()
+    n_epochs, lr, weight_decay, lh_var = parameters
     for j, sequence in enumerate(sequences):
         if init_pose == 'dummy':
             init_pose = dummy_pose
@@ -22,11 +23,13 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
             init_pose = samples[j][0]
             for key, value in init_pose.items():
                 init_pose[key] = torch.tensor(value)
+        elif init_pose == 'model pose':
+            init_pose = init_inv_model.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var,
+                                            weight_decay=weight_decay, opt_pose=opt_pose)
 
         inv_model.pose = init_pose
         sequence_results = []
         hstate_probs = []
-        n_epochs, lr, weight_decay, lh_var = parameters
         for i, goal in tqdm(enumerate(sequence)):
             inv_model.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var,
                                             weight_decay=weight_decay, opt_pose=opt_pose)
@@ -34,8 +37,6 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
             if inv_model.update:
                 hstate_probs.append(inv_model.hstates.detach().numpy())
 
-            # print(hstate_probs)
-            # print(i + 1)
         goal_joints = goal.keys()
         if interpolate:
             sequence_results = array2motions(interpolatearray(motions2array(sequence_results), sample_rate), type='numpy')
@@ -46,4 +47,3 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
             v.run()
 
 
-        # return sequence_results

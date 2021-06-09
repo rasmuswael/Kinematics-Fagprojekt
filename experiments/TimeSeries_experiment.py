@@ -1,16 +1,16 @@
 from inverse_kinematics.TimeSeries import *
-seed = 1511
+seed = 1510
 torch.manual_seed(seed)
 
 sample_rate=6
 
 selected = get_fnames(["run", "walk"])
+# selected = get_manual_names(["walk","run"])
+
 data = parse_selected(selected, sample_rate=sample_rate, limit=5000)
 len_array = get_lengths_np(data)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1] - 3)]
-
-dummy_joints, dummy_pose = dummy()
 
 # excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes']
 excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes', 'rhand', 'lhand', 'head', 'rwrist', 'lwrist', 'rclavicle', 'lclavicle']
@@ -31,16 +31,16 @@ hmmGaussprior = ('hmmGauss', (gmm_prior(model.means_, model.covars_, torch.zeros
 
 goal_joints = ['rfoot','lfoot']
 
-#examples = selected
-examples = {'104': [('104_56','')]}
+examples = selected
+#examples = {'104': [('104_56','')]}
 
 np.random.seed(seed)
-samples = get_motion_samples(examples, 100, 2, sample_rate=sample_rate)
-sequences = get_goal_sequences(goal_joints, samples, indices)
+samples = get_motion_samples(examples, 40, 2, sample_rate=sample_rate)
+sequences, trunc_samples = get_goal_sequences(goal_joints, samples, indices, return_trunc_samples=True)
 
 saveframes, plot = True, False
 
-n_epochs, lr, weight_decay, lh_var = 100, 1e-1 * sample_rate, 0, 1e-2
+n_epochs, lr, weight_decay, lh_var = 100, 1, 0, 1e-3
 parameters = (n_epochs, lr, weight_decay, lh_var)
 
 # inv_noprior = Inverse_model(noprior, excluded, saveframes=saveframes, plot=plot)
@@ -48,6 +48,6 @@ parameters = (n_epochs, lr, weight_decay, lh_var)
 # inv_gm = Inverse_model(gmprior, indices, saveframes=saveframes, plot=plot)
 inv_hmmGauss = Inverse_model(hmmGaussprior, indices, saveframes=saveframes, plot=plot)
 
-gen_timeseries(inv_hmmGauss, sequences, parameters, samples, view=True, init_pose='first pose', opt_pose='self',
+gen_timeseries(inv_hmmGauss, sequences, parameters, trunc_samples, view=True, init_pose='first pose', opt_pose='self',
                interpolate=True, sample_rate=sample_rate)
 

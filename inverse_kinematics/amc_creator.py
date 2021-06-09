@@ -1,8 +1,6 @@
 import numpy as np
 from amc_parser import *
 
-amc_path = './data/01/01_01.amc'
-motions = parse_amc_np(amc_path)
 
 def amc_converter(frames, filename):
     """
@@ -20,4 +18,5 @@ def amc_converter(frames, filename):
             f.write(f"{key} {string}\n")
     f.close()
 
-#amc_converter(motions, "tester")
+
+if __init__ == k#amc_converter(motions, "tester")

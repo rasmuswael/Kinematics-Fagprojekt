@@ -5,7 +5,7 @@ from torch.distributions import MultivariateNormal
 
 def log_likelihood(yhat, y, variance = 1):
     """Goal coordinates is 3xN tensor (in the same order as in the joint class)
-    Takes joint coordinates as a 3xN tensor. where N is the number of goal joints
+    Takes joint coordinates as a 3xN tensor, where N is the number of goal joints
     Variance is chosen somewhat arbitrarily"""
 
     #Method 2
@@ -44,7 +44,7 @@ class gmm_prior:
         self.gaussians = [MultivariateNormal(self.means[i], covariance_matrix=self.covs[i]) for i in range(self.n_components)]
 
     def log_prob(self, pose):
-        return sum([self.gaussians[i].log_prob(pose) * self.weights[i] for i in range(self.n_components)])
+        return sum([self.gaussians[i].log_prob(pose) + torch.log(self.weights[i]+1e-7) for i in range(self.n_components)])
 
 
 class nf_prior:
@@ -58,8 +58,8 @@ class nf_prior:
 class euclidian_Loss:
     def Loss(self, yhat, y, pose):
         loss = 0
-        for i in range(len(yhat)):
-            loss += torch.cdist(yhat[i].transpose(0, 1), y[i].transpose(0, 1), p=2.0)
+        for i in range(yhat.size(1)):
+            loss += torch.cdist(yhat[:,i].transpose(0, 1), y[:,i].transpose(0, 1), p=2.0)
         return loss
 
 
@@ -70,10 +70,11 @@ class posterior_Loss:
 
 
     def Loss_likelihood(self, yhat, y):
-        likelihood = 0
-        for i in range(len(yhat)):
-            likelihood += log_likelihood(yhat[i], y[i], self.lh_var)
-        return likelihood / len(yhat)
+        # likelihood = 0
+        # for i in range(len(yhat)):
+        #     likelihood += log_likelihood(yhat[i], y[i], self.lh_var)
+        #return likelihood / len(yhat)
+        return log_likelihood(yhat, y, self.lh_var)
 
 
 class noprior_Loss(posterior_Loss):
