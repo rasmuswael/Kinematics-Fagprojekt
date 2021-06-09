@@ -2,7 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from transforms3d.euler import euler2mat
+from transforms3d.euler import euler2mat, mat2euler
 from mpl_toolkits.mplot3d import Axes3D
 
 

@@ -3,6 +3,9 @@ from inverse_kinematics.dummy import dummy, dummy_joints_np
 import torch
 from scipy.stats import circmean, circvar
 from sklearn.mixture import GaussianMixture
+from transforms3d.euler import euler2mat, mat2euler
+from scipy.spatial.transform import Rotation as R
+
 import pyro
 import pyro.distributions as dist
 import pyro.distributions.transforms as T
@@ -12,8 +15,14 @@ from hmmlearn import hmm
 
 def truncate(X, root_limit=[]):
     '''Remove translation from X coloumns first'''
-    X = (X + 180) % 360 - 180
     joints, pose, dof = dummy(return_dof=True)
+
+    root = R.from_euler('xyz', X[:,:3],degrees=True)
+    c = root.as_euler('zxy', degrees=True)
+    X[:,0] = c[:,1]
+    X[:,1] = 0
+    X[:,2] = c[:,0]
+    X = (X + 180) % 360 - 180
 
     if not len(root_limit):
         root_limit = np.array([[-30., 30.],
@@ -190,7 +199,7 @@ def compute_NF(X, steps, indices=np.arange(59), lr=1e-2):
     n_features = X.shape[1]
 
     base_dist = dist.Normal(torch.zeros(n_features), torch.ones(n_features))
-    spline_transform = T.spline_coupling(n_features, count_bins=16)
+    spline_transform = T.spline_coupling(n_features, hidden_dims=[n_features * 2] * 128, split_dim=None, count_bins=32)
     flow_dist = dist.TransformedDistribution(base_dist, [spline_transform])
 
     dataset = torch.from_numpy(X).float()
