@@ -219,7 +219,7 @@ def get_Kfold_mat(data, folds):
         data_Kfold[i] = {}
         data_Kfold[i]['actions'], data_Kfold[i]['labels'] = [], []
         for id in fold:
-            key = id[:2]
+            key = id[:-3]
             idx = int(np.argwhere(np.array(data[key]['actionid']) == id))
             data_Kfold[i]['actions'].append(data[key]['actions'][idx])
             data_Kfold[i]['labels'].append(data[key]['labels'][idx])
