@@ -61,8 +61,10 @@ def get_manual_names(folder_path, type):
                     subject += i
                 else:
                     break
-            selected[subject] = [(file[:-4], type)]
-
+            if subject not in selected:
+                selected[subject] = [(file[:-4], type)]
+            else:
+                selected[subject].append((file[:-4], type))
     return selected
 
 
