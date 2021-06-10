@@ -1,5 +1,5 @@
 from inverse_kinematics.TimeSeries import *
-
+import pickle
 
 def quick_setup(queries, data_pool="manual", sample_rate=1, limit=None, excluded=[]):
     """Write an elaborate docstring here"""
@@ -54,4 +54,56 @@ def train_prior(X, indices, type='noprior',hyperparameters=[]):
         return get_prior(type, model)
 
 
+#new version - returns parameters
+def train_prior(X, indices, type='noprior',hyperparameters=[], path, save=True):
+    """Write an elaborate docstring here"""
+    if type == 'noprior':
+        return
+    elif type == 'normal':
+        parameters = compute_parameters_normal(remove_excluded(truncate(X), indices, type='numpy'))
+        if save==True:
+            with open(f"{path}.pkl", "wb") as file:
+                pickle.dump(parameters, file)
+        return get_prior(type, parameters)
 
+    elif type == 'gaussianmixture':
+        n_components, covariance_type = hyperparameters
+        parameters = compute_gm_params(X, n_components=n_components, indices=indices, covariance_type=covariance_type)
+        if save==True:
+            with open(f"{path}.pkl", "wb") as file:
+                pickle.dump(parameters, file)
+        return get_prior(type, parameters)
+
+    elif type == 'hmmGauss':
+        n_states, len_array, covariance_type = hyperparameters
+        model = compute_hmmGauss(X, len_array, n_components=n_states, indices=indices, covariance_type='full')
+        if save == True:
+            with open(f"{path}.pkl", "wb") as file:
+                pickle.dump(model, file)
+        return get_prior(type, model)
+
+def load_param(path, type):
+    """
+    Decodes model pickle-file
+    :param path: str, path to model in ./models
+    :param type: str, type of model
+    :return: parameters
+    """
+
+    if type == 'noprior':
+        return
+
+    elif type == 'normal':
+        with open(f"{path}.pkl", "rb") as file:
+            parameters = pickle.load(file)
+        return parameters
+
+    elif type == 'gaussianmixture':
+        with open(f"{path}.pkl", "rb") as file:
+            parameters = pickle.load(file)
+        return parameters
+
+    elif type == 'hmmGauss':
+        with open(f"{path}.pkl", "rb") as file:
+            parameters = pickle.load(file)
+        return parameters
