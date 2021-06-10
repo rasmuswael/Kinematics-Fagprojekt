@@ -71,7 +71,7 @@ def get_testsample_names(seed):
         dir = f"./{type}_data"
         samples = []
         data = sorted(os.listdir(dir))
-        samples.extend(np.random.choice(data, 5))
+        samples.extend(np.random.choice(data, 5, replace = False))
         for filename in samples:
             fname = str(filename)[:-4]
             subject = fname[:-3]
