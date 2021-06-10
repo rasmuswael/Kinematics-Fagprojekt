@@ -17,6 +17,3 @@ def amc_converter(frames, filename):
             string = " ".join([str(f) for f in frames[i][key]])
             f.write(f"{key} {string}\n")
     f.close()
-
-
-if __init__ == k#amc_converter(motions, "tester")

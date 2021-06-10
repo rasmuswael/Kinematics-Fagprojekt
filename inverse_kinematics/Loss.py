@@ -11,13 +11,6 @@ def log_likelihood(yhat, y, variance = 1):
     #Method 2
     N = y.size(1)
     cov = torch.eye(3) * variance
-    # likelihoods = []
-    # for i in range(N):
-    #     mean = yhat[:,i]
-    #     goal_point = y[:,i]
-    #     likelihood_model = MultivariateNormal(mean, covariance_matrix=cov)
-    #     likelihoods.append(likelihood_model.log_prob(goal_point))
-    # return sum(likelihoods)
     return sum([MultivariateNormal(yhat[:,i], covariance_matrix=cov).log_prob(y[:,i]) for i in range(N)])
 
 
