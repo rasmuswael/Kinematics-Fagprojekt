@@ -28,16 +28,22 @@ def set_goal(goal_joints, pose):
     return goal
 
 
-def get_goal_sequences(goal_joints, samples, indices=np.arange(59)):
+def get_goal_sequences(goal_joints, samples, indices=np.arange(59), return_trunc_samples=False):
     sequences = []
+    trunc_samples_list = []
     for sample in samples:
         goals = []
+        trunc_samples = []
         for pose in sample:
             posearr = pose2array(pose, type='numpy')
             posearr = truncate(np.vstack((posearr,posearr)))[0]
             pose = array2pose(remove_excluded(posearr, indices, type='numpy'), indices, type='numpy')
             goals.append(set_goal(goal_joints, pose))
+            trunc_samples.append(pose)
+        trunc_samples_list.append(trunc_samples)
         sequences.append(goals)
+    if return_trunc_samples:
+        return sequences, trunc_samples_list
     return sequences
 
 
@@ -46,6 +52,7 @@ def unpack_sequence(joint, sequence):
     for goal in sequence:
         coordinate_list.append(goal[joint].detach().numpy())
     return coordinate_list
+
 
 class Inverse_model:
     def __init__(self, prior = (None, None), indices=np.arange(59), saveframes=True, plot=False):
@@ -75,7 +82,7 @@ class Inverse_model:
         return torch.cat(pose)
 
 
-    def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0, opt_pose='dummy'):
+    def inverse_kinematics(self, goal, lr=1, n_epochs=100, lh_var=1e-2, weight_decay=0, opt_pose='dummy', print_loss=True):
         frames = []
 
         Loss_function = get_loss_func(self.prior, lh_var)
@@ -92,7 +99,7 @@ class Inverse_model:
 
         optimizer = optim.Adam(optim_joints, lr=lr, weight_decay=weight_decay)
 
-        y = [y for y in goal.values()]
+        y = torch.cat([y for y in goal.values()], 1)
 
         for epoch in range(n_epochs+1):
             def closure():
@@ -102,7 +109,7 @@ class Inverse_model:
                 pose_dict = array2pose(pose)
 
                 self.joints['root'].set_motion(pose_dict)
-                yhat = [self.joints[goal_joint].coordinate for goal_joint in goal.keys()]
+                yhat = torch.cat([self.joints[goal_joint].coordinate for goal_joint in goal.keys()], 1)
 
                 if self.saveframes:
                     frames.append(array2pose(pose.detach().numpy(), type='numpy'))
@@ -110,12 +117,10 @@ class Inverse_model:
 
                 loss = Loss_function.Loss(yhat, y, pose[self.indices])
                 loss.backward(retain_graph=True)
-                # if epoch % 10 == 0:
-                #     print('step: {}, loss: {}'.format(epoch, loss.detach()))
+                if epoch % 10 == 0 and print_loss:
+                    print('step: {}, loss: {}'.format(epoch, loss.detach()))
                 return loss
             optimizer.step(closure)
-
-
 
         self.pose = array2pose(self.stitch(optim_joints).detach())
         # self.pose_np = array2pose(self.stich(optim_joints).detach().numpy(), type='numpy')

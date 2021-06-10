@@ -11,7 +11,7 @@ from OpenGL.GLU import *
 from scipy.spatial.transform import Rotation as R
 
 class Viewer:
-    def __init__(self, joints=None, motions=None, points=[], trajectories=[], hstate_probs=[], sample_rate=1):
+    def __init__(self, joints=None, motions=None, points=[], trajectories=[], hstate_probs=[], fps=120, sample_rate=1):
         """
         Display motion sequence in 3D.
 
@@ -39,7 +39,7 @@ class Viewer:
 
         self.frame = 0  # current frame of the motion sequence
         self.playing = False  # whether is playing the motion sequence
-        self.fps = 120  # frame rate
+        self.fps = fps  # frame rate
 
         # whether is dragging
         self.rotate_dragging = False
@@ -309,16 +309,20 @@ class Viewer:
         """
         while not self.done:
             self.process_event()
-            # if self.playing:
-            #     root = self.motions[self.frame]['root']
-            #     r = R.from_euler('xyz', root[3:], degrees=True)
-            #     c = r.as_euler('zxy', degrees=True)
-            #     d = r.as_euler('xzy', degrees=True)
-            #     self.motions[self.frame]['root'][3] = c[1]
-            #     self.motions[self.frame]['root'][4] = 0
-            #     self.motions[self.frame]['root'][5] = c[0]
-            #     print(c[0],c[1])
-            #     print(d[0],d[1])
+            fix_orientation = False
+            if self.playing and fix_orientation:
+                root = self.motions[self.frame]['root']
+                r = R.from_euler('xyz', root[3:], degrees=True)
+                c = r.as_euler('zxy', degrees=True)
+                d = r.as_euler('xzy', degrees=True)
+                self.motions[self.frame]['root'][0] = 0
+                self.motions[self.frame]['root'][1] = 0
+                self.motions[self.frame]['root'][2] = 0
+                self.motions[self.frame]['root'][3] = c[1]
+                self.motions[self.frame]['root'][4] = 0
+                self.motions[self.frame]['root'][5] = c[0]
+                print(c[0],c[1])
+                print(d[0],d[1])
             self.joints['root'].set_motion(self.motions[self.frame])
             if self.playing:
                 self.frame += 1
@@ -334,9 +338,10 @@ class Viewer:
 
 
 if __name__ == '__main__':
-    subject = '104'
-    amc_num = '39'
-    asf_path = f'./data/{subject}/{subject}.asf'
+    subject = '16'
+    amc_num = '18'
+    # asf_path = f'./data/{subject}/{subject}.asf'
+    asf_path = f'./data/{"01"}/{"01"}.asf'
     amc_path = f'./data/{subject}/{subject}_{amc_num}.amc'
     joints = parse_asf_np(asf_path)
     motions = parse_amc_np(amc_path)

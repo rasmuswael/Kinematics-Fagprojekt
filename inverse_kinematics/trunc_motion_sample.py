@@ -6,7 +6,7 @@ def trunc_motion_samples(selected, excluded):
     # for key, file in selected.items():
     #     for sample in file:
     included, indices = exclude(excluded, return_indices=True, root_exclude=[1])
-    data = parse_selected(selected, limit=5000)
+    data = parse_selected(selected, limit=None)
     trunc_motion_samples = {}
     for key in data.keys():
         for i, fname in enumerate(data[key]['actionid']):
