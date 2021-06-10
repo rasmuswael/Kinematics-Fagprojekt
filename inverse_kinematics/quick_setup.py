@@ -37,23 +37,6 @@ def get_prior(type, parameters=None):
         return ('hmmGauss', (gmm_prior(model.means_, model.covars_, torch.tensor([1/len(model.means_)]*len(model.means_))), model))
 
 
-def train_prior(X, indices, type='noprior',hyperparameters=[]):
-    """Write an elaborate docstring here"""
-    if type == 'noprior':
-        return get_prior(type)
-    elif type == 'normal':
-        parameters = compute_parameters_normal(remove_excluded(truncate(X), indices, type='numpy'))
-        return get_prior(type, parameters)
-    elif type == 'gaussianmixture':
-        n_components, covariance_type = hyperparameters
-        parameters = compute_gm_params(X, n_components=n_components, indices=indices, covariance_type=covariance_type)
-        return get_prior(type, parameters)
-    elif type == 'hmmGauss':
-        n_states, len_array, covariance_type = hyperparameters
-        model = compute_hmmGauss(X, len_array, n_components=n_states, indices=indices, covariance_type='full')
-        return get_prior(type, model)
-
-
 #new version - returns parameters
 def train_prior(X, indices, type='noprior',hyperparameters=[], path, save=True):
     """Write an elaborate docstring here"""
