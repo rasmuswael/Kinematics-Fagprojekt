@@ -1,3 +1,5 @@
+from inverse_kinematics.compute_models import *
+import numpy as np
 import pandas as pd
 from get_subjects import *
 from sklearn.preprocessing import StandardScaler

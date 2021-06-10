@@ -63,23 +63,31 @@ def get_manual_names(types):
                 selected[subject].append((fname, type))
     return selected
 
-def get_testsample_names(seed):
+def get_trainandtestsample_names(seed):
     np.random.seed(seed)
-    selected = {}
+    trainselected, testselected = {}, {}
     types = ('run', 'walk')
     for type in types:
         dir = f"./{type}_data"
         samples = []
-        data = os.listdir(dir)
-        samples.extend(np.random.choice(data, 5))
+        data = sorted(os.listdir(dir))
+        samples.extend(np.random.choice(data, 5, replace=False))
         for filename in samples:
             fname = str(filename)[:-4]
             subject = fname[:-3]
-            if subject not in selected:
-                selected[subject] = [(fname, type)]
+            if subject not in testselected:
+                testselected[subject] = [(fname, type)]
             else:
-                selected[subject].append((fname, type))
-    return selected
+                testselected[subject].append((fname, type))
+        for filename in data:
+            if filename not in samples:
+                fname = str(filename)[:-4]
+                subject = fname[:-3]
+                if subject not in trainselected:
+                    trainselected[subject] = [(fname, type)]
+                else:
+                    trainselected[subject].append((fname, type))
+    return trainselected, testselected
 
 
 def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_translation=True, sep_trans_root=True, motions_as_mat=True):
