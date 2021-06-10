@@ -1,14 +1,14 @@
 from inverse_kinematics.TimeSeries import *
 
 
-def quick_setup(selected, data_pool="manual", sample_rate=1, limit=None, excluded=[]):
+def quick_setup(queries, data_pool="manual", sample_rate=1, limit=None, excluded=[]):
     """Write an elaborate docstring here"""
     sample_rate = sample_rate
 
     if data_pool == 'manual':
-        selected = get_manual_names(selected)
+        selected = get_manual_names(queries)
     else:
-        selected = get_fnames(selected)
+        selected = get_fnames(queries)
 
     data = parse_selected(selected, sample_rate=sample_rate, limit=limit)
     len_array = get_lengths_np(data)
@@ -36,6 +36,7 @@ def get_prior(type, parameters=None):
         model, n_states = parameters
         return ('hmmGauss', (gmm_prior(model.means_, model.covars_, torch.zeros(n_states)), model))
 
+
 def train_prior(X, indices, type='noprior',hyperparameters=[]):
     """Write an elaborate docstring here"""
     if type == 'noprior':
@@ -48,30 +49,9 @@ def train_prior(X, indices, type='noprior',hyperparameters=[]):
         parameters = compute_gm_params(X, n_components=n_components, indices=indices, covariance_type=covariance_type)
         return get_prior(type, parameters)
     elif type == 'hmmGauss':
-        n_states, covariance_type = hyperparameters
+        n_states, len_array, covariance_type = hyperparameters
         model = compute_hmmGauss(X, len_array, n_components=n_states, indices=indices, covariance_type='full')
         return get_prior(type, (model, n_states))
 
-goal_joints = ['rfoot', 'lfoot']
 
-examples = selected
-# examples = {'104': [('104_56','')]}
-
-np.random.seed(seed)
-samples = get_motion_samples(examples, 100, 2, sample_rate=sample_rate)
-sequences, trunc_samples = get_goal_sequences(goal_joints, samples, indices, return_trunc_samples=True)
-
-saveframes, plot = True, False
-
-n_epochs, lr, weight_decay, lh_var = 100, 1e-1 * sample_rate, 0, 1e-2
-parameters = (n_epochs, lr, weight_decay, lh_var)
-
-# inv_noprior = Inverse_model(noprior, excluded, saveframes=saveframes, plot=plot)
-# inv_normal = Inverse_model(normprior, excluded, saveframes=saveframes, plot=plot)
-# inv_gm = Inverse_model(gmprior, indices, saveframes=saveframes, plot=plot)
-inv_hmmGauss = Inverse_model(hmmGaussprior, indices, saveframes=saveframes, plot=plot)
-
-
-gen_timeseries(inv_hmmGauss, sequences, parameters, trunc_samples, view=True, init_pose='first pose', opt_pose='self',
-               interpolate=True, sample_rate=sample_rate)
 
