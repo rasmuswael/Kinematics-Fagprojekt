@@ -33,8 +33,8 @@ def get_prior(type, parameters=None):
     elif type == 'gaussianmixture':
         return ('gaussianmixture', gmm_prior(*parameters))
     elif type == 'hmmGauss':
-        model, n_states = parameters
-        return ('hmmGauss', (gmm_prior(model.means_, model.covars_, torch.zeros(n_states)), model))
+        model = parameters
+        return ('hmmGauss', (gmm_prior(model.means_, model.covars_, torch.tensor([1/len(model.means_)]*len(model.means_))), model))
 
 
 def train_prior(X, indices, type='noprior',hyperparameters=[]):
@@ -51,7 +51,7 @@ def train_prior(X, indices, type='noprior',hyperparameters=[]):
     elif type == 'hmmGauss':
         n_states, len_array, covariance_type = hyperparameters
         model = compute_hmmGauss(X, len_array, n_components=n_states, indices=indices, covariance_type='full')
-        return get_prior(type, (model, n_states))
+        return get_prior(type, model)
 
 
 
