@@ -9,6 +9,7 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 
 from scipy.spatial.transform import Rotation as R
+from inverse_kinematics.compute_models import *
 
 class Viewer:
     def __init__(self, joints=None, motions=None, points=[], trajectories=[], hstate_probs=[], fps=120, sample_rate=1):
@@ -32,9 +33,10 @@ class Viewer:
             self.trajectory_colours = [np.random.uniform(size=3) for i in range(len(self.trajectories))]
         self.hstate_probs = hstate_probs
         if len(self.hstate_probs):
-            self.hstate_colours = [np.random.uniform(size=3) for i in range(len(self.hstate_probs))]
-            self.hstate_names = [f"h{i+1}" for i in range(len(self.hstate_probs))]
+            self.hstate_colours = [np.random.uniform(size=3) for i in range(len(self.hstate_probs[0]))]
+            self.hstate_names = [f"h{i+1}" for i in range(len(self.hstate_probs[0]))]
 
+        print(len(self.hstate_colours))
         self.sample_rate = sample_rate
 
         self.frame = 0  # current frame of the motion sequence
@@ -290,7 +292,7 @@ class Viewer:
             top3 = np.argsort(iprobs)[::-1][:3]
             for i in range(3):
                 glMaterialfv(
-                    GL_FRONT, GL_EMISSION, np.array([*self.hstate_colours[i], 1], dtype=np.float32)
+                    GL_FRONT, GL_EMISSION, np.array([*self.hstate_colours[top3[i]], 1], dtype=np.float32)
                 )
                 for j in range(2):
                     coord_x = np.array(np.array([i*2+5+j*.5,15,50]) + self.translate, dtype=np.float32)
@@ -338,12 +340,22 @@ class Viewer:
 
 
 if __name__ == '__main__':
-    subject = '16'
-    amc_num = '18'
+    subject = '91'
+    amc_num = '30'
     # asf_path = f'./data/{subject}/{subject}.asf'
     asf_path = f'./data/{"01"}/{"01"}.asf'
     amc_path = f'./data/{subject}/{subject}_{amc_num}.amc'
     joints = parse_asf_np(asf_path)
     motions = parse_amc_np(amc_path)
+
+    v = Viewer(joints, motions, points=[np.array([0., 0., 0.])], hstate_probs=[np.array([0.5, 1, 0.1])] * len(motions))
+    v.run()
+    # excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes', 'rhand', 'lhand', 'head', 'rwrist', 'lwrist', 'rclavicle', 'lclavicle']
+    #
+    # included, indices = exclude(excluded, return_indices=True, root_exclude=[])
+    # X = motions2array(motions, type='numpy')
+    # X = remove_excluded(truncate(X), indices, type='numpy')
+    # motions = array2motions(X[:1000], indices, type='numpy')
+
     v = Viewer(joints, motions, points=[np.array([0., 0., 0.])],hstate_probs=[np.array([0.5,1,0.1])]*len(motions))
     v.run()

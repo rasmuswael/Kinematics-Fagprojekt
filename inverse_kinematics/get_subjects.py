@@ -179,26 +179,37 @@ def gather_all_np(data ,big_matrix=True):
     return gathered, y
 
 
-def get_motion_samples(selected, length, num_samples, random=True, sample_rate=1):
+def get_motion_samples(selected, length, num_samples=1, random=True, sample_rate=1):
     '''Input the length of the sample in terms of frames.
     Input the selected files to be used for sampling.
     Returns 'num_samples' amount of coordinate sets of 'length' for each tracked joint in 'joints' '''
-    data = parse_selected(selected, limit=length * num_samples * 20, sample_rate=sample_rate, sep_trans_root=False, motions_as_mat=False)
+    if length is None:
+        limit = None
+    else:
+        limit = length * num_samples * 20
+    data = parse_selected(selected, limit=limit, sample_rate=sample_rate, sep_trans_root=False, motions_as_mat=False)
+    actionids = [actionid for sublist in [data[key]['actionid'] for key in data.keys()] for actionid in sublist]
     actions = [action for sublist in [data[key]['actions'] for key in data.keys()] for action in sublist]
-    num_actions = len(actions)
-    choices = np.random.choice(np.arange(num_actions), num_samples, replace=True)
-    samples = []
-    for choice in choices:
-        action = actions[choice]
-        if length < len(action):
-            high_idx = np.random.randint(low=length, high=len(action))
-            low_idx = high_idx - length
-        else:
-            high_idx = len(action)
-            low_idx = 0
-        sample = action[low_idx:high_idx]
-        samples.append(sample)
-    return samples
+    if random == True:
+        num_actions = len(actions)
+        choices = np.random.choice(np.arange(num_actions), num_samples, replace=True)
+        samples = []
+        sampleids = []
+        for choice in choices:
+            action = actions[choice]
+            if length < len(action):
+                high_idx = np.random.randint(low=length, high=len(action))
+                low_idx = high_idx - length
+            else:
+                high_idx = len(action)
+                low_idx = 0
+            sample = action[low_idx:high_idx]
+            samples.append(sample)
+            sampleids.append(actionids[choice])
+    else:
+        samples = actions
+        sampleids = actionids
+    return samples, sampleids
 
 
 def get_lengths_np(data):

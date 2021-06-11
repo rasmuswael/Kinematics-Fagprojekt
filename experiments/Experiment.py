@@ -11,12 +11,13 @@ X = X[:, :(X.shape[1] - 3)]
 dummy_joints, dummy_pose = dummy()
 
 # excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes']
-excluded = ['root', 'lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes', 'rhand', 'lhand', 'rfoot', 'lfoot', 'head', 'rwrist', 'lwrist', 'rclavicle', 'lclavicle']
+excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes', 'rhand', 'lhand', 'head', 'rwrist', 'lwrist', 'rclavicle', 'lclavicle']
+
 
 included, indices = exclude(excluded, return_indices=True, root_exclude=[1])
 mean, cov = compute_parameters_normal(truncate(X))
 mean, cov = mean[indices], cov[indices, :][:, indices]
-
+print(len(indices))
 means, covs, weights = compute_gm_params(X, n_components=3, indices=indices)
 
 noprior = ('noprior', None)

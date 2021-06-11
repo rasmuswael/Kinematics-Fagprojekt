@@ -39,7 +39,7 @@ def truncate(X, root_limit=[]):
             low, high = limits[axis, 0], limits[axis, 1]
             X[:,i] = np.clip(X[:,i], low, high)
             i +=1
-    return(X)
+    return X
 
 def standardize(X):
     mean, std = X.mean(0), X.std(0)
@@ -120,15 +120,15 @@ def array2motions(X, indices=np.arange(59), type='torch'):
     motions = []
     if type=='torch':
         X = torch.tensor(X)
-    for x in X:
+    for x in tqdm(X):
         motions.append((array2pose(x, indices, type=type)))
     return motions
 
 
-def motions2array(motions):
-    X = np.array(pose2array(motions[0]))
+def motions2array(motions, type='torch'):
+    X = np.array(pose2array(motions[0], type=type))
     for pose in motions[1:]:
-        X = np.vstack((X,np.array(pose2array(pose))))
+        X = np.vstack((X,np.array(pose2array(pose, type=type))))
     return X
 
 

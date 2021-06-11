@@ -59,28 +59,26 @@ def train_prior(X, indices, type='noprior',hyperparameters=()):
 #new version - returns parameters
 def train_prior(X, indices, type='noprior',hyperparameters=[], savepath=None):
     """Write an elaborate docstring here"""
-    if type == 'noprior':
-        return get_prior(type)
-    elif type == 'normal':
+    if type == 'normal':
         parameters = compute_parameters_normal(remove_excluded(truncate(X), indices, type='numpy'))
         if savepath is not None:
             with open(f"./models/{savepath}.pkl", "wb") as file:
                 pickle.dump(parameters, file)
-        return get_prior(type, parameters)
+        return parameters
     elif type == 'gaussianmixture':
         n_components, covariance_type = hyperparameters
         parameters = compute_gm_params(X, n_components=n_components, indices=indices, covariance_type=covariance_type)
         if savepath is not None:
             with open(f"./models/{savepath}.pkl", "wb") as file:
                 pickle.dump(parameters, file)
-        return get_prior(type, parameters)
+        return parameters
     elif type == 'hmmGauss':
         n_states, len_array, covariance_type = hyperparameters
         model = compute_hmmGauss(X, len_array, n_components=n_states, indices=indices, covariance_type='full')
         if savepath is not None:
             with open(f"./models/{savepath}.pkl", "wb") as file:
                 pickle.dump(model, file)
-        return get_prior(type, model)
+        return model
 
 def load_param(path, type):
     """

@@ -113,7 +113,6 @@ class Inverse_model:
 
                 if self.saveframes:
                     frames.append(array2pose(pose.detach().numpy(), type='numpy'))
-                    #frames.append(pose_dict)
 
                 loss = Loss_function.Loss(yhat, y, pose[self.indices])
                 loss.backward(retain_graph=True)
@@ -122,8 +121,8 @@ class Inverse_model:
                 return loss
             optimizer.step(closure)
 
+        # self.pose = poses[np.argmin(losses)]
         self.pose = array2pose(self.stitch(optim_joints).detach())
-        # self.pose_np = array2pose(self.stich(optim_joints).detach().numpy(), type='numpy')
         self.frames = frames
         if self.plot:
             draw_cluster(torch.cat(optim_joints), self.indices)

@@ -1,5 +1,7 @@
 from scipy import interpolate
 from inverse_kinematics.InverseKinematics import *
+from inverse_kinematics.amc_creator import amc_converter
+import pickle
 
 def interpolatearray(X, sample_rate, output_fps=120):
     input_fps = 120
@@ -15,7 +17,7 @@ def interpolatearray(X, sample_rate, output_fps=120):
     return X_interpolated
 
 def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_pose='first pose', opt_pose='self',
-                   interpolate=False, sample_rate=1, output_fps=120, save=False):
+                   interpolate=False, sample_rate=1, output_fps=120, saveids=[]):
     dummy_joints, dummy_pose = dummy()
     n_epochs, lr, weight_decay, lh_var = parameters
     for j, sequence in enumerate(sequences):
@@ -38,7 +40,9 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
         inv_model.pose = init_pose
         sequence_results = []
         hstate_probs = []
-        for i, goal in tqdm(enumerate(sequence)):
+        nframes = len(sequence)
+        for i, goal in enumerate(sequence):
+            print(f'Frame: {i} / {nframes}')
             inv_model.inverse_kinematics(goal, n_epochs=n_epochs, lr=lr, lh_var=lh_var,
                                             weight_decay=weight_decay, opt_pose=opt_pose)
             sequence_results.append(inv_model.pose)
@@ -55,5 +59,9 @@ def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_po
                        sample_rate=sample_rate, hstate_probs=hstate_probs, fps=output_fps)
             v.run()
 
-
+        if len(saveids):
+            amc_converter(sequence_results, f"{inv_model.prior[0]}-{saveids[j]}")
+            if inv_model.update:
+                with open(f"./hstate_probs_results/hstate_probs_{inv_model.prior[0]}-{saveids[j]}.txt", "wb") as fp:  # Pickling
+                    pickle.dump(hstate_probs, fp)
 

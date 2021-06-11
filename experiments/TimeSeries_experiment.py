@@ -1,13 +1,13 @@
 from inverse_kinematics.TimeSeries import *
-seed = 1512
+seed = 1510
 torch.manual_seed(seed)
 
-sample_rate=4
+sample_rate=6
 
 selected = get_fnames(["run", "walk"])
-selected = get_manual_names(["walk","run"])
+# selected = get_manual_names(["walk","run"])
 
-data = parse_selected(selected, sample_rate=sample_rate, limit=10000)
+data = parse_selected(selected, sample_rate=sample_rate, limit=5000)
 len_array = get_lengths_np(data)
 X, y = gather_all_np(data)
 X = X[:, :(X.shape[1] - 3)]
@@ -39,7 +39,7 @@ sequences, trunc_samples = get_goal_sequences(goal_joints, samples, indices, ret
 
 saveframes, plot = True, False
 
-n_epochs, lr, weight_decay, lh_var = 100, 1, 0, 1e-4
+n_epochs, lr, weight_decay, lh_var = 150, 1, 0, 1e-5
 parameters = (n_epochs, lr, weight_decay, lh_var)
 
 # inv_noprior = Inverse_model(noprior, excluded, saveframes=saveframes, plot=plot)
@@ -47,7 +47,7 @@ parameters = (n_epochs, lr, weight_decay, lh_var)
 # inv_gm = Inverse_model(gmprior, indices, saveframes=saveframes, plot=plot)
 inv_hmmGauss = Inverse_model(hmmGaussprior, indices, saveframes=saveframes, plot=plot)
 
-output_fps = 30
+output_fps = 120
 gen_timeseries(inv_hmmGauss, sequences, parameters, trunc_samples, view=True, init_pose='model pose', opt_pose='self',
-               interpolate=False, sample_rate=sample_rate, output_fps=output_fps)
+               interpolate=True, sample_rate=sample_rate, output_fps=output_fps)
 
