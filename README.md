@@ -6,7 +6,7 @@ This repository is the result of work done in the DTU course 'Project Work in Ar
 In /Generate/Generate.py, select one of the models available in inverse_kinematics/models/. Then, select a motion to get the joint positions from which the rest of the motion is generated. Running the script will then generate a motion sequence, which will be saved as a .amc file.
 
 ### References
-The code which interprets the .amc files was kindly borrowed from https://github.com/CalciferZh/AMCParser and later rewritten in order to be compatible with pyTorch - based gradient descent.
+amc_parser.py and 3Dviewer.py were kindly borrowed from https://github.com/CalciferZh/AMCParser and later rewritten in order to be compatible with pyTorch - based gradient descent.
 
 
 
