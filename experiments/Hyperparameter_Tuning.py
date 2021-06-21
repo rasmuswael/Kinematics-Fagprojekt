@@ -1,9 +1,10 @@
 from inverse_kinematics.compute_models import *
 import matplotlib.pyplot as plt
 import pickle
-sample_rate = 6
 
-# Lets create a cross validation loop for the HMM Gaussian model
+
+### SCRIPT FOR CROSS VALIDATION FOR THE NUMBER OF HIDDEN STATES IN THE GAUSSIAN HMM MODEL ###
+sample_rate = 6
 #selected = get_fnames("walk")
 selected = get_manual_names(["walk", "run"])
 excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes', 'rhand', 'lhand', 'head', 'rwrist', 'lwrist', 'rclavicle', 'lclavicle']

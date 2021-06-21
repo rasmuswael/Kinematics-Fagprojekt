@@ -23,7 +23,11 @@ class Viewer:
 
         motions: List returned from `amc_parser.parse_amc. Each element is a dict
         with joint names as keys and relative rotation degree as values.
-
+        points: List of 3d points to render
+        trajectories: list of trajectories (lists of points) to render
+        hstate_probs: hidden state probabilities for each time step (default empty)
+        sample_rate: sample rate of the data
+        fps: fps of the viewer output
         """
         self.joints = joints
         self.motions = motions
@@ -36,7 +40,6 @@ class Viewer:
             self.hstate_colours = [np.random.uniform(size=3) for i in range(len(self.hstate_probs[0]))]
             self.hstate_names = [f"h{i+1}" for i in range(len(self.hstate_probs[0]))]
 
-        print(len(self.hstate_colours))
         self.sample_rate = sample_rate
 
         self.frame = 0  # current frame of the motion sequence

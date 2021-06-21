@@ -1,6 +1,8 @@
 from inverse_kinematics.InverseKinematics import *
 torch.manual_seed(1510)
 
+### TEST SCRIPT FOR SINGLE POSE GENERATION ###
+
 sample_rate = 12
 
 selected = get_fnames(["walk"])

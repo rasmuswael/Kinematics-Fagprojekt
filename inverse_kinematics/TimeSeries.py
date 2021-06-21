@@ -4,6 +4,10 @@ from inverse_kinematics.amc_creator import amc_converter
 import pickle
 
 def interpolatearray(X, sample_rate, output_fps=120):
+    """Function for linearly interpolating between generated frames
+    :arg X, numpy array to be interpolated
+    :arg sample_rate, the sub-sampling rate
+    :arg output_fps, output fps of the interpolation. Defaults to 120 fps"""
     input_fps = 120
     fps_ratio = input_fps // output_fps
     num_frames, num_features = X.shape
@@ -18,6 +22,20 @@ def interpolatearray(X, sample_rate, output_fps=120):
 
 def gen_timeseries(inv_model, sequences, parameters, samples, view=True, init_pose='first pose', opt_pose='self',
                    interpolate=False, sample_rate=1, output_fps=120, saveids=[]):
+    """The main function handling the time series generation loop. Loops over all goal point in a sequence and
+    performs inverse kinematics using inv_model.
+    :arg inv_model, see InverseKinematics.py
+    :arg sequences, list of goal point sequences
+    :arg parameters, tuple (n_epochs, lr, weight_decay, lh_var) containing the parameters for the inverse_kinematics solver.
+    :arg samples, list of motions samples to get the goal sequences
+    :arg view, view result
+    :arg init_pose, initial pose for the model. Either 'dummy' meaning t-pose, 'first pose' meaning the first pose in the
+    motion sample or 'model pose' meaning that the initial pose is computed by the model
+    :arg opt_pose, whether the optimisation starts from the previous pose, 'self' or the dummy pose, 'dummy'
+    :arg interpolate, whether the motion should be interpolated.
+    :arg sample_rate, the rate at which the motion was sampled
+    :arg output_fps, output fps of the motion. Only relevant if interpolate=True (see interpolatearray)
+    :arg saveids, ids for the generated motions. If empty, motions are NOT saved"""
     dummy_joints, dummy_pose = dummy()
     n_epochs, lr, weight_decay, lh_var = parameters
     for j, sequence in enumerate(sequences):

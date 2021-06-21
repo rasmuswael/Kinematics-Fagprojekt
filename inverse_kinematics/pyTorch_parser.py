@@ -75,15 +75,20 @@ class Joint:
     for child in self.children:
       child.set_motion(motion)
 
-  def draw(self, *args):
+  def draw(self, fig=None, *args):
     joints = self.to_dict()
-    fig = plt.figure()
+    returnfig = False
+    if fig is None:
+      fig = plt.figure()
+      returnfig = True
     ax = Axes3D(fig)
 
+    ax.set_axis_off()
     # Center around origo
-    ax.set_xlim3d(-30, 30)
-    ax.set_ylim3d(-30, 30)
-    ax.set_zlim3d(-20, 40)
+    scale = 3.6
+    ax.set_xlim3d(-30 / scale, 30 / scale)
+    ax.set_ylim3d(-30 / scale, 30 / scale)
+    ax.set_zlim3d(-20 / scale, 40 / scale)
 
     xs, ys, zs = [], [], []
     for joint in joints.values():
@@ -105,6 +110,8 @@ class Joint:
     if args != ():
       ax.plot(args[0][2], args[0][0], args[0][1], markerfacecolor='k', markeredgecolor='k', marker='o',
               markersize=5, alpha=1)
+    if not returnfig:
+      return fig
     plt.show()
 
   def to_dict(self):

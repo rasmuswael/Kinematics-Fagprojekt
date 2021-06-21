@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from transforms3d.euler import euler2mat, mat2euler
 from mpl_toolkits.mplot3d import Axes3D
 
+### NOT OUR SCRIPT. Rewritten and used in pyTorch_parser.py
 
 class Joint_np:
     def __init__(self, name, direction, length, axis, dof, limits):

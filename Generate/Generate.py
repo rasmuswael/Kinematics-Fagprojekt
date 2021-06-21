@@ -1,5 +1,7 @@
 from inverse_kinematics.quick_setup import *
 
+
+### SCRIPT TO GENERATE MOTIONS USING MAP IK ###
 seed = 4256
 
 type = 'hmmGauss'
@@ -23,7 +25,7 @@ sequences, trunc_samples = get_goal_sequences(goal_joints, testsamples, indices,
 
 saveframes, plot = True, False
 
-n_epochs, lr, weight_decay, lh_var = 250, 1, 0, 1e-4
+n_epochs, lr, weight_decay, lh_var = 100, 1, 0, 1e-4
 parameters = (n_epochs, lr, weight_decay, lh_var)
 
 inv_model = Inverse_model(prior, indices, saveframes=saveframes, plot=plot)

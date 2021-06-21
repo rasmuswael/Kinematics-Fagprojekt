@@ -3,6 +3,7 @@ from inverse_kinematics.pyTorch_parser import Joint, read_line
 from inverse_kinematics.amc_parser import parse_asf_np
 
 def dummy(return_dof=False):
+    """Dummy function which returns the joints of subject 01, the t-pose and the dof for each joint angle."""
     # Read 01.asf (placeholder) to get rudementary information, but set all directions to zero.
     file_path = './data/01/01.asf'
     '''read joint data only'''

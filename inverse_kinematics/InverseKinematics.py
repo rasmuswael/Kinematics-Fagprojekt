@@ -7,7 +7,7 @@ torch.manual_seed(1510)
 
 def set_goal(goal_joints, pose):
     '''
-    Sets constraints.
+    Sets constraints (goal coordinates) given a pose.
     Returns dictionary of goal joints and their desired cartesian coordinates
 
     Arguments:
@@ -29,6 +29,12 @@ def set_goal(goal_joints, pose):
 
 
 def get_goal_sequences(goal_joints, samples, indices=np.arange(59), return_trunc_samples=False):
+    """Helper function to get sequences of goal coordinates
+    :return goal_sequences, sequences of goal coordinates
+    :arg goal_joints, the goal joint to be tracked
+    :arg samples, samples from which the goal points are extracted
+    :arg indices, indices for the included joints
+    :arg return_trunc_samples, whether to return truncated samples or not."""
     sequences = []
     trunc_samples_list = []
     for sample in samples:

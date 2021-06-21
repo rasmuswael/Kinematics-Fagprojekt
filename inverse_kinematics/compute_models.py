@@ -14,7 +14,8 @@ from hmmlearn import hmm
 
 
 def truncate(X, root_limit=[]):
-    '''Remove translation from X coloumns first'''
+    """Truncates the numpy matrix of angles to prepare for statistics, and removes orientation.
+    Remove translation from X coloumns first"""
     joints, pose, dof = dummy(return_dof=True)
 
     root = R.from_euler('xyz', X[:,:3],degrees=True)
@@ -44,6 +45,48 @@ def truncate(X, root_limit=[]):
 def standardize(X):
     mean, std = X.mean(0), X.std(0)
     return (X-mean)/std, mean, std
+
+def compute_parameters_normal(X):
+    '''Remove translations X coloumns first'''
+    mean = X.mean(0)
+    cov = np.cov(X, rowvar=False)
+    return mean, cov
+
+
+def compute_gm_params(X, n_components, indices=np.arange(59), covariance_type='full'):
+    X = remove_excluded(truncate(X), indices, type='numpy')
+    gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(X)
+    return gm.means_, gm.covariances_, gm.weights_
+
+
+def compute_hmmGauss(X, lengths, n_components, indices=np.arange(59), covariance_type='full'):
+    X = remove_excluded(truncate(X), indices, type='numpy')
+    model = hmm.GaussianHMM(n_components=n_components, covariance_type=covariance_type).fit(X, lengths=lengths)
+    return model
+
+
+def compute_NF(X, steps, indices=np.arange(59), lr=1e-2):
+    X = remove_excluded(truncate(X), indices, type='numpy')
+    X, mean, std = standardize(X)
+    n_features = X.shape[1]
+
+    base_dist = dist.Normal(torch.zeros(n_features), torch.ones(n_features))
+    spline_transform = T.spline_coupling(n_features, hidden_dims=[n_features * 2] * 128, split_dim=None, count_bins=32)
+    flow_dist = dist.TransformedDistribution(base_dist, [spline_transform])
+
+    dataset = torch.from_numpy(X).float()
+    optimizer = torch.optim.Adam(spline_transform.parameters(), lr=lr)
+    for step in range(steps + 1):
+        optimizer.zero_grad()
+        loss = -flow_dist.log_prob(dataset).mean()
+        loss.backward()
+        optimizer.step()
+        flow_dist.clear_cache()
+
+        if step % 10 == 0:
+            print('step: {}, loss: {}'.format(step, loss.item()))
+    return (flow_dist, torch.tensor(mean, dtype=torch.float), torch.tensor(std, dtype=torch.float))
+
 
 ### Helper functions
 def exclude(excluded=None, return_indices=True, root_exclude=[1]):
@@ -159,138 +202,11 @@ def remove_excluded(A, indices, datatype='array', type='torch'):
     return B
 
 
-def draw_cluster(mean, indices=[], type='torch'):
+def draw_cluster(mean, indices=[], type='torch', fig=None):
     joints, pose, dof = dummy(return_dof=True)
     mean_pose = array2pose(mean, indices, type)
+    if type=='numpy':
+        mean_pose = convertpose(mean_pose, 'numpy')
     joints['root'].set_motion(mean_pose)
-    joints['root'].draw()
-###
-
-def compute_circ_params(X):
-    '''Remove translation from X coloumns first'''
-    X = np.deg2rad(X)
-    cmean = circmean(X, axis=0)
-    cvar = circvar(X, axis=0)
-    return np.rad2deg(cmean), np.rad2deg(cvar)
-
-
-def compute_parameters_normal(X):
-    '''Remove translations X coloumns first'''
-    mean = X.mean(0)
-    cov = np.cov(X, rowvar=False)
-    return mean, cov
-
-
-def compute_gm_params(X, n_components, indices=np.arange(59), covariance_type='full'):
-    X = remove_excluded(truncate(X), indices, type='numpy')
-    gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(X)
-    return gm.means_, gm.covariances_, gm.weights_
-
-
-def compute_hmmGauss(X, lengths, n_components, indices=np.arange(59), covariance_type='full'):
-    X = remove_excluded(truncate(X), indices, type='numpy')
-    model = hmm.GaussianHMM(n_components=n_components, covariance_type=covariance_type).fit(X, lengths=lengths)
-    return model
-
-
-def compute_NF(X, steps, indices=np.arange(59), lr=1e-2):
-    X = remove_excluded(truncate(X), indices, type='numpy')
-    X, mean, std = standardize(X)
-    n_features = X.shape[1]
-
-    base_dist = dist.Normal(torch.zeros(n_features), torch.ones(n_features))
-    spline_transform = T.spline_coupling(n_features, hidden_dims=[n_features * 2] * 128, split_dim=None, count_bins=32)
-    flow_dist = dist.TransformedDistribution(base_dist, [spline_transform])
-
-    dataset = torch.from_numpy(X).float()
-    optimizer = torch.optim.Adam(spline_transform.parameters(), lr=lr)
-    for step in range(steps + 1):
-        optimizer.zero_grad()
-        loss = -flow_dist.log_prob(dataset).mean()
-        loss.backward()
-        optimizer.step()
-        flow_dist.clear_cache()
-
-        if step % 10 == 0:
-            print('step: {}, loss: {}'.format(step, loss.item()))
-    return (flow_dist, torch.tensor(mean, dtype=torch.float), torch.tensor(std, dtype=torch.float))
-
-
-### EXPERIMENTAL ###
-def angle2cartesian(X):
-    X = np.deg2rad(X)
-    Xcos, Xsin = np.cos(X), np.sin(X)
-    return np.hstack((Xcos, Xsin))
-
-
-def cartesian2angle(X):
-    shape = X.shape
-    onedim = not len(shape) - 1
-    if onedim:
-        ncols = shape[0]
-        Xcos, Xsin = X[:int(ncols / 2)], X[int(ncols / 2):]
-    else:
-        ncols = shape[1]
-        Xcos, Xsin = X[:, :int(ncols / 2)], X[:, int(ncols / 2):]
-    X = np.zeros(Xcos.shape)
-    for i in range(int(ncols / 2)):
-        if onedim:
-            X[i] = np.rad2deg(np.arctan2(Xsin[i], Xcos[i]))
-        else:
-            X[:, i] = np.rad2deg(np.arctan2(Xsin[:, i], Xcos[:, i]))
-    return X
-
-
-###
-if __name__ == "__main__":
-    # output_file = "./models/normal_params"
-    # means = []
-    # covs = []
-    # query_list = [["walk"], ["dance"], ["walk", "run"]]
-    # for queries in query_list:
-    #     mean, cov = compute_parameters_normal(queries)
-    #     means.append(mean)
-    #     covs.append(cov)
-    # np.savez(output_file, np.array(means), np.array(covs), np.array(query_list))
-    # means, covs, queries = get_prior_model()
-    # mean, cov = means[0], covs[0]
-    # Lets try visualizing the circular mean
-    selected = get_fnames(["walk"])
-    data = parse_selected(selected, sample_rate=8, limit=2000)
-    X, y = gather_all_np(data)
-    X = X[:, :(X.shape[1] - 3)]
-
-    dummy_joints, dummy_pose = dummy()
-
-    included, indices = exclude(return_indices=True)
-    mean, cov = compute_parameters_normal(truncate(X))
-
-    truncmean, trunccov = np.zeros(mean.shape), np.zeros(cov.shape)
-    truncmean[indices], trunccov[indices, indices] = mean[indices], cov[indices, indices]
-    mean, cov = torch.tensor(truncmean), torch.tensor(trunccov)
-    # Draw prior
-    mean_pose = array2pose(mean)
-
-    dummy_joints['root'].set_motion(mean_pose)
-    dummy_joints['root'].draw()
-
-    # Ignore orientation
-    # X[:, 1] = np.zeros(X.shape[0])
-
-    cmean, _ = compute_circ_params(X)
-    trunccmean, _ = compute_circ_params(truncate(X))
-
-    # Xcart = angle2cartesian(X)
-    # Xangle = cartesian2angle(Xcart)
-    # cart_mean = np.mean(Xcart, axis=0)
-    # angle_mean = cartesian2angle(cart_mean)
-    # cart_cov = np.var(Xcart, axis=0)
-    # angle_cov = cartesian2angle(cart_cov)
-    mean, cov = compute_parameters_normal(X)
-    truncmean, trunccov = compute_parameters_normal(truncate(X))
-
-    draw_cluster(cmean)
-    draw_cluster(trunccmean)
-    draw_cluster(truncmean)
-    #draw_cluster(angle_mean)
-    #draw_cluster(mean)
+    return joints['root'].draw(fig=fig)
+### END OF HELPER FUNCTIONS

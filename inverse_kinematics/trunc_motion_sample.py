@@ -3,8 +3,8 @@ from compute_models import *
 excluded = ['lfingers', 'lthumb', 'ltoes', 'rfingers', 'rthumb', 'rtoes', 'rhand', 'lhand', 'head', 'rwrist', 'lwrist', 'rclavicle', 'lclavicle']
 
 def trunc_motion_samples(selected, excluded):
-    # for key, file in selected.items():
-    #     for sample in file:
+    """Truncate motion samples
+    :return truncated motion samples in a dictionary by filename"""
     included, indices = exclude(excluded, return_indices=True, root_exclude=[1])
     data = parse_selected(selected, limit=None)
     trunc_motion_samples = {}

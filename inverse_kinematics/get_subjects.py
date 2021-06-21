@@ -8,6 +8,7 @@ import random
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 def get_subjects():
+    """Reads subjects.txt into a dictionary with keywords"""
     dir_path = "./data/subjects"
 
     subjects = {}
@@ -33,6 +34,7 @@ def get_subjects():
     return subjects
 
 def get_fnames(queries, limit=0, subjects=get_subjects()):
+    """Get filenames based on a list of queries"""
     selected = {}
     for subject_number, file in subjects.items():
         match = []
@@ -50,7 +52,7 @@ def get_fnames(queries, limit=0, subjects=get_subjects()):
     return selected
 
 def get_manual_names(types):
-    """The sequel"""
+    """Get the filenames in the manually sorted dataset given a list of types"""
     selected = {}
     for type in types:
         dir = f"./{type}_data"
@@ -64,6 +66,7 @@ def get_manual_names(types):
     return selected
 
 def get_trainandtestsample_names(seed):
+    """Get train and test set given a seed"""
     np.random.seed(seed)
     trainselected, testselected = {}, {}
     types = ('run', 'walk')
@@ -91,6 +94,7 @@ def get_trainandtestsample_names(seed):
 
 
 def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_translation=True, sep_trans_root=True, motions_as_mat=True):
+    """Parse files specifies in selected. Too hard to explain, but you can pass arguments to get the data in all manner of ways :)"""
     count = 0
     done = False
     data = {}
@@ -154,7 +158,7 @@ def parse_selected(selected, type="numpy", sample_rate=1, limit=None, ignore_tra
 
 
 def gather_all_np(data ,big_matrix=True):
-    """Requires data as actions as np matrix. See parse_selected"""
+    """Gathers parsed data in a big, numpy matrix. Requires data as actions as np matrix. See parse_selected"""
     first = 1
     for set in tqdm(data.values()):
         labels = set['labels']
@@ -213,6 +217,7 @@ def get_motion_samples(selected, length, num_samples=1, random=True, sample_rate
 
 
 def get_lengths_np(data):
+    """Get lenghts of arrays as numpy array"""
     len_array = np.array([])
     for key in data.keys():
         len_array = np.concatenate((len_array, np.array(data[key]['lengths'])))
@@ -220,7 +225,7 @@ def get_lengths_np(data):
 
 
 def get_fold(data, K, type='Kfold', group='motion'):
-    """Maybe change this code later to account for representation of each label in the folds"""
+    """Get folds for crossvalidation"""
     len_array = get_lengths_np(data)
     N = sum(len_array)
     fold_size = N // K
@@ -266,6 +271,7 @@ def get_Kfold_mat(data, folds):
 
 
 def get_train_test_split(X, k, len_arrays, y=None):
+    """Get the train test split for the kth fold"""
     len_arrays_ = len_arrays.copy()
     low = int(sum(np.concatenate(len_arrays_[:k] + [np.empty(0)])))
     high = int(low + sum(len_arrays_[k]))

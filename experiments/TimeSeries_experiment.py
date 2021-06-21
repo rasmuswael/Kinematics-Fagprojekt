@@ -1,4 +1,7 @@
 from inverse_kinematics.TimeSeries import *
+
+
+### TEST SCRIPT FOR TIMESERIES GENERATION ###
 seed = 1510
 torch.manual_seed(seed)
 
@@ -20,7 +23,7 @@ included, indices = exclude(excluded, return_indices=True, root_exclude=[1])
 # mean, cov = mean[indices], cov[indices, :][:, indices]
 
 # means, covs, weights = compute_gm_params(X, n_components=5, indices=indices, covariance_type='full')
-n_states=9
+n_states=6
 model = compute_hmmGauss(X, len_array, n_components=n_states, indices=indices, covariance_type='full')
 
 # noprior = ('noprior', None)
@@ -34,12 +37,12 @@ examples = selected
 #examples = {'104': [('104_56','')]}
 
 np.random.seed(seed)
-samples = get_motion_samples(examples, 40, 2, sample_rate=sample_rate)
+samples, sampleids = get_motion_samples(examples, 10, 2, sample_rate=sample_rate)
 sequences, trunc_samples = get_goal_sequences(goal_joints, samples, indices, return_trunc_samples=True)
 
 saveframes, plot = True, False
 
-n_epochs, lr, weight_decay, lh_var = 150, 1, 0, 1e-5
+n_epochs, lr, weight_decay, lh_var = 100, 1, 0, 1e-5
 parameters = (n_epochs, lr, weight_decay, lh_var)
 
 # inv_noprior = Inverse_model(noprior, excluded, saveframes=saveframes, plot=plot)
